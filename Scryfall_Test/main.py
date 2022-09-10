@@ -15,5 +15,5 @@ data = response.json()
 for item in data["data"]:
     print(item['name'])
 
-with open("sample.json", "w") as outfile:
+with open("scryfall_output.json", "w") as outfile:
     json.dump(data["data"][0]["name"], outfile)
