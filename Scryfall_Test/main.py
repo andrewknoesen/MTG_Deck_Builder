@@ -2,7 +2,7 @@ import requests
 import json
 
 parameters = {                          #Parameters for api. Key must match documents
-    "q": "Lightning",
+    "q": "Vigor",
     "unique": "cards",
     "order": "name",
 }
