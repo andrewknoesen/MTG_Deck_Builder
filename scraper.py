@@ -1,13 +1,20 @@
 import requests
 import re
-import json
+import eel
 from bs4 import BeautifulSoup
+import scraper as scraper
 
 
 def is_deck(href):
     return href and re.compile("deck").search(href)
 
-def get_decks(URL):
+def update_progress(text):
+    # eel.get_decks_eel(text)
+    # eel.prompt_alerts(text)
+    eel.display_progress(text)
+    # print(text)
+
+def scrape_decks(URL):
     print("Retrieving decks...")
 
     goldfish = "https://www.mtggoldfish.com" 
@@ -28,11 +35,11 @@ def get_decks(URL):
     links = elements.find_all("a", href=is_deck)
     deck_count = len(links)
     curr_count = 0
-    for element in links:
-        result += str(element)
-        result += "\n\n"
+    retrieved_decks = ""
 
-        print(f"Retrieving: {element.text}")
+    for element in links:
+
+        retrieved_decks += f"\n{element.text}"
         response = requests.get(f"{goldfish}/deck/download/{str(element['href']).split('/')[-1]}")
         cards = str(BeautifulSoup(response.content, "html.parser")).split('\r\n\r\n')
         deck = {
@@ -44,7 +51,10 @@ def get_decks(URL):
         decks.append(deck)
 
         curr_count += 1
-        print(f"{curr_count}/{deck_count} complete...")
+        # print(f"{curr_count}/{deck_count} complete...\n{retrieved_decks}")
+        # eel.display_progress(f"{curr_count}/{deck_count} complete...\n{retrieved_decks}")
+        update_progress(f"{curr_count}/{deck_count} complete...\n{retrieved_decks}")
+
        
     return decks 
 
