@@ -13,6 +13,7 @@ def get_id(exact_card: str):
         url="https://mox.rouxtaccess.com/api/card/search", params=search_parameters)
 
     print(mox_response)
+    print(f"Card: {exact_card}")
 
     data = mox_response.json()
 
