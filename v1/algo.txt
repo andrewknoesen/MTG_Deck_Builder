@@ -1,0 +1,12 @@
+import all cards into supplier_df
+sort by qty (desc) and unit_cost (asc)
+
+loop through order_df per card
+    add to buy_df until order is fullfiled
+
+if buy_df supplier_count > 0
+    loop through buy_df 
+        for each supplier
+            if removing entry with delivery and replacing with delivery is less
+                swap
+

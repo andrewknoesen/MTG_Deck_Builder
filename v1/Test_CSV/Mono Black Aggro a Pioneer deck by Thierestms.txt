@@ -1,0 +1,30 @@
+2 Grim Haruspex
+2 Tymaret, Chosen from Death
+3 Ayara, First of Locthwain
+3 Nightmare Shepherd
+3 Priest of Forgotten Gods
+3 Gray Merchant of Asphodel
+3 Murderous Rider
+4 Yarok's Fenlurker
+4 Serrated Scorpion
+4 Shambling Ghast
+2 Power Word Kill
+2 Grasp of Darkness
+3 Fatal Push
+2 Liliana, Dreadhorde General
+1 Witch's Cottage
+1 Takenuma, Abandoned Mire
+3 Nykthos, Shrine to Nyx
+15 Swamp
+
+Sideboard
+1 Gonti, Lord of Luxury
+1 Underworld Dreams
+1 Leyline of the Void
+1 Extinction Event
+1 Debt to the Kami
+1 Murderous Rider
+2 Lithoform Blight
+2 Go Blank
+2 Malicious Malfunction
+3 Duress
