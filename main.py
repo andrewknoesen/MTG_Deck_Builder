@@ -1,6 +1,6 @@
-import card_importer
-from mox_scraper import scrape_mox
-from response_to_df import flatten_store
+import tools.card_importer as card_importer
+from tools.mox_scraper import scrape_mox
+from utils.response_to_df import flatten_store
 import pandas as pd
 from pprint import pprint
 
@@ -11,18 +11,14 @@ from pprint import pprint
 
 def main():
     # load cards from purchase_list.json
-    cards = card_importer.load_cards_from_json()
-    print(cards)
-    stores_list = scrape_mox(cards)
-    stores_df = flatten_store(stores_list)
-    stores_df.to_csv('order.csv', index=False)
-    pprint(stores_df)
-
-    # scrape
-    # load into df
+    wanted_cards_df: pd.DataFrame = card_importer.load_cards_from_json()
+    pprint(wanted_cards_df)
+    stores_list: list = scrape_mox(wanted_cards_df)
+    stores_df: pd.DataFrame = flatten_store(stores_list)
+    # stores_df.to_csv('order.csv', index=False)
+    # pprint(stores_df)
+    # build order
     # optimize
-    pass
-
 
 if __name__ == "__main__":
     main()
