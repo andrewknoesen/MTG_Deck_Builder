@@ -13,11 +13,17 @@ def get_id(exact_card: str):
     mox_response = requests.get(
         url="https://mox.rouxtaccess.com/api/card/search", params=search_parameters)
         
-
-    pprint(mox_response.text)
-    print(f"Card: {exact_card}")
-
     data = mox_response.json()
+    
+    print("###################################")
+    print(f"Returned retailer Raw for card {exact_card}:")
+    print("###################################")
+    pprint(data)
+    print("###################################")
+    print("###################################")
+
+
+    
 
     # print(data['data'])
     return int(data['data'][0]['id'])
