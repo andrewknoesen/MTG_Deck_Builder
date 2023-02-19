@@ -1,4 +1,5 @@
 import pandas as pd
+from pprint import pprint
 import requests
 
 def get_id(exact_card: str):
@@ -11,8 +12,9 @@ def get_id(exact_card: str):
 
     mox_response = requests.get(
         url="https://mox.rouxtaccess.com/api/card/search", params=search_parameters)
+        
 
-    print(mox_response)
+    pprint(mox_response.text)
     print(f"Card: {exact_card}")
 
     data = mox_response.json()
@@ -24,7 +26,12 @@ def get_retailers(id: int, name: str):
     retailers = requests.post(
         f"https://mox.rouxtaccess.com/api/card/{id}/scrape/queued?include=retailer")
 
-    # print(retailers.json())
+    print("###################################")
+    print("Returned retailer Raw:")
+    print("###################################")
+    pprint(retailers.json())
+    print("###################################")
+    print("###################################")
     retail = {}
     private = {}
     for item in retailers.json()['data']:
