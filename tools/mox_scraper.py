@@ -58,7 +58,10 @@ def get_retailers(id: int, name: str):
         'private': private
     }
 
-def scrape_mox(cards_df: pd.DataFrame):
+def clean_up(cards: list) -> list:
+    pass
+
+def scrape_mox(cards_df: pd.DataFrame) -> list:
     
     print("###################################")
     print(f'Scraping')
@@ -82,5 +85,7 @@ def scrape_mox(cards_df: pd.DataFrame):
         print("###################################")
         print(f'Completed: {count}/{dict_len}')
         print("###################################")
+
+
 
     return compiled_retailers
