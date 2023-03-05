@@ -1,5 +1,6 @@
 import json
 import sys
+import time
 import pandas as pd
 from pprint import pprint
 import requests
@@ -15,6 +16,13 @@ def get_id(exact_card: str):
 
     mox_response = requests.get(
         url="https://mox.rouxtaccess.com/api/card/search", params=search_parameters)
+    
+    while "<!DOCTYPE html>" in mox_response.text:
+        print("server error")
+        time.sleep(5)
+        mox_response = requests.get(
+        url="https://mox.rouxtaccess.com/api/card/search", params=search_parameters)
+    
 
     data = mox_response.json()
 
@@ -32,11 +40,24 @@ def get_id(exact_card: str):
 def get_retailers(id: int, name: str):
     endpoint: str = f"https://mox.rouxtaccess.com/api/card/{id}/scrape/queued?include=retailer"
     retailers: requests.Response = requests.post(endpoint)
+    
+    while "<!DOCTYPE html>" in retailers.text :
+        print("server error")
+        time.sleep(5)
+        retailers = requests.post(endpoint)
+
     compiled_reatilers: list = retailers.json()['data']
 
     for i in range(2, retailers.json()['meta']['pagination']['total_pages'] + 1):
         retailers_page = requests.post(
             f'https://mox.rouxtaccess.com/api/card/{id}/scrape/queued?include=retailer&page={i}')
+
+        while "<!DOCTYPE html>" in retailers_page.text :
+            print("server error")
+            time.sleep(5)
+            retailers_page = requests.post(
+            f'https://mox.rouxtaccess.com/api/card/{id}/scrape/queued?include=retailer&page={i}')
+
         for item in retailers_page.json()['data']:
             compiled_reatilers.append(item)
 
@@ -51,8 +72,8 @@ def get_retailers(id: int, name: str):
     private = {}
     for item in compiled_reatilers:
         print(item)
-        response_card_name: str = item['name']
-        if name in response_card_name.split(' '):
+        response_card_name: str = item['name'].split(' - ')[0].split(' [')[0].split(' (')[0]
+        if name == response_card_name:
             if '?' not in item['priceRead']:
                 retail[item['id']] = {
                     'name': name,
@@ -101,7 +122,7 @@ def scrape_mox(cards_df: pd.DataFrame) -> list:
     print(cards_df)
     print("###################################")
     count = 0
-    for card in cards_df['Item']:
+    for card in cards_df['name']:
 
         id = get_id(card)
 
@@ -114,6 +135,3 @@ def scrape_mox(cards_df: pd.DataFrame) -> list:
 
     return compiled_retailers
 
-
-if __name__ == '__main__':
-    globals()[sys.argv[1]](sys.argv[2])

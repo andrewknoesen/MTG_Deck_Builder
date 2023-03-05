@@ -1,3 +1,4 @@
+from pprint import pprint
 import pandas as pd
 
 def create_retailer_dict(compiled_retailers: list):
@@ -41,6 +42,8 @@ def create_retailer_dict(compiled_retailers: list):
 
 def flatten_store(list_data):
     data = create_retailer_dict(list_data)
+    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+    pprint(list_data)
     flattened_data = []
     for store, items in data.items():
         for item in items:

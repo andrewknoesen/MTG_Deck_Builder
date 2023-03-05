@@ -1,9 +1,179 @@
 id,cost,link,name,name_long,qty,store,shipping
-383946,15.0,https://thestonedragon.co.za/product/consider-2/,Consider,Consider – Innistrad: Midnight Hunt,64,The Stone Dragon,90
-505860,25.0,https://shop.dracoti.co.za/product/consider/,Consider,Consider,1,Dracoti,90
-430855,48.0,https://tcgtrader.net/products/consider-innistrad-midnight-hunt,Consider,Consider [Innistrad: Midnight Hunt] - Near Mint Foil,1,TCG Trader,90
-500576,55.0,https://d20battleground.co.za/products/consider-promo-pack-innistrad-midnight-hunt,Consider,Consider (Promo Pack) [Innistrad: Midnight Hunt Promos] - Near Mint,1,D20Battleground,90
-523092,65.0,https://www.sadrobot.co.za/shop/consider-fnm-promo/,Consider,Consider (Promo Pack) - Innistrad Midnight Hunt,7,SadRobot,90
+321047,7.0,https://www.thewarren.co.za/shop/card/aeve-progenitor-ooze,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze - Modern Horizons 2",1,The Warren,90
+439996,7.0,https://d20battleground.co.za/products/aeve-progenitor-ooze-modern-horizons-2,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze [Modern Horizons 2] - Near Mint",2,D20Battleground,90
+194424,7.0,https://shop.dracoti.co.za/product/aeve-progenitor-ooze/,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze",3,Dracoti,90
+128789,8.0,https://store.topdecksa.co.za/products/aeve-progenitor-ooze?_pos=1&_psq=Aeve%2C%20Progenitor%20Ooze&_ss=e&_v=1.0,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze - Modern Horizons 2 {R} #148",16,TopDeck,90
+439993,13.0,https://www.thewarren.co.za/shop/card/aeve-progenitor-ooze,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze - Modern Horizons 2(PRERELEASE) (Foil)",1,The Warren,90
+40752,16.0,https://www.battlewizards.co.za/aeve-progenitor-ooze-modern-horizons-2/,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze - Modern Horizons 2",4,Battle Wizards,90
+430855,45.0,https://tcgtrader.net/products/consider-innistrad-midnight-hunt,Consider,Consider [Innistrad: Midnight Hunt] - Near Mint Foil,1,TCG Trader,90
 13606,116.0,https://luckshack.co.za/index.php?route=product/product&product_id=83409,Consider,Consider,6,Luckshack,90
-360114,140.0,https://www.sadrobot.co.za/shop/consider-fnm-foil/,Consider,Consider (FNM Foil) - Innistrad Midnight Hunt,1,SadRobot,90
-356242,505.0,https://www.sadrobot.co.za/shop/consider-foil/,Consider,Consider (Foil) - Innistrad: Double Feature,1,SadRobot,90
+525076,145.0,https://store.topdecksa.co.za/products/consider?_pos=1&_psq=Consider&_ss=e&_v=1.0,Consider,Consider - Innistrad: Midnight Hunt {C} #388 (Foil) [Promopack],1,TopDeck,90
+15812,6.0,https://luckshack.co.za/index.php?route=product/product&product_id=62116,Echoing Truth,Echoing Truth,1,Luckshack,90
+476049,8.0,https://www.thewarren.co.za/shop/card/echoing-truth,Echoing Truth,Echoing Truth - Darksteel,1,The Warren,90
+509887,8.0,https://d20battleground.co.za/products/echoing-truth-commander-2019,Echoing Truth,Echoing Truth [Commander 2019] - Near Mint,1,D20Battleground,90
+476048,9.0,https://d20battleground.co.za/products/echoing-truth-darksteel,Echoing Truth,Echoing Truth [Darksteel] - Near Mint,1,D20Battleground,90
+275009,12.0,https://www.sadrobot.co.za/shop/echoing-truth/,Echoing Truth,Echoing Truth - Modern Masters,74,SadRobot,90
+354104,41.0,https://store.topdecksa.co.za/products/echoing-truth?_pos=1&_psq=Echoing%20Truth&_ss=e&_v=1.0,Echoing Truth,Echoing Truth - Modern Masters (Foil),2,TopDeck,90
+529172,43.0,https://www.thewarren.co.za/shop/card/echoing-truth,Echoing Truth,Echoing Truth - Modern Masters (Foil),1,The Warren,90
+506296,3.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Dominaria Remastered,3,The Warren,90
+204037,3.0,https://shop.dracoti.co.za/product/empty-the-warrens-4/,Empty the Warrens,Empty the Warrens,3,Dracoti,90
+52229,3.2,https://www.battlewizards.co.za/empty-the-warrens-time-spiral-remastered/,Empty the Warrens,Empty the Warrens - Time Spiral Remastered,4,Battle Wizards,90
+204035,4.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Time Spiral Remastered,6,The Warren,90
+506295,4.0,https://d20battleground.co.za/products/empty-the-warrens-dominaria-remastered,Empty the Warrens,Empty the Warrens [Dominaria Remastered] - Near Mint,4,D20Battleground,90
+17656,4.0,https://luckshack.co.za/index.php?route=product/product&product_id=100530,Empty the Warrens,Empty the Warrens,1,Luckshack,90
+506298,4.0,https://www.battlewizards.co.za/empty-the-warrens-dominaria-remastered/,Empty the Warrens,Empty the Warrens - Dominaria Remastered,10,Battle Wizards,90
+506299,4.8,https://www.battlewizards.co.za/empty-the-warrens-dominaria-remastered-retro/,Empty the Warrens,Empty the Warrens - Dominaria Remastered: Retro,3,Battle Wizards,90
+506297,5.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Dominaria Remastered(ALTERNATE ART) (#Retro),1,The Warren,90
+204045,5.0,https://www.sadrobot.co.za/shop/empty-the-warrens-3/,Empty the Warrens,Empty the Warrens - Time Spiral Remastered,11,SadRobot,90
+204042,5.0,https://d20battleground.co.za/products/empty-the-warrens-time-spiral-remastered,Empty the Warrens,Empty the Warrens [Time Spiral Remastered] - Near Mint,6,D20Battleground,90
+494264,5.0,https://tcgtrader.net/products/empty-the-warrens-time-spiral-remastered,Empty the Warrens,Empty the Warrens [Time Spiral Remastered] - Near Mint,1,TCG Trader,90
+397563,6.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Duel Decks: Mind vs. Might,1,The Warren,90
+52227,6.4,https://www.battlewizards.co.za/empty-the-warrens-time-spiral/,Empty the Warrens,Empty the Warrens - Time Spiral,9,Battle Wizards,90
+347371,6.4,https://www.battlewizards.co.za/empty-the-warrens-duel-decks-mind-vs-might/,Empty the Warrens,Empty the Warrens - Duel Decks: Mind vs. Might,2,Battle Wizards,90
+204036,7.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Time Spiral,11,The Warren,90
+529173,7.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Modern Masters,1,The Warren,90
+52226,7.2,https://www.battlewizards.co.za/empty-the-warrens-modern-masters/,Empty the Warrens,Empty the Warrens - Modern Masters,3,Battle Wizards,90
+347370,8.0,https://store.topdecksa.co.za/products/empty-the-warrens?_pos=1&_psq=Empty%20the%20Warrens&_ss=e&_v=1.0&variant=33824382275,Empty the Warrens,Empty the Warrens - Modern Masters,1,TopDeck,90
+506292,8.0,https://store.topdecksa.co.za/products/empty-the-warrens?_pos=1&_psq=Empty%20the%20Warrens&_ss=e&_v=1.0&variant=33824382275,Empty the Warrens,Empty the Warrens - Dominaria Remastered {C} #318 [Boosterfun],30,TopDeck,90
+204046,8.0,https://www.sadrobot.co.za/shop/empty-the-warrens-2/,Empty the Warrens,Empty the Warrens - Modern Masters,31,SadRobot,90
+204047,8.0,https://www.sadrobot.co.za/shop/empty-the-warrens/,Empty the Warrens,Empty the Warrens - Time Spiral,13,SadRobot,90
+204039,8.0,https://d20battleground.co.za/products/empty-the-warrens-duel-decks-mind-vs-might,Empty the Warrens,Empty the Warrens [Duel Decks: Mind vs. Might] - Near Mint,4,D20Battleground,90
+204041,8.0,https://d20battleground.co.za/products/empty-the-warrens-time-spiral,Empty the Warrens,Empty the Warrens [Time Spiral] - Near Mint,8,D20Battleground,90
+494261,9.0,https://store.topdecksa.co.za/products/empty-the-warrens?_pos=1&_psq=Empty%20the%20Warrens&_ss=e&_v=1.0&variant=33824382275,Empty the Warrens,Empty the Warrens - Time Spiral,2,TopDeck,90
+494262,9.0,https://store.topdecksa.co.za/products/empty-the-warrens?_pos=1&_psq=Empty%20the%20Warrens&_ss=e&_v=1.0&variant=33824382275,Empty the Warrens,Empty the Warrens - Dominaria Remastered {C} #118,52,TopDeck,90
+204040,9.0,https://d20battleground.co.za/products/empty-the-warrens-modern-masters,Empty the Warrens,Empty the Warrens [Modern Masters] - Near Mint,4,D20Battleground,90
+494263,21.0,https://store.topdecksa.co.za/products/empty-the-warrens?_pos=1&_psq=Empty%20the%20Warrens&_ss=e&_v=1.0&variant=33824382275,Empty the Warrens,Empty the Warrens - Dominaria Remastered {C} #118 (Foil),9,TopDeck,90
+414089,312.0,https://d20battleground.co.za/products/engineered-explosives-fifth-dawn,Engineered Explosives,Engineered Explosives [Fifth Dawn] - Near Mint,1,D20Battleground,90
+489660,650.0,https://d20battleground.co.za/products/flooded-strand-khans-of-tarkir,Flooded Strand,Flooded Strand [Khans of Tarkir] - Near Mint,1,D20Battleground,90
+528451,680.0,https://store.topdecksa.co.za/products/flooded-strand?_pos=1&_psq=Flooded%20Strand&_ss=e&_v=1.0,Flooded Strand,Flooded Strand - Khans of Tarkir,3,TopDeck,90
+284325,720.0,https://www.sadrobot.co.za/shop/flooded-strand/,Flooded Strand,Flooded Strand - Khans of Tarkir,3,SadRobot,90
+284323,1195.0,https://www.thewarren.co.za/shop/card/flooded-strand,Flooded Strand,Flooded Strand - Nationals Promos (Foil),4,The Warren,90
+18733,1321.0,https://luckshack.co.za/index.php?route=product/product&product_id=53222,Flooded Strand,Flooded Strand,1,Luckshack,90
+94309,1470.0,https://store.topdecksa.co.za/products/flooded-strand?_pos=1&_psq=Flooded%20Strand&_ss=e&_v=1.0,Flooded Strand,Flooded Strand - Nationals Promos,1,TopDeck,90
+284324,1750.0,https://www.sadrobot.co.za/shop/flooded-strand-2/,Flooded Strand,Flooded Strand - Onslaught,1,SadRobot,90
+166525,3.0,https://shop.dracoti.co.za/product/grapeshot-3/,Grapeshot,Grapeshot,1,Dracoti,90
+56704,3.2,https://www.battlewizards.co.za/grapeshot-time-spiral-remastered/,Grapeshot,Grapeshot - Time Spiral Remastered,3,Battle Wizards,90
+505862,4.0,https://d20battleground.co.za/products/grapeshot-dominaria-remastered,Grapeshot,Grapeshot [Dominaria Remastered] - Near Mint,3,D20Battleground,90
+505863,5.0,https://d20battleground.co.za/products/grapeshot-dominaria-remastered,Grapeshot,Grapeshot [Dominaria Remastered] - Near Mint Foil,1,D20Battleground,90
+166531,6.0,https://d20battleground.co.za/products/grapeshot-time-spiral-remastered,Grapeshot,Grapeshot [Time Spiral Remastered] - Near Mint,1,D20Battleground,90
+505864,6.4,https://www.battlewizards.co.za/grapeshot-dominaria-remastered/,Grapeshot,Grapeshot - Dominaria Remastered,10,Battle Wizards,90
+314223,7.0,https://www.sadrobot.co.za/shop/grapeshot-2/,Grapeshot,Grapeshot - Modern Masters,14,SadRobot,90
+56703,7.2,https://www.battlewizards.co.za/grapeshot-modern-masters/,Grapeshot,Grapeshot - Modern Masters,3,Battle Wizards,90
+354096,7.2,https://www.battlewizards.co.za/grapeshot-duel-decks-mind-vs-might/,Grapeshot,Grapeshot - Duel Decks: Mind vs. Might,2,Battle Wizards,90
+314217,8.0,https://d20battleground.co.za/products/grapeshot-mystery-booster,Grapeshot,Grapeshot [Mystery Booster] - Near Mint,2,D20Battleground,90
+493556,9.0,https://store.topdecksa.co.za/products/grapeshot?_pos=1&_psq=Grapeshot&_ss=e&_v=1.0,Grapeshot,Grapeshot - Dominaria Remastered {C} #125,43,TopDeck,90
+505866,9.0,https://www.thewarren.co.za/shop/card/grapeshot,Grapeshot,Grapeshot - Time Spiral,4,The Warren,90
+21170,9.0,https://luckshack.co.za/index.php?route=product/product&product_id=35531,Grapeshot,Grapeshot,13,Luckshack,90
+166529,10.0,https://d20battleground.co.za/products/grapeshot-duel-decks-mind-vs-might,Grapeshot,Grapeshot [Duel Decks: Mind vs. Might] - Near Mint,2,D20Battleground,90
+314214,10.0,https://d20battleground.co.za/products/grapeshot-time-spiral,Grapeshot,Grapeshot [Time Spiral] - Near Mint,7,D20Battleground,90
+354092,10.0,https://d20battleground.co.za/products/grapeshot-modern-masters,Grapeshot,Grapeshot [Modern Masters] - Near Mint,4,D20Battleground,90
+314224,13.0,https://www.sadrobot.co.za/shop/grapeshot/,Grapeshot,Grapeshot - Time Spiral,4,SadRobot,90
+314215,165.0,https://d20battleground.co.za/products/grapeshot-time-spiral,Grapeshot,Grapeshot [Time Spiral] - Near Mint Foil,1,D20Battleground,90
+493457,87.0,https://www.swordandboard.co.za/products/leyline-of-sanctity-core-set-2020,Leyline of Sanctity,Leyline of Sanctity [Core Set 2020] - Near Mint,1,Sword & Board,90
+432648,92.0,https://tcgtrader.net/products/leyline-of-sanctity-core-set-2020,Leyline of Sanctity,Leyline of Sanctity [Core Set 2020] - Near Mint,2,TCG Trader,90
+517762,100.0,https://www.sadrobot.co.za/shop/leyline-of-sanctity-2/,Leyline of Sanctity,Leyline of Sanctity - Core Set 2020,1,SadRobot,90
+517763,120.0,https://www.sadrobot.co.za/shop/leyline-of-sanctity-3/,Leyline of Sanctity,Leyline of Sanctity - Modern Masters 2015 Edition,1,SadRobot,90
+493456,135.0,https://store.topdecksa.co.za/products/leyline-of-sanctity?_pos=1&_psq=Leyline%20of%20Sanctity&_ss=e&_v=1.0&variant=33826707651,Leyline of Sanctity,"Leyline of Sanctity - Core Set 2020 Promos {R} #26p [Promopack, Stamped]",1,TopDeck,90
+470893,135.0,https://d20battleground.co.za/products/leyline-of-sanctity-magic-2011,Leyline of Sanctity,Leyline of Sanctity [Magic 2011] - Near Mint,1,D20Battleground,90
+511268,152.0,https://www.thewarren.co.za/shop/card/leyline-of-sanctity,Leyline of Sanctity,Leyline of Sanctity - Core Set 2020 (Foil),1,The Warren,90
+189859,155.0,https://www.sadrobot.co.za/shop/leyline-of-sanctity-4/,Leyline of Sanctity,Leyline of Sanctity - Magic 2011,2,SadRobot,90
+24388,160.0,https://luckshack.co.za/index.php?route=product/product&product_id=62628,Leyline of Sanctity,Leyline of Sanctity,2,Luckshack,90
+349615,289.0,https://www.thewarren.co.za/shop/card/leyline-of-sanctity,Leyline of Sanctity,Leyline of Sanctity - Modern Masters 2015 Edition (Foil),1,The Warren,90
+508975,66.0,https://www.thewarren.co.za/shop/card/lotus-field,Lotus Field,Lotus Field - Core Set 2020,1,The Warren,90
+184640,70.0,https://shop.dracoti.co.za/product/lotus-field/,Lotus Field,Lotus Field,3,Dracoti,90
+508976,230.0,https://www.thewarren.co.za/shop/card/lotus-field,Lotus Field,Lotus Field - Core Set 2020 (Foil),1,The Warren,90
+184643,237.0,https://d20battleground.co.za/products/lotus-field-core-set-2020,Lotus Field,Lotus Field [Core Set 2020] - Near Mint Foil,1,D20Battleground,90
+423221,248.0,https://luckshack.co.za/index.php?route=product/product&product_id=61393,Lotus Field,Lotus Field,1,Luckshack,90
+458387,28.0,https://luckshack.co.za/index.php?route=product/product&product_id=98160,Mishra's Bauble,Mishra's Bauble,7,Luckshack,90
+458150,38.0,https://www.thewarren.co.za/shop/card/mishras-bauble,Mishra's Bauble,Mishra's Bauble - The Brothers' War Retro Artifacts,2,The Warren,90
+518159,61.0,https://d20battleground.co.za/products/mishras-bauble-iconic-masters,Mishra's Bauble,Mishra's Bauble [Iconic Masters] - Near Mint,1,D20Battleground,90
+459675,70.0,https://www.thewarren.co.za/shop/card/mishras-bauble,Mishra's Bauble,Mishra's Bauble - The Brothers' War Retro Artifacts (Foil),2,The Warren,90
+529154,143.0,https://d20battleground.co.za/products/mishras-bauble-coldsnap,Mishra's Bauble,Mishra's Bauble [Coldsnap] - Near Mint,1,D20Battleground,90
+270083,3400.0,https://www.thewarren.co.za/shop/card/mishras-bauble,Mishra's Bauble,Mishra's Bauble - Coldsnap (Foil),1,The Warren,90
+76483,4325.0,https://store.topdecksa.co.za/products/mishras-bauble?_pos=1&_psq=Mishra%27s%20Bauble&_ss=e&_v=1.0,Mishra's Bauble,Mishra's Bauble - Coldsnap (Foil),1,TopDeck,90
+97277,4.8,https://www.battlewizards.co.za/otherworldly-gaze-innistrad-midnight-hunt/,Otherworldly Gaze,Otherworldly Gaze - Innistrad: Midnight Hunt,2,Battle Wizards,90
+445655,5.0,https://tcgtrader.net/products/otherworldly-gaze-innistrad-midnight-hunt,Otherworldly Gaze,Otherworldly Gaze [Innistrad: Midnight Hunt] - Near Mint,1,TCG Trader,90
+500365,6.0,https://www.thewarren.co.za/shop/card/otherworldly-gaze,Otherworldly Gaze,Otherworldly Gaze - Innistrad: Midnight Hunt,1,The Warren,90
+97278,25.6,https://www.battlewizards.co.za/otherworldly-gaze-innistrad-midnight-hunt-f/,Otherworldly Gaze,Otherworldly Gaze - Innistrad: Midnight Hunt [F],2,Battle Wizards,90
+160917,29.0,https://d20battleground.co.za/products/otherworldly-gaze-innistrad-midnight-hunt,Otherworldly Gaze,Otherworldly Gaze [Innistrad: Midnight Hunt] - Near Mint Foil,1,D20Battleground,90
+445656,29.0,https://tcgtrader.net/products/otherworldly-gaze-innistrad-midnight-hunt,Otherworldly Gaze,Otherworldly Gaze [Innistrad: Midnight Hunt] - Near Mint Foil,1,TCG Trader,90
+530641,215.0,https://luckshack.co.za/index.php?route=product/product&product_id=53374,Pact of Negation,Pact of Negation,1,Luckshack,90
+358685,110.0,https://www.thewarren.co.za/shop/card/pithing-needle,Pithing Needle,Pithing Needle - Return to Ravnica (Foil),1,The Warren,90
+358688,130.0,https://www.sadrobot.co.za/shop/pithing-needle-4/,Pithing Needle,Pithing Needle - Saviors of Kamigawa,1,SadRobot,90
+114903,205.0,https://store.topdecksa.co.za/products/pithing-needle?_pos=1&_psq=Pithing%20Needle&_ss=e&_v=1.0,Pithing Needle,Pithing Needle - Magic 2010 (Foil),1,TopDeck,90
+197117,720.0,https://www.sadrobot.co.za/shop/polluted-delta/,Polluted Delta,Polluted Delta - Khans of Tarkir,2,SadRobot,90
+502594,774.0,https://luckshack.co.za/index.php?route=product/product&product_id=39694,Polluted Delta,Polluted Delta,2,Luckshack,90
+363460,1050.0,https://www.sadrobot.co.za/shop/polluted-delta-3/,Polluted Delta,Polluted Delta - Zendikar Rising Expeditions,1,SadRobot,90
+289141,1120.0,https://www.thewarren.co.za/shop/card/polluted-delta,Polluted Delta,Polluted Delta - Khans of Tarkir (Foil),2,The Warren,90
+197116,1550.0,https://www.sadrobot.co.za/shop/polluted-delta-2/,Polluted Delta,Polluted Delta - Onslaught,1,SadRobot,90
+508241,485.0,https://store.topdecksa.co.za/products/scalding-tarn?_pos=1&_psq=Scalding%20Tarn&_ss=e&_v=1.0,Scalding Tarn,Scalding Tarn - Zendikar,4,TopDeck,90
+400044,575.0,https://www.battlewizards.co.za/scalding-tarn-modern-horizons-2-f/,Scalding Tarn,Scalding Tarn - Modern Horizons 2 [F],1,Battle Wizards,90
+506850,835.0,https://store.topdecksa.co.za/products/scalding-tarn?_pos=1&_psq=Scalding%20Tarn&_ss=e&_v=1.0,Scalding Tarn,Scalding Tarn - Zendikar Rising Expeditions {M} #7,1,TopDeck,90
+33653,4.0,https://luckshack.co.za/index.php?route=product/product&product_id=86705,Spell Pierce,Spell Pierce,5,Luckshack,90
+360821,4.0,https://www.battlewizards.co.za/spell-pierce-double-masters-2022/,Spell Pierce,Spell Pierce - Double Masters 2022,1,Battle Wizards,90
+360824,4.0,https://www.battlewizards.co.za/spell-pierce-kamigawa-neon-dynasty-1/,Spell Pierce,Spell Pierce -  Kamigawa: Neon Dynasty,6,Battle Wizards,90
+421524,5.0,https://www.thewarren.co.za/shop/card/spell-pierce,Spell Pierce,Spell Pierce - Ixalan,2,The Warren,90
+360820,5.0,https://www.sadrobot.co.za/shop/spell-pierce-4/,Spell Pierce,Spell Pierce - Kamigawa: Neon Dynasty,3,SadRobot,90
+360818,5.0,https://d20battleground.co.za/products/spell-pierce-kamigawa-neon-dynasty,Spell Pierce,Spell Pierce [Kamigawa: Neon Dynasty] - Near Mint,2,D20Battleground,90
+458794,5.0,https://d20battleground.co.za/products/spell-pierce-double-masters-2022,Spell Pierce,Spell Pierce [Double Masters 2022] - Near Mint,1,D20Battleground,90
+529171,5.0,https://d20battleground.co.za/products/spell-pierce-ixalan,Spell Pierce,Spell Pierce [Ixalan] - Near Mint,4,D20Battleground,90
+431841,5.0,https://tcgtrader.net/products/spell-pierce-ixalan,Spell Pierce,Spell Pierce [Ixalan] - Near Mint,38,TCG Trader,90
+364280,7.0,https://www.sadrobot.co.za/shop/spell-pierce-2/,Spell Pierce,Spell Pierce - Modern Masters 2017 Edition,3,SadRobot,90
+360807,8.0,https://store.topdecksa.co.za/products/spell-pierce?_pos=1&_psq=Spell%20Pierce&_ss=e&_v=1.0,Spell Pierce,Spell Pierce - Kamigawa: Neon Dynasty {C} #80,14,TopDeck,90
+360809,9.0,https://store.topdecksa.co.za/products/spell-pierce?_pos=1&_psq=Spell%20Pierce&_ss=e&_v=1.0,Spell Pierce,Spell Pierce - Double Masters 2022 {C} #63,13,TopDeck,90
+153295,10.0,https://d20battleground.co.za/products/spell-pierce-zendikar,Spell Pierce,Spell Pierce [Zendikar] - Near Mint,13,D20Battleground,90
+360825,12.0,https://www.battlewizards.co.za/spell-pierce-kamigawa-neon-dynasty-foil/,Spell Pierce,Spell Pierce -  Kamigawa: Neon Dynasty (Foil),1,Battle Wizards,90
+360823,14.4,https://www.battlewizards.co.za/spell-pierce-double-masters-2022-borderless/,Spell Pierce,Spell Pierce - Double Masters 2022: Borderless,2,Battle Wizards,90
+360810,20.0,https://store.topdecksa.co.za/products/spell-pierce?_pos=1&_psq=Spell%20Pierce&_ss=e&_v=1.0,Spell Pierce,Spell Pierce - Double Masters 2022 {C} #63 (Foil),4,TopDeck,90
+360808,21.0,https://store.topdecksa.co.za/products/spell-pierce?_pos=1&_psq=Spell%20Pierce&_ss=e&_v=1.0,Spell Pierce,Spell Pierce - Kamigawa: Neon Dynasty {C} #80 (Foil),5,TopDeck,90
+52293,38.4,https://www.battlewizards.co.za/spell-pierce-ixalan-f/,Spell Pierce,Spell Pierce - Ixalan [F],1,Battle Wizards,90
+523568,45.0,https://www.thewarren.co.za/shop/card/spell-pierce,Spell Pierce,Spell Pierce - Ixalan (Foil),1,The Warren,90
+456424,54.0,https://www.thewarren.co.za/shop/card/spell-pierce,Spell Pierce,Spell Pierce - Store Championships 2022 (Foil),10,The Warren,90
+238155,278.0,https://d20battleground.co.za/products/spell-pierce-zendikar,Spell Pierce,Spell Pierce [Zendikar] - Near Mint Foil,1,D20Battleground,90
+360804,315.0,https://store.topdecksa.co.za/products/spell-pierce?_pos=1&_psq=Spell%20Pierce&_ss=e&_v=1.0,Spell Pierce,Spell Pierce - Zendikar (Foil),5,TopDeck,90
+52294,1853.0,https://www.battlewizards.co.za/spell-pierce-amonkhet-invocations-f/,Spell Pierce,Spell Pierce - Amonkhet Invocations [F],1,Battle Wizards,90
+390330,355.0,https://luckshack.co.za/index.php?route=product/product&product_id=63550,Steam Vents,Steam Vents,1,Luckshack,90
+144145,375.0,https://shop.dracoti.co.za/product/steam-vents/,Steam Vents,Steam Vents,3,Dracoti,90
+506290,499.0,https://www.thewarren.co.za/shop/card/steam-vents,Steam Vents,Steam Vents - Guilds of Ravnica (Foil),1,The Warren,90
+498601,499.0,https://d20battleground.co.za/products/steam-vents-guilds-of-ravnica,Steam Vents,Steam Vents [Guilds of Ravnica] - Near Mint Foil,1,D20Battleground,90
+451964,515.0,https://d20battleground.co.za/products/steam-vents-guildpact,Steam Vents,Steam Vents [Guildpact] - Near Mint,1,D20Battleground,90
+126309,670.0,https://store.topdecksa.co.za/products/steam-vents?_pos=1&_psq=Steam%20Vents&_ss=e&_v=1.0,Steam Vents,Steam Vents - Guildpact,6,TopDeck,90
+445912,702.0,https://www.thewarren.co.za/shop/card/steam-vents,Steam Vents,Steam Vents - Return to Ravnica (Foil),1,The Warren,90
+523095,9.0,https://luckshack.co.za/index.php?route=product/product&product_id=79608,Suspend,Suspend,2,Luckshack,90
+348525,10.0,https://d20battleground.co.za/products/suspend-modern-horizons-2,Suspend,Suspend [Modern Horizons 2] - Near Mint,1,D20Battleground,90
+96263,65.0,https://www.battlewizards.co.za/suspend-modern-horizons-2-prerelease-promos-foil/,Suspend,Suspend - Modern Horizons 2: Prerelease Promos Foil,1,Battle Wizards,90
+523091,35.0,https://www.sadrobot.co.za/shop/tolaria-west-2/,Tolaria West,Tolaria West - Time Spiral Remastered,1,SadRobot,90
+358051,37.0,https://shop.dracoti.co.za/product/tolaria-west-2/,Tolaria West,Tolaria West,3,Dracoti,90
+454706,67.0,https://d20battleground.co.za/products/tolaria-west-from-the-vault-lore,Tolaria West,Tolaria West [From the Vault: Lore] - Near Mint Foil,2,D20Battleground,90
+36160,69.0,https://luckshack.co.za/index.php?route=product/product&product_id=46181,Tolaria West,Tolaria West,2,Luckshack,90
+214949,110.0,https://www.sadrobot.co.za/shop/tolaria-west/,Tolaria West,Tolaria West - Future Sight,2,SadRobot,90
+464472,4.0,https://shop.dracoti.co.za/product/tome-scour-3/,Tome Scour,Tome Scour,3,Dracoti,90
+36185,4.0,https://luckshack.co.za/index.php?route=product/product&product_id=28810,Tome Scour,Tome Scour,4,Luckshack,90
+316030,5.0,https://d20battleground.co.za/products/tome-scour-magic-2014,Tome Scour,Tome Scour [Magic 2014] - Near Mint,12,D20Battleground,90
+464470,5.0,https://d20battleground.co.za/products/tome-scour-magic-2011,Tome Scour,Tome Scour [Magic 2011] - Near Mint,6,D20Battleground,90
+464471,6.0,https://d20battleground.co.za/products/tome-scour-magic-2010,Tome Scour,Tome Scour [Magic 2010] - Near Mint,9,D20Battleground,90
+464467,8.0,https://store.topdecksa.co.za/products/tome-scour?_pos=1&_psq=Tome%20Scour&_ss=e&_v=1.0,Tome Scour,Tome Scour - Magic 2010,1,TopDeck,90
+464469,8.0,https://store.topdecksa.co.za/products/tome-scour?_pos=1&_psq=Tome%20Scour&_ss=e&_v=1.0,Tome Scour,Tome Scour - Magic 2011,1,TopDeck,90
+464474,27.0,https://www.thewarren.co.za/shop/card/tome-scour,Tome Scour,Tome Scour - Magic 2014 Core Set (Foil),1,The Warren,90
+464468,68.0,https://store.topdecksa.co.za/products/tome-scour?_pos=1&_psq=Tome%20Scour&_ss=e&_v=1.0,Tome Scour,Tome Scour - Magic 2010 (Foil),1,TopDeck,90
+83458,135.0,https://store.topdecksa.co.za/products/tome-scour?_pos=1&_psq=Tome%20Scour&_ss=e&_v=1.0,Tome Scour,Tome Scour - Magic 2011 (Foil) (French),1,TopDeck,90
+260207,3.0,https://shop.dracoti.co.za/product/twiddle-3/,Twiddle,Twiddle,2,Dracoti,90
+535213,6.0,https://www.thewarren.co.za/shop/card/twiddle,Twiddle,Twiddle - Fifth Edition,1,The Warren,90
+143932,7.0,https://d20battleground.co.za/products/twiddle-eighth-edition,Twiddle,Twiddle [Eighth Edition] - Near Mint,2,D20Battleground,90
+143933,7.0,https://d20battleground.co.za/products/twiddle-fifth-edition,Twiddle,Twiddle [Fifth Edition] - Near Mint,2,D20Battleground,90
+143935,7.0,https://d20battleground.co.za/products/twiddle-fourth-edition,Twiddle,Twiddle [Fourth Edition] - Near Mint,3,D20Battleground,90
+76197,8.0,https://store.topdecksa.co.za/products/twiddle?_pos=1&_psq=Twiddle&_ss=e&_v=1.0,Twiddle,Twiddle - Fifth Edition,3,TopDeck,90
+76198,8.0,https://store.topdecksa.co.za/products/twiddle?_pos=1&_psq=Twiddle&_ss=e&_v=1.0,Twiddle,Twiddle - Fourth Edition,2,TopDeck,90
+529170,400.0,https://shop.dracoti.co.za/product/underworld-breach/,Underworld Breach,Underworld Breach,1,Dracoti,90
+527805,415.0,https://store.topdecksa.co.za/products/underworld-breach?_pos=1&_psq=Underworld%20Breach&_ss=e&_v=1.0,Underworld Breach,Underworld Breach - Theros Beyond Death {R} #161,1,TopDeck,90
+307827,3.0,https://www.thewarren.co.za/shop/card/void-snare,Void Snare,Void Snare - Magic 2015 Core Set,4,The Warren,90
+307828,5.0,https://www.sadrobot.co.za/shop/void-snare/,Void Snare,Void Snare - Magic 2015,37,SadRobot,90
+147275,5.0,https://d20battleground.co.za/products/void-snare-magic-2015,Void Snare,Void Snare [Magic 2015] - Near Mint,8,D20Battleground,90
+147273,8.0,https://store.topdecksa.co.za/products/void-snare?_pos=1&_psq=Void%20Snare&_ss=e&_v=1.0,Void Snare,Void Snare - Magic 2015 Core Set,12,TopDeck,90
+385673,445.0,https://www.thewarren.co.za/shop/card/void-snare,Void Snare,Void Snare - Magic 2015 Core Set (Foil),1,The Warren,90
+38287,295.0,https://luckshack.co.za/index.php?route=product/product&product_id=63554,Watery Grave,Watery Grave,2,Luckshack,90
+358065,395.0,https://shop.dracoti.co.za/product/watery-grave-2/,Watery Grave,Watery Grave,3,Dracoti,90
+420453,400.0,https://www.sadrobot.co.za/shop/watery-grave-4/,Watery Grave,Watery Grave - Ravnica City of Guilds,3,SadRobot,90
+212576,425.0,https://store.topdecksa.co.za/products/watery-grave?_pos=1&_psq=Watery%20Grave&_ss=e&_v=1.0,Watery Grave,Watery Grave - Ravnica: City of Guilds,2,TopDeck,90
+358069,576.0,https://www.thewarren.co.za/shop/card/watery-grave,Watery Grave,Watery Grave - Gatecrash (Foil),1,The Warren,90
+433702,58.0,https://tcgtrader.net/products/wishclaw-talisman-throne-of-eldraine,Wishclaw Talisman,Wishclaw Talisman [Throne of Eldraine] - Near Mint,1,TCG Trader,90
