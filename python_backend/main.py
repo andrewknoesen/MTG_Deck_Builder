@@ -23,6 +23,7 @@ def main():
     sorted_order_df.to_csv('order.csv', index=False)
     compared: pd.DataFrame  = sorted_order.compare_cards()
     compared.to_csv('compared.csv', index=False)
+    print("\n Missing cards \n")
     pprint(compared)
     # pprint(stores_df)
     # build order

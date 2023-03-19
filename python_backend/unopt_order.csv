@@ -1,179 +1,190 @@
 ,id,cost,link,name,name_long,qty,store,shipping
-0,76197,8.0,https://store.topdecksa.co.za/products/twiddle?_pos=1&_psq=Twiddle&_ss=e&_v=1.0,Twiddle,Twiddle - Fifth Edition,3,TopDeck,90
-1,76198,8.0,https://store.topdecksa.co.za/products/twiddle?_pos=1&_psq=Twiddle&_ss=e&_v=1.0,Twiddle,Twiddle - Fourth Edition,2,TopDeck,90
-2,464467,8.0,https://store.topdecksa.co.za/products/tome-scour?_pos=1&_psq=Tome%20Scour&_ss=e&_v=1.0,Tome Scour,Tome Scour - Magic 2010,1,TopDeck,90
-3,464469,8.0,https://store.topdecksa.co.za/products/tome-scour?_pos=1&_psq=Tome%20Scour&_ss=e&_v=1.0,Tome Scour,Tome Scour - Magic 2011,1,TopDeck,90
-4,147273,8.0,https://store.topdecksa.co.za/products/void-snare?_pos=1&_psq=Void%20Snare&_ss=e&_v=1.0,Void Snare,Void Snare - Magic 2015 Core Set,12,TopDeck,90
-5,360807,8.0,https://store.topdecksa.co.za/products/spell-pierce?_pos=1&_psq=Spell%20Pierce&_ss=e&_v=1.0,Spell Pierce,Spell Pierce - Kamigawa: Neon Dynasty {C} #80,14,TopDeck,90
-6,347370,8.0,https://store.topdecksa.co.za/products/empty-the-warrens?_pos=1&_psq=Empty%20the%20Warrens&_ss=e&_v=1.0&variant=33824382275,Empty the Warrens,Empty the Warrens - Modern Masters,1,TopDeck,90
-7,506292,8.0,https://store.topdecksa.co.za/products/empty-the-warrens?_pos=1&_psq=Empty%20the%20Warrens&_ss=e&_v=1.0&variant=33824382275,Empty the Warrens,Empty the Warrens - Dominaria Remastered {C} #318 [Boosterfun],30,TopDeck,90
-8,128789,8.0,https://store.topdecksa.co.za/products/aeve-progenitor-ooze?_pos=1&_psq=Aeve%2C%20Progenitor%20Ooze&_ss=e&_v=1.0,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze - Modern Horizons 2 {R} #148",16,TopDeck,90
-9,493556,9.0,https://store.topdecksa.co.za/products/grapeshot?_pos=1&_psq=Grapeshot&_ss=e&_v=1.0,Grapeshot,Grapeshot - Dominaria Remastered {C} #125,43,TopDeck,90
-10,360809,9.0,https://store.topdecksa.co.za/products/spell-pierce?_pos=1&_psq=Spell%20Pierce&_ss=e&_v=1.0,Spell Pierce,Spell Pierce - Double Masters 2022 {C} #63,13,TopDeck,90
-11,494261,9.0,https://store.topdecksa.co.za/products/empty-the-warrens?_pos=1&_psq=Empty%20the%20Warrens&_ss=e&_v=1.0&variant=33824382275,Empty the Warrens,Empty the Warrens - Time Spiral,2,TopDeck,90
-12,494262,9.0,https://store.topdecksa.co.za/products/empty-the-warrens?_pos=1&_psq=Empty%20the%20Warrens&_ss=e&_v=1.0&variant=33824382275,Empty the Warrens,Empty the Warrens - Dominaria Remastered {C} #118,52,TopDeck,90
-13,360810,20.0,https://store.topdecksa.co.za/products/spell-pierce?_pos=1&_psq=Spell%20Pierce&_ss=e&_v=1.0,Spell Pierce,Spell Pierce - Double Masters 2022 {C} #63 (Foil),4,TopDeck,90
-14,360808,21.0,https://store.topdecksa.co.za/products/spell-pierce?_pos=1&_psq=Spell%20Pierce&_ss=e&_v=1.0,Spell Pierce,Spell Pierce - Kamigawa: Neon Dynasty {C} #80 (Foil),5,TopDeck,90
-15,494263,21.0,https://store.topdecksa.co.za/products/empty-the-warrens?_pos=1&_psq=Empty%20the%20Warrens&_ss=e&_v=1.0&variant=33824382275,Empty the Warrens,Empty the Warrens - Dominaria Remastered {C} #118 (Foil),9,TopDeck,90
-16,354104,41.0,https://store.topdecksa.co.za/products/echoing-truth?_pos=1&_psq=Echoing%20Truth&_ss=e&_v=1.0,Echoing Truth,Echoing Truth - Modern Masters (Foil),2,TopDeck,90
-17,464468,68.0,https://store.topdecksa.co.za/products/tome-scour?_pos=1&_psq=Tome%20Scour&_ss=e&_v=1.0,Tome Scour,Tome Scour - Magic 2010 (Foil),1,TopDeck,90
-18,83458,135.0,https://store.topdecksa.co.za/products/tome-scour?_pos=1&_psq=Tome%20Scour&_ss=e&_v=1.0,Tome Scour,Tome Scour - Magic 2011 (Foil) (French),1,TopDeck,90
-19,493456,135.0,https://store.topdecksa.co.za/products/leyline-of-sanctity?_pos=1&_psq=Leyline%20of%20Sanctity&_ss=e&_v=1.0&variant=33826707651,Leyline of Sanctity,"Leyline of Sanctity - Core Set 2020 Promos {R} #26p [Promopack, Stamped]",1,TopDeck,90
-20,525076,145.0,https://store.topdecksa.co.za/products/consider?_pos=1&_psq=Consider&_ss=e&_v=1.0,Consider,Consider - Innistrad: Midnight Hunt {C} #388 (Foil) [Promopack],1,TopDeck,90
-21,114903,205.0,https://store.topdecksa.co.za/products/pithing-needle?_pos=1&_psq=Pithing%20Needle&_ss=e&_v=1.0,Pithing Needle,Pithing Needle - Magic 2010 (Foil),1,TopDeck,90
-22,360804,315.0,https://store.topdecksa.co.za/products/spell-pierce?_pos=1&_psq=Spell%20Pierce&_ss=e&_v=1.0,Spell Pierce,Spell Pierce - Zendikar (Foil),5,TopDeck,90
-23,527805,415.0,https://store.topdecksa.co.za/products/underworld-breach?_pos=1&_psq=Underworld%20Breach&_ss=e&_v=1.0,Underworld Breach,Underworld Breach - Theros Beyond Death {R} #161,1,TopDeck,90
-24,212576,425.0,https://store.topdecksa.co.za/products/watery-grave?_pos=1&_psq=Watery%20Grave&_ss=e&_v=1.0,Watery Grave,Watery Grave - Ravnica: City of Guilds,2,TopDeck,90
-25,508241,485.0,https://store.topdecksa.co.za/products/scalding-tarn?_pos=1&_psq=Scalding%20Tarn&_ss=e&_v=1.0,Scalding Tarn,Scalding Tarn - Zendikar,4,TopDeck,90
-26,126309,670.0,https://store.topdecksa.co.za/products/steam-vents?_pos=1&_psq=Steam%20Vents&_ss=e&_v=1.0,Steam Vents,Steam Vents - Guildpact,6,TopDeck,90
-27,528451,680.0,https://store.topdecksa.co.za/products/flooded-strand?_pos=1&_psq=Flooded%20Strand&_ss=e&_v=1.0,Flooded Strand,Flooded Strand - Khans of Tarkir,3,TopDeck,90
-28,506850,835.0,https://store.topdecksa.co.za/products/scalding-tarn?_pos=1&_psq=Scalding%20Tarn&_ss=e&_v=1.0,Scalding Tarn,Scalding Tarn - Zendikar Rising Expeditions {M} #7,1,TopDeck,90
-29,94309,1470.0,https://store.topdecksa.co.za/products/flooded-strand?_pos=1&_psq=Flooded%20Strand&_ss=e&_v=1.0,Flooded Strand,Flooded Strand - Nationals Promos,1,TopDeck,90
-30,76483,4325.0,https://store.topdecksa.co.za/products/mishras-bauble?_pos=1&_psq=Mishra%27s%20Bauble&_ss=e&_v=1.0,Mishra's Bauble,Mishra's Bauble - Coldsnap (Foil),1,TopDeck,90
-31,307827,3.0,https://www.thewarren.co.za/shop/card/void-snare,Void Snare,Void Snare - Magic 2015 Core Set,4,The Warren,90
-32,506296,3.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Dominaria Remastered,3,The Warren,90
-33,204035,4.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Time Spiral Remastered,6,The Warren,90
-34,421524,5.0,https://www.thewarren.co.za/shop/card/spell-pierce,Spell Pierce,Spell Pierce - Ixalan,2,The Warren,90
-35,506297,5.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Dominaria Remastered(ALTERNATE ART) (#Retro),1,The Warren,90
-36,535213,6.0,https://www.thewarren.co.za/shop/card/twiddle,Twiddle,Twiddle - Fifth Edition,1,The Warren,90
-37,500365,6.0,https://www.thewarren.co.za/shop/card/otherworldly-gaze,Otherworldly Gaze,Otherworldly Gaze - Innistrad: Midnight Hunt,1,The Warren,90
-38,397563,6.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Duel Decks: Mind vs. Might,1,The Warren,90
-39,204036,7.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Time Spiral,11,The Warren,90
-40,529173,7.0,https://www.thewarren.co.za/shop/card/empty-the-warrens,Empty the Warrens,Empty the Warrens - Modern Masters,1,The Warren,90
-41,321047,7.0,https://www.thewarren.co.za/shop/card/aeve-progenitor-ooze,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze - Modern Horizons 2",1,The Warren,90
-42,476049,8.0,https://www.thewarren.co.za/shop/card/echoing-truth,Echoing Truth,Echoing Truth - Darksteel,1,The Warren,90
-43,505866,9.0,https://www.thewarren.co.za/shop/card/grapeshot,Grapeshot,Grapeshot - Time Spiral,4,The Warren,90
-44,439993,13.0,https://www.thewarren.co.za/shop/card/aeve-progenitor-ooze,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze - Modern Horizons 2(PRERELEASE) (Foil)",1,The Warren,90
-45,464474,27.0,https://www.thewarren.co.za/shop/card/tome-scour,Tome Scour,Tome Scour - Magic 2014 Core Set (Foil),1,The Warren,90
-46,458150,38.0,https://www.thewarren.co.za/shop/card/mishras-bauble,Mishra's Bauble,Mishra's Bauble - The Brothers' War Retro Artifacts,2,The Warren,90
-47,529172,43.0,https://www.thewarren.co.za/shop/card/echoing-truth,Echoing Truth,Echoing Truth - Modern Masters (Foil),1,The Warren,90
-48,523568,45.0,https://www.thewarren.co.za/shop/card/spell-pierce,Spell Pierce,Spell Pierce - Ixalan (Foil),1,The Warren,90
-49,456424,54.0,https://www.thewarren.co.za/shop/card/spell-pierce,Spell Pierce,Spell Pierce - Store Championships 2022 (Foil),10,The Warren,90
-50,508975,66.0,https://www.thewarren.co.za/shop/card/lotus-field,Lotus Field,Lotus Field - Core Set 2020,1,The Warren,90
-51,459675,70.0,https://www.thewarren.co.za/shop/card/mishras-bauble,Mishra's Bauble,Mishra's Bauble - The Brothers' War Retro Artifacts (Foil),2,The Warren,90
-52,358685,110.0,https://www.thewarren.co.za/shop/card/pithing-needle,Pithing Needle,Pithing Needle - Return to Ravnica (Foil),1,The Warren,90
-53,511268,152.0,https://www.thewarren.co.za/shop/card/leyline-of-sanctity,Leyline of Sanctity,Leyline of Sanctity - Core Set 2020 (Foil),1,The Warren,90
-54,508976,230.0,https://www.thewarren.co.za/shop/card/lotus-field,Lotus Field,Lotus Field - Core Set 2020 (Foil),1,The Warren,90
-55,349615,289.0,https://www.thewarren.co.za/shop/card/leyline-of-sanctity,Leyline of Sanctity,Leyline of Sanctity - Modern Masters 2015 Edition (Foil),1,The Warren,90
-56,385673,445.0,https://www.thewarren.co.za/shop/card/void-snare,Void Snare,Void Snare - Magic 2015 Core Set (Foil),1,The Warren,90
-57,506290,499.0,https://www.thewarren.co.za/shop/card/steam-vents,Steam Vents,Steam Vents - Guilds of Ravnica (Foil),1,The Warren,90
-58,358069,576.0,https://www.thewarren.co.za/shop/card/watery-grave,Watery Grave,Watery Grave - Gatecrash (Foil),1,The Warren,90
-59,445912,702.0,https://www.thewarren.co.za/shop/card/steam-vents,Steam Vents,Steam Vents - Return to Ravnica (Foil),1,The Warren,90
-60,289141,1120.0,https://www.thewarren.co.za/shop/card/polluted-delta,Polluted Delta,Polluted Delta - Khans of Tarkir (Foil),2,The Warren,90
-61,284323,1195.0,https://www.thewarren.co.za/shop/card/flooded-strand,Flooded Strand,Flooded Strand - Nationals Promos (Foil),4,The Warren,90
-62,270083,3400.0,https://www.thewarren.co.za/shop/card/mishras-bauble,Mishra's Bauble,Mishra's Bauble - Coldsnap (Foil),1,The Warren,90
-63,307828,5.0,https://www.sadrobot.co.za/shop/void-snare/,Void Snare,Void Snare - Magic 2015,37,SadRobot,90
-64,360820,5.0,https://www.sadrobot.co.za/shop/spell-pierce-4/,Spell Pierce,Spell Pierce - Kamigawa: Neon Dynasty,3,SadRobot,90
-65,204045,5.0,https://www.sadrobot.co.za/shop/empty-the-warrens-3/,Empty the Warrens,Empty the Warrens - Time Spiral Remastered,11,SadRobot,90
-66,314223,7.0,https://www.sadrobot.co.za/shop/grapeshot-2/,Grapeshot,Grapeshot - Modern Masters,14,SadRobot,90
-67,364280,7.0,https://www.sadrobot.co.za/shop/spell-pierce-2/,Spell Pierce,Spell Pierce - Modern Masters 2017 Edition,3,SadRobot,90
-68,204046,8.0,https://www.sadrobot.co.za/shop/empty-the-warrens-2/,Empty the Warrens,Empty the Warrens - Modern Masters,31,SadRobot,90
-69,204047,8.0,https://www.sadrobot.co.za/shop/empty-the-warrens/,Empty the Warrens,Empty the Warrens - Time Spiral,13,SadRobot,90
-70,275009,12.0,https://www.sadrobot.co.za/shop/echoing-truth/,Echoing Truth,Echoing Truth - Modern Masters,74,SadRobot,90
-71,314224,13.0,https://www.sadrobot.co.za/shop/grapeshot/,Grapeshot,Grapeshot - Time Spiral,4,SadRobot,90
-72,523091,35.0,https://www.sadrobot.co.za/shop/tolaria-west-2/,Tolaria West,Tolaria West - Time Spiral Remastered,1,SadRobot,90
-73,517762,100.0,https://www.sadrobot.co.za/shop/leyline-of-sanctity-2/,Leyline of Sanctity,Leyline of Sanctity - Core Set 2020,1,SadRobot,90
-74,214949,110.0,https://www.sadrobot.co.za/shop/tolaria-west/,Tolaria West,Tolaria West - Future Sight,2,SadRobot,90
-75,517763,120.0,https://www.sadrobot.co.za/shop/leyline-of-sanctity-3/,Leyline of Sanctity,Leyline of Sanctity - Modern Masters 2015 Edition,1,SadRobot,90
-76,358688,130.0,https://www.sadrobot.co.za/shop/pithing-needle-4/,Pithing Needle,Pithing Needle - Saviors of Kamigawa,1,SadRobot,90
-77,189859,155.0,https://www.sadrobot.co.za/shop/leyline-of-sanctity-4/,Leyline of Sanctity,Leyline of Sanctity - Magic 2011,2,SadRobot,90
-78,420453,400.0,https://www.sadrobot.co.za/shop/watery-grave-4/,Watery Grave,Watery Grave - Ravnica City of Guilds,3,SadRobot,90
-79,284325,720.0,https://www.sadrobot.co.za/shop/flooded-strand/,Flooded Strand,Flooded Strand - Khans of Tarkir,3,SadRobot,90
-80,197117,720.0,https://www.sadrobot.co.za/shop/polluted-delta/,Polluted Delta,Polluted Delta - Khans of Tarkir,2,SadRobot,90
-81,363460,1050.0,https://www.sadrobot.co.za/shop/polluted-delta-3/,Polluted Delta,Polluted Delta - Zendikar Rising Expeditions,1,SadRobot,90
-82,197116,1550.0,https://www.sadrobot.co.za/shop/polluted-delta-2/,Polluted Delta,Polluted Delta - Onslaught,1,SadRobot,90
-83,284324,1750.0,https://www.sadrobot.co.za/shop/flooded-strand-2/,Flooded Strand,Flooded Strand - Onslaught,1,SadRobot,90
-84,505862,4.0,https://d20battleground.co.za/products/grapeshot-dominaria-remastered,Grapeshot,Grapeshot [Dominaria Remastered] - Near Mint,3,D20Battleground,90
-85,506295,4.0,https://d20battleground.co.za/products/empty-the-warrens-dominaria-remastered,Empty the Warrens,Empty the Warrens [Dominaria Remastered] - Near Mint,4,D20Battleground,90
-86,505863,5.0,https://d20battleground.co.za/products/grapeshot-dominaria-remastered,Grapeshot,Grapeshot [Dominaria Remastered] - Near Mint Foil,1,D20Battleground,90
-87,316030,5.0,https://d20battleground.co.za/products/tome-scour-magic-2014,Tome Scour,Tome Scour [Magic 2014] - Near Mint,12,D20Battleground,90
-88,464470,5.0,https://d20battleground.co.za/products/tome-scour-magic-2011,Tome Scour,Tome Scour [Magic 2011] - Near Mint,6,D20Battleground,90
-89,147275,5.0,https://d20battleground.co.za/products/void-snare-magic-2015,Void Snare,Void Snare [Magic 2015] - Near Mint,8,D20Battleground,90
-90,360818,5.0,https://d20battleground.co.za/products/spell-pierce-kamigawa-neon-dynasty,Spell Pierce,Spell Pierce [Kamigawa: Neon Dynasty] - Near Mint,2,D20Battleground,90
-91,458794,5.0,https://d20battleground.co.za/products/spell-pierce-double-masters-2022,Spell Pierce,Spell Pierce [Double Masters 2022] - Near Mint,1,D20Battleground,90
-92,529171,5.0,https://d20battleground.co.za/products/spell-pierce-ixalan,Spell Pierce,Spell Pierce [Ixalan] - Near Mint,4,D20Battleground,90
-93,204042,5.0,https://d20battleground.co.za/products/empty-the-warrens-time-spiral-remastered,Empty the Warrens,Empty the Warrens [Time Spiral Remastered] - Near Mint,6,D20Battleground,90
-94,166531,6.0,https://d20battleground.co.za/products/grapeshot-time-spiral-remastered,Grapeshot,Grapeshot [Time Spiral Remastered] - Near Mint,1,D20Battleground,90
-95,464471,6.0,https://d20battleground.co.za/products/tome-scour-magic-2010,Tome Scour,Tome Scour [Magic 2010] - Near Mint,9,D20Battleground,90
-96,143932,7.0,https://d20battleground.co.za/products/twiddle-eighth-edition,Twiddle,Twiddle [Eighth Edition] - Near Mint,2,D20Battleground,90
-97,143933,7.0,https://d20battleground.co.za/products/twiddle-fifth-edition,Twiddle,Twiddle [Fifth Edition] - Near Mint,2,D20Battleground,90
-98,143935,7.0,https://d20battleground.co.za/products/twiddle-fourth-edition,Twiddle,Twiddle [Fourth Edition] - Near Mint,3,D20Battleground,90
-99,439996,7.0,https://d20battleground.co.za/products/aeve-progenitor-ooze-modern-horizons-2,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze [Modern Horizons 2] - Near Mint",2,D20Battleground,90
-100,314217,8.0,https://d20battleground.co.za/products/grapeshot-mystery-booster,Grapeshot,Grapeshot [Mystery Booster] - Near Mint,2,D20Battleground,90
-101,509887,8.0,https://d20battleground.co.za/products/echoing-truth-commander-2019,Echoing Truth,Echoing Truth [Commander 2019] - Near Mint,1,D20Battleground,90
-102,204039,8.0,https://d20battleground.co.za/products/empty-the-warrens-duel-decks-mind-vs-might,Empty the Warrens,Empty the Warrens [Duel Decks: Mind vs. Might] - Near Mint,4,D20Battleground,90
-103,204041,8.0,https://d20battleground.co.za/products/empty-the-warrens-time-spiral,Empty the Warrens,Empty the Warrens [Time Spiral] - Near Mint,8,D20Battleground,90
-104,476048,9.0,https://d20battleground.co.za/products/echoing-truth-darksteel,Echoing Truth,Echoing Truth [Darksteel] - Near Mint,1,D20Battleground,90
-105,204040,9.0,https://d20battleground.co.za/products/empty-the-warrens-modern-masters,Empty the Warrens,Empty the Warrens [Modern Masters] - Near Mint,4,D20Battleground,90
-106,166529,10.0,https://d20battleground.co.za/products/grapeshot-duel-decks-mind-vs-might,Grapeshot,Grapeshot [Duel Decks: Mind vs. Might] - Near Mint,2,D20Battleground,90
-107,314214,10.0,https://d20battleground.co.za/products/grapeshot-time-spiral,Grapeshot,Grapeshot [Time Spiral] - Near Mint,7,D20Battleground,90
-108,354092,10.0,https://d20battleground.co.za/products/grapeshot-modern-masters,Grapeshot,Grapeshot [Modern Masters] - Near Mint,4,D20Battleground,90
-109,153295,10.0,https://d20battleground.co.za/products/spell-pierce-zendikar,Spell Pierce,Spell Pierce [Zendikar] - Near Mint,13,D20Battleground,90
-110,348525,10.0,https://d20battleground.co.za/products/suspend-modern-horizons-2,Suspend,Suspend [Modern Horizons 2] - Near Mint,1,D20Battleground,90
-111,160917,29.0,https://d20battleground.co.za/products/otherworldly-gaze-innistrad-midnight-hunt,Otherworldly Gaze,Otherworldly Gaze [Innistrad: Midnight Hunt] - Near Mint Foil,1,D20Battleground,90
-112,518159,61.0,https://d20battleground.co.za/products/mishras-bauble-iconic-masters,Mishra's Bauble,Mishra's Bauble [Iconic Masters] - Near Mint,1,D20Battleground,90
-113,454706,67.0,https://d20battleground.co.za/products/tolaria-west-from-the-vault-lore,Tolaria West,Tolaria West [From the Vault: Lore] - Near Mint Foil,2,D20Battleground,90
-114,470893,135.0,https://d20battleground.co.za/products/leyline-of-sanctity-magic-2011,Leyline of Sanctity,Leyline of Sanctity [Magic 2011] - Near Mint,1,D20Battleground,90
-115,529154,143.0,https://d20battleground.co.za/products/mishras-bauble-coldsnap,Mishra's Bauble,Mishra's Bauble [Coldsnap] - Near Mint,1,D20Battleground,90
-116,314215,165.0,https://d20battleground.co.za/products/grapeshot-time-spiral,Grapeshot,Grapeshot [Time Spiral] - Near Mint Foil,1,D20Battleground,90
-117,184643,237.0,https://d20battleground.co.za/products/lotus-field-core-set-2020,Lotus Field,Lotus Field [Core Set 2020] - Near Mint Foil,1,D20Battleground,90
-118,238155,278.0,https://d20battleground.co.za/products/spell-pierce-zendikar,Spell Pierce,Spell Pierce [Zendikar] - Near Mint Foil,1,D20Battleground,90
-119,414089,312.0,https://d20battleground.co.za/products/engineered-explosives-fifth-dawn,Engineered Explosives,Engineered Explosives [Fifth Dawn] - Near Mint,1,D20Battleground,90
-120,498601,499.0,https://d20battleground.co.za/products/steam-vents-guilds-of-ravnica,Steam Vents,Steam Vents [Guilds of Ravnica] - Near Mint Foil,1,D20Battleground,90
-121,451964,515.0,https://d20battleground.co.za/products/steam-vents-guildpact,Steam Vents,Steam Vents [Guildpact] - Near Mint,1,D20Battleground,90
-122,489660,650.0,https://d20battleground.co.za/products/flooded-strand-khans-of-tarkir,Flooded Strand,Flooded Strand [Khans of Tarkir] - Near Mint,1,D20Battleground,90
-123,260207,3.0,https://shop.dracoti.co.za/product/twiddle-3/,Twiddle,Twiddle,2,Dracoti,90
-124,166525,3.0,https://shop.dracoti.co.za/product/grapeshot-3/,Grapeshot,Grapeshot,1,Dracoti,90
-125,204037,3.0,https://shop.dracoti.co.za/product/empty-the-warrens-4/,Empty the Warrens,Empty the Warrens,3,Dracoti,90
-126,464472,4.0,https://shop.dracoti.co.za/product/tome-scour-3/,Tome Scour,Tome Scour,3,Dracoti,90
-127,194424,7.0,https://shop.dracoti.co.za/product/aeve-progenitor-ooze/,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze",3,Dracoti,90
-128,358051,37.0,https://shop.dracoti.co.za/product/tolaria-west-2/,Tolaria West,Tolaria West,3,Dracoti,90
-129,184640,70.0,https://shop.dracoti.co.za/product/lotus-field/,Lotus Field,Lotus Field,3,Dracoti,90
-130,144145,375.0,https://shop.dracoti.co.za/product/steam-vents/,Steam Vents,Steam Vents,3,Dracoti,90
-131,358065,395.0,https://shop.dracoti.co.za/product/watery-grave-2/,Watery Grave,Watery Grave,3,Dracoti,90
-132,529170,400.0,https://shop.dracoti.co.za/product/underworld-breach/,Underworld Breach,Underworld Breach,1,Dracoti,90
-133,36185,4.0,https://luckshack.co.za/index.php?route=product/product&product_id=28810,Tome Scour,Tome Scour,4,Luckshack,90
-134,33653,4.0,https://luckshack.co.za/index.php?route=product/product&product_id=86705,Spell Pierce,Spell Pierce,5,Luckshack,90
-135,17656,4.0,https://luckshack.co.za/index.php?route=product/product&product_id=100530,Empty the Warrens,Empty the Warrens,1,Luckshack,90
-136,15812,6.0,https://luckshack.co.za/index.php?route=product/product&product_id=62116,Echoing Truth,Echoing Truth,1,Luckshack,90
-137,21170,9.0,https://luckshack.co.za/index.php?route=product/product&product_id=35531,Grapeshot,Grapeshot,13,Luckshack,90
-138,523095,9.0,https://luckshack.co.za/index.php?route=product/product&product_id=79608,Suspend,Suspend,2,Luckshack,90
-139,458387,28.0,https://luckshack.co.za/index.php?route=product/product&product_id=98160,Mishra's Bauble,Mishra's Bauble,7,Luckshack,90
-140,36160,69.0,https://luckshack.co.za/index.php?route=product/product&product_id=46181,Tolaria West,Tolaria West,2,Luckshack,90
-141,13606,116.0,https://luckshack.co.za/index.php?route=product/product&product_id=83409,Consider,Consider,6,Luckshack,90
-142,24388,160.0,https://luckshack.co.za/index.php?route=product/product&product_id=62628,Leyline of Sanctity,Leyline of Sanctity,2,Luckshack,90
-143,530641,215.0,https://luckshack.co.za/index.php?route=product/product&product_id=53374,Pact of Negation,Pact of Negation,1,Luckshack,90
-144,423221,248.0,https://luckshack.co.za/index.php?route=product/product&product_id=61393,Lotus Field,Lotus Field,1,Luckshack,90
-145,38287,295.0,https://luckshack.co.za/index.php?route=product/product&product_id=63554,Watery Grave,Watery Grave,2,Luckshack,90
-146,390330,355.0,https://luckshack.co.za/index.php?route=product/product&product_id=63550,Steam Vents,Steam Vents,1,Luckshack,90
-147,502594,774.0,https://luckshack.co.za/index.php?route=product/product&product_id=39694,Polluted Delta,Polluted Delta,2,Luckshack,90
-148,18733,1321.0,https://luckshack.co.za/index.php?route=product/product&product_id=53222,Flooded Strand,Flooded Strand,1,Luckshack,90
-149,56704,3.2,https://www.battlewizards.co.za/grapeshot-time-spiral-remastered/,Grapeshot,Grapeshot - Time Spiral Remastered,3,Battle Wizards,90
-150,52229,3.2,https://www.battlewizards.co.za/empty-the-warrens-time-spiral-remastered/,Empty the Warrens,Empty the Warrens - Time Spiral Remastered,4,Battle Wizards,90
-151,360821,4.0,https://www.battlewizards.co.za/spell-pierce-double-masters-2022/,Spell Pierce,Spell Pierce - Double Masters 2022,1,Battle Wizards,90
-152,360824,4.0,https://www.battlewizards.co.za/spell-pierce-kamigawa-neon-dynasty-1/,Spell Pierce,Spell Pierce -  Kamigawa: Neon Dynasty,6,Battle Wizards,90
-153,506298,4.0,https://www.battlewizards.co.za/empty-the-warrens-dominaria-remastered/,Empty the Warrens,Empty the Warrens - Dominaria Remastered,10,Battle Wizards,90
-154,97277,4.8,https://www.battlewizards.co.za/otherworldly-gaze-innistrad-midnight-hunt/,Otherworldly Gaze,Otherworldly Gaze - Innistrad: Midnight Hunt,2,Battle Wizards,90
-155,506299,4.8,https://www.battlewizards.co.za/empty-the-warrens-dominaria-remastered-retro/,Empty the Warrens,Empty the Warrens - Dominaria Remastered: Retro,3,Battle Wizards,90
-156,505864,6.4,https://www.battlewizards.co.za/grapeshot-dominaria-remastered/,Grapeshot,Grapeshot - Dominaria Remastered,10,Battle Wizards,90
-157,52227,6.4,https://www.battlewizards.co.za/empty-the-warrens-time-spiral/,Empty the Warrens,Empty the Warrens - Time Spiral,9,Battle Wizards,90
-158,347371,6.4,https://www.battlewizards.co.za/empty-the-warrens-duel-decks-mind-vs-might/,Empty the Warrens,Empty the Warrens - Duel Decks: Mind vs. Might,2,Battle Wizards,90
-159,56703,7.2,https://www.battlewizards.co.za/grapeshot-modern-masters/,Grapeshot,Grapeshot - Modern Masters,3,Battle Wizards,90
-160,354096,7.2,https://www.battlewizards.co.za/grapeshot-duel-decks-mind-vs-might/,Grapeshot,Grapeshot - Duel Decks: Mind vs. Might,2,Battle Wizards,90
-161,52226,7.2,https://www.battlewizards.co.za/empty-the-warrens-modern-masters/,Empty the Warrens,Empty the Warrens - Modern Masters,3,Battle Wizards,90
-162,360825,12.0,https://www.battlewizards.co.za/spell-pierce-kamigawa-neon-dynasty-foil/,Spell Pierce,Spell Pierce -  Kamigawa: Neon Dynasty (Foil),1,Battle Wizards,90
-163,360823,14.4,https://www.battlewizards.co.za/spell-pierce-double-masters-2022-borderless/,Spell Pierce,Spell Pierce - Double Masters 2022: Borderless,2,Battle Wizards,90
-164,40752,16.0,https://www.battlewizards.co.za/aeve-progenitor-ooze-modern-horizons-2/,"Aeve, Progenitor Ooze","Aeve, Progenitor Ooze - Modern Horizons 2",4,Battle Wizards,90
-165,97278,25.6,https://www.battlewizards.co.za/otherworldly-gaze-innistrad-midnight-hunt-f/,Otherworldly Gaze,Otherworldly Gaze - Innistrad: Midnight Hunt [F],2,Battle Wizards,90
-166,52293,38.4,https://www.battlewizards.co.za/spell-pierce-ixalan-f/,Spell Pierce,Spell Pierce - Ixalan [F],1,Battle Wizards,90
-167,96263,65.0,https://www.battlewizards.co.za/suspend-modern-horizons-2-prerelease-promos-foil/,Suspend,Suspend - Modern Horizons 2: Prerelease Promos Foil,1,Battle Wizards,90
-168,400044,575.0,https://www.battlewizards.co.za/scalding-tarn-modern-horizons-2-f/,Scalding Tarn,Scalding Tarn - Modern Horizons 2 [F],1,Battle Wizards,90
-169,52294,1853.0,https://www.battlewizards.co.za/spell-pierce-amonkhet-invocations-f/,Spell Pierce,Spell Pierce - Amonkhet Invocations [F],1,Battle Wizards,90
-170,431841,5.0,https://tcgtrader.net/products/spell-pierce-ixalan,Spell Pierce,Spell Pierce [Ixalan] - Near Mint,38,TCG Trader,90
-171,445655,5.0,https://tcgtrader.net/products/otherworldly-gaze-innistrad-midnight-hunt,Otherworldly Gaze,Otherworldly Gaze [Innistrad: Midnight Hunt] - Near Mint,1,TCG Trader,90
-172,494264,5.0,https://tcgtrader.net/products/empty-the-warrens-time-spiral-remastered,Empty the Warrens,Empty the Warrens [Time Spiral Remastered] - Near Mint,1,TCG Trader,90
-173,445656,29.0,https://tcgtrader.net/products/otherworldly-gaze-innistrad-midnight-hunt,Otherworldly Gaze,Otherworldly Gaze [Innistrad: Midnight Hunt] - Near Mint Foil,1,TCG Trader,90
-174,430855,45.0,https://tcgtrader.net/products/consider-innistrad-midnight-hunt,Consider,Consider [Innistrad: Midnight Hunt] - Near Mint Foil,1,TCG Trader,90
-175,433702,58.0,https://tcgtrader.net/products/wishclaw-talisman-throne-of-eldraine,Wishclaw Talisman,Wishclaw Talisman [Throne of Eldraine] - Near Mint,1,TCG Trader,90
-176,432648,92.0,https://tcgtrader.net/products/leyline-of-sanctity-core-set-2020,Leyline of Sanctity,Leyline of Sanctity [Core Set 2020] - Near Mint,2,TCG Trader,90
-177,493457,87.0,https://www.swordandboard.co.za/products/leyline-of-sanctity-core-set-2020,Leyline of Sanctity,Leyline of Sanctity [Core Set 2020] - Near Mint,1,Sword & Board,90
+0,453836,2.0,https://tcgtrader.net/products/falkenrath-forebear-innistrad-crimson-vow,Falkenrath Forebear,Falkenrath Forebear [Innistrad: Crimson Vow] - Near Mint,2,TCG Trader,90
+1,445684,3.0,https://tcgtrader.net/products/voldaren-estate-innistrad-crimson-vow,Voldaren Estate,Voldaren Estate [Innistrad: Crimson Vow] - Near Mint,2,TCG Trader,90
+2,458477,4.0,https://tcgtrader.net/products/anje-maid-of-dishonor-innistrad-crimson-vow,"Anje, Maid of Dishonor","Anje, Maid of Dishonor [Innistrad: Crimson Vow] - Near Mint",2,TCG Trader,90
+3,456199,4.0,https://tcgtrader.net/products/florian-voldaren-scion-showcase-eternal-night-innistrad-midnight-hunt,"Florian, Voldaren Scion","Florian, Voldaren Scion (Showcase Eternal Night) [Innistrad: Midnight Hunt] - Near Mint",1,TCG Trader,90
+4,482636,4.0,https://tcgtrader.net/products/olivias-attendants-innistrad-crimson-vow,Olivia's Attendants,Olivia's Attendants [Innistrad: Crimson Vow] - Near Mint,3,TCG Trader,90
+5,482637,4.0,https://tcgtrader.net/products/olivias-attendants-showcase-fang-frame-innistrad-crimson-vow,Olivia's Attendants,Olivia's Attendants (Showcase Fang Frame) [Innistrad: Crimson Vow] - Near Mint,1,TCG Trader,90
+6,467973,5.0,https://tcgtrader.net/products/edgars-awakening-innistrad-crimson-vow,Edgar's Awakening,Edgar's Awakening [Innistrad: Crimson Vow] - Near Mint,9,TCG Trader,90
+7,453620,5.0,https://tcgtrader.net/products/ifnir-deadlands-hour-of-devastation,Ifnir Deadlands,Ifnir Deadlands [Hour of Devastation] - Near Mint,1,TCG Trader,90
+8,453148,5.0,https://tcgtrader.net/products/pointed-discussion-innistrad-crimson-vow,Pointed Discussion,Pointed Discussion [Innistrad: Crimson Vow] - Near Mint,6,TCG Trader,90
+9,467825,5.0,https://tcgtrader.net/products/vampire-socialite-innistrad-midnight-hunt,Vampire Socialite,Vampire Socialite [Innistrad: Midnight Hunt] - Near Mint,2,TCG Trader,90
+10,456198,6.0,https://tcgtrader.net/products/florian-voldaren-scion-innistrad-midnight-hunt,"Florian, Voldaren Scion","Florian, Voldaren Scion [Innistrad: Midnight Hunt] - Near Mint",2,TCG Trader,90
+11,431361,7.0,https://tcgtrader.net/products/reckless-fireweaver-kaladesh,Reckless Fireweaver,Reckless Fireweaver [Kaladesh] - Near Mint,3,TCG Trader,90
+12,466066,7.0,https://tcgtrader.net/products/call-to-the-netherworld-time-spiral,Call to the Netherworld,Call to the Netherworld [Time Spiral] - Near Mint,1,TCG Trader,90
+13,443569,9.0,https://tcgtrader.net/products/victimize-commander-legends,Victimize,Victimize [Commander Legends] - Near Mint,1,TCG Trader,90
+14,441829,11.0,https://tcgtrader.net/products/ramunap-ruins-hour-of-devastation,Ramunap Ruins,Ramunap Ruins [Hour of Devastation] - Near Mint,1,TCG Trader,90
+15,482638,32.0,https://tcgtrader.net/products/olivias-attendants-showcase-fang-frame-innistrad-crimson-vow,Olivia's Attendants,Olivia's Attendants (Showcase Fang Frame) [Innistrad: Crimson Vow] - Near Mint Foil,1,TCG Trader,90
+16,456213,135.0,https://tcgtrader.net/products/olivia-crimson-bride-innistrad-crimson-vow,"Olivia, Crimson Bride","Olivia, Crimson Bride [Innistrad: Crimson Vow] - Near Mint",1,TCG Trader,90
+17,456214,314.0,https://tcgtrader.net/products/olivia-crimson-bride-showcase-innistrad-crimson-vow,"Olivia, Crimson Bride","Olivia, Crimson Bride (Showcase Fang Frame) [Innistrad: Crimson Vow] - Near Mint Foil",1,TCG Trader,90
+18,554742,10.0,https://greedygold.co.za/products/voldaren-estate-promo-pack-innistrad-crimson-vow-promos,Voldaren Estate,Voldaren Estate (Promo Pack) [Innistrad: Crimson Vow Promos] - Near Mint,2,Greedy Gold,90
+19,545412,13.0,https://greedygold.co.za/products/anje-maid-of-dishonor-showcase-fang-frame-innistrad-crimson-vow,"Anje, Maid of Dishonor","Anje, Maid of Dishonor (Showcase Fang Frame) [Innistrad: Crimson Vow] - Near Mint",1,Greedy Gold,90
+20,545413,13.0,https://greedygold.co.za/products/anje-maid-of-dishonor-innistrad-crimson-vow,"Anje, Maid of Dishonor","Anje, Maid of Dishonor [Innistrad: Crimson Vow] - Near Mint Foil",1,Greedy Gold,90
+21,546300,26.0,https://greedygold.co.za/products/bojuka-bog-worldwake,Bojuka Bog,Bojuka Bog [Worldwake] - Lightly Played,1,Greedy Gold,90
+22,554741,30.0,https://greedygold.co.za/products/voldaren-estate-castle-dracula-buy-a-box-innistrad-crimson-vow,Voldaren Estate,Voldaren Estate - Castle Dracula (Buy-A-Box) [Innistrad: Crimson Vow] - Near Mint Foil,3,Greedy Gold,90
+23,546299,32.0,https://greedygold.co.za/products/bojuka-bog-commander-2013,Bojuka Bog,Bojuka Bog [Commander 2013] - Lightly Played,1,Greedy Gold,90
+24,546301,33.0,https://greedygold.co.za/products/bojuka-bog-commander-2017,Bojuka Bog,Bojuka Bog [Commander 2017] - Near Mint,1,Greedy Gold,90
+25,546298,34.0,https://greedygold.co.za/products/bojuka-bog-commander-2013,Bojuka Bog,Bojuka Bog [Commander 2013] - Near Mint,1,Greedy Gold,90
+26,555664,49.0,https://greedygold.co.za/products/yahenni-undying-partisan-aether-revolt,"Yahenni, Undying Partisan","Yahenni, Undying Partisan [Aether Revolt] - Near Mint",1,Greedy Gold,90
+27,554050,61.0,https://greedygold.co.za/products/talisman-of-indulgence-mirrodin,Talisman of Indulgence,Talisman of Indulgence [Mirrodin] - Lightly Played,1,Greedy Gold,90
+28,551494,104.0,https://greedygold.co.za/products/olivia-crimson-bride-sisters-of-the-undead-innistrad-crimson-vow,"Olivia, Crimson Bride","Olivia, Crimson Bride - Sisters of the Undead [Innistrad: Crimson Vow] - Near Mint",1,Greedy Gold,90
+29,182981,8.0,https://store.topdecksa.co.za/products/falkenrath-forebear?_pos=1&_psq=Falkenrath%20Forebear&_ss=e&_v=1.0,Falkenrath Forebear,Falkenrath Forebear - Innistrad: Crimson Vow {R} #111,8,TopDeck,90
+30,183025,8.0,https://store.topdecksa.co.za/products/olivias-attendants?_pos=1&_psq=Olivia%27s%20Attendants&_ss=e&_v=1.0,Olivia's Attendants,Olivia's Attendants - Innistrad: Crimson Vow {R} #307 [Boosterfun],4,TopDeck,90
+31,127960,8.0,https://store.topdecksa.co.za/products/reckless-fireweaver?_pos=1&_psq=Reckless%20Fireweaver&_ss=e&_v=1.0,Reckless Fireweaver,Reckless Fireweaver - Kaladesh,12,TopDeck,90
+32,105519,8.0,https://store.topdecksa.co.za/products/ifnir-deadlands?_pos=1&_psq=Ifnir%20Deadlands&_ss=e&_v=1.0,Ifnir Deadlands,Ifnir Deadlands - Hour of Devastation,2,TopDeck,90
+33,218974,8.0,https://store.topdecksa.co.za/products/pointed-discussion?_pos=1&_psq=Pointed%20Discussion&_ss=e&_v=1.0,Pointed Discussion,Pointed Discussion - Innistrad: Crimson Vow {C} #126,47,TopDeck,90
+34,83203,8.0,https://store.topdecksa.co.za/products/vampire-socialite?_pos=1&_psq=Vampire%20Socialite&_ss=e&_v=1.0,Vampire Socialite,Vampire Socialite - Innistrad: Midnight Hunt {U} #249,2,TopDeck,90
+35,183022,9.0,https://store.topdecksa.co.za/products/olivias-attendants?_pos=1&_psq=Olivia%27s%20Attendants&_ss=e&_v=1.0,Olivia's Attendants,Olivia's Attendants - Innistrad: Crimson Vow {R} #172,14,TopDeck,90
+36,179445,9.0,https://store.topdecksa.co.za/products/edgars-awakening?_pos=1&_psq=Edgar%27s%20Awakening&_ss=e&_v=1.0,Edgar's Awakening,Edgar's Awakening - Innistrad: Crimson Vow {U} #110,40,TopDeck,90
+37,84087,9.0,https://store.topdecksa.co.za/products/terminal-agony?_pos=1&_psq=Terminal%20Agony&_ss=e&_v=1.0,Terminal Agony,Terminal Agony - Modern Horizons 2 {C} #215,43,TopDeck,90
+38,484500,9.0,https://store.topdecksa.co.za/products/mind-stone?_pos=1&_psq=Mind%20Stone&_ss=e&_v=1.0,Mind Stone,Mind Stone - Dominaria Remastered {C} #232,33,TopDeck,90
+39,514042,9.0,https://store.topdecksa.co.za/products/mind-stone?_pos=1&_psq=Mind%20Stone&_ss=e&_v=1.0,Mind Stone,Mind Stone - Dominaria Remastered {C} #385 [Boosterfun],23,TopDeck,90
+40,127961,18.0,https://store.topdecksa.co.za/products/reckless-fireweaver?_pos=1&_psq=Reckless%20Fireweaver&_ss=e&_v=1.0,Reckless Fireweaver,Reckless Fireweaver - Mystery Booster {C} #1035,2,TopDeck,90
+41,84090,19.0,https://store.topdecksa.co.za/products/terminal-agony?_pos=1&_psq=Terminal%20Agony&_ss=e&_v=1.0,Terminal Agony,Terminal Agony - Modern Horizons 2 {C} #424 [Boosterfun],53,TopDeck,90
+42,218975,20.0,https://store.topdecksa.co.za/products/pointed-discussion?_pos=1&_psq=Pointed%20Discussion&_ss=e&_v=1.0,Pointed Discussion,Pointed Discussion - Innistrad: Crimson Vow {C} #126 (Foil),19,TopDeck,90
+43,484501,20.0,https://store.topdecksa.co.za/products/mind-stone?_pos=1&_psq=Mind%20Stone&_ss=e&_v=1.0,Mind Stone,Mind Stone - Dominaria Remastered {C} #232 (Foil),4,TopDeck,90
+44,182983,21.0,https://store.topdecksa.co.za/products/falkenrath-forebear?_pos=1&_psq=Falkenrath%20Forebear&_ss=e&_v=1.0,Falkenrath Forebear,Falkenrath Forebear - Innistrad: Crimson Vow {R} #291 (Foil) [Boosterfun],3,TopDeck,90
+45,179446,21.0,https://store.topdecksa.co.za/products/edgars-awakening?_pos=1&_psq=Edgar%27s%20Awakening&_ss=e&_v=1.0,Edgar's Awakening,Edgar's Awakening - Innistrad: Crimson Vow {U} #110 (Foil),9,TopDeck,90
+46,83204,21.0,https://store.topdecksa.co.za/products/vampire-socialite?_pos=1&_psq=Vampire%20Socialite&_ss=e&_v=1.0,Vampire Socialite,Vampire Socialite - Innistrad: Midnight Hunt {U} #249 (Foil),3,TopDeck,90
+47,183024,31.0,https://store.topdecksa.co.za/products/olivias-attendants?_pos=1&_psq=Olivia%27s%20Attendants&_ss=e&_v=1.0,Olivia's Attendants,Olivia's Attendants - Innistrad: Crimson Vow {R} #307 (Foil) [Boosterfun],3,TopDeck,90
+48,540545,31.0,https://store.topdecksa.co.za/products/bojuka-bog?_pos=1&_psq=Bojuka%20Bog&_ss=e&_v=1.0,Bojuka Bog,Bojuka Bog - Midnight Hunt Commander {C} #167,1,TopDeck,90
+49,84088,34.0,https://store.topdecksa.co.za/products/terminal-agony?_pos=1&_psq=Terminal%20Agony&_ss=e&_v=1.0,Terminal Agony,Terminal Agony - Modern Horizons 2 {C} #215 (Foil),10,TopDeck,90
+50,84089,39.0,https://store.topdecksa.co.za/products/terminal-agony?_pos=1&_psq=Terminal%20Agony&_ss=e&_v=1.0,Terminal Agony,Terminal Agony - Modern Horizons 2 {C} #424 (Foil) [Boosterfun],5,TopDeck,90
+51,498957,43.0,https://store.topdecksa.co.za/products/yahenni-undying-partisan?_pos=1&_psq=Yahenni%2C%20Undying%20Partisan&_ss=e&_v=1.0,"Yahenni, Undying Partisan","Yahenni, Undying Partisan - Aether Revolt",1,TopDeck,90
+52,508385,65.0,https://store.topdecksa.co.za/products/archfiend-of-ifnir?_pos=1&_psq=Archfiend%20of%20Ifnir&_ss=e&_v=1.0&variant=36850272515,Archfiend of Ifnir,Archfiend of Ifnir - Amonkhet (Foil),3,TopDeck,90
+53,541552,99.0,https://store.topdecksa.co.za/products/anger?_pos=2&_psq=Anger&_ss=e&_v=1.0,Anger,Anger - Commander Anthology,1,TopDeck,90
+54,78909,370.0,https://store.topdecksa.co.za/products/call-to-the-netherworld?_pos=1&_psq=Call%20to%20the%20Netherworld&_ss=e&_v=1.0&variant=31662747713632,Call to the Netherworld,Call to the Netherworld - Time Spiral (Foil),2,TopDeck,90
+55,82958,560.0,https://store.topdecksa.co.za/products/barbarian-ring?_pos=1&_psq=Barbarian%20Ring&_ss=e&_v=1.0,Barbarian Ring,Barbarian Ring - Odyssey (Foil),1,TopDeck,90
+56,218981,3.2,https://www.battlewizards.co.za/pointed-discussion-innistrad-crimson-vow/,Pointed Discussion,Pointed Discussion - Innistrad: Crimson Vow,12,Battle Wizards,90
+57,84093,3.2,https://www.battlewizards.co.za/terminal-agony-modern-horizons-2-retro/,Terminal Agony,Terminal Agony - Modern Horizons 2: Retro,5,Battle Wizards,90
+58,84094,3.2,https://www.battlewizards.co.za/terminal-agony-modern-horizons-2/,Terminal Agony,Terminal Agony - Modern Horizons 2,16,Battle Wizards,90
+59,218982,4.0,https://www.battlewizards.co.za/pointed-discussion-innistrad-crimson-vow-f/,Pointed Discussion,Pointed Discussion - Innistrad: Crimson Vow [F],1,Battle Wizards,90
+60,179452,6.3,https://www.battlewizards.co.za/edgars-awakening-innistrad-crimson-vow/,Edgar's Awakening,Edgar's Awakening - Innistrad: Crimson Vow,6,Battle Wizards,90
+61,514044,7.2,https://www.battlewizards.co.za/mind-stone-dominaria-remastered/,Mind Stone,Mind Stone - Dominaria Remastered,10,Battle Wizards,90
+62,514045,7.2,https://www.battlewizards.co.za/mind-stone-dominaria-remastered-retro/,Mind Stone,Mind Stone - Dominaria Remastered: Retro,3,Battle Wizards,90
+63,67596,8.0,https://www.battlewizards.co.za/reckless-fireweaver-kaladesh/,Reckless Fireweaver,Reckless Fireweaver - Kaladesh,10,Battle Wizards,90
+64,343399,12.0,https://www.battlewizards.co.za/mind-stone-iconic-masters/,Mind Stone,Mind Stone - Iconic Masters,2,Battle Wizards,90
+65,343398,13.6,https://www.battlewizards.co.za/mind-stone-commander-2018/,Mind Stone,Mind Stone - Commander 2018,2,Battle Wizards,90
+66,44973,14.4,https://www.battlewizards.co.za/cabal-pit-odyssey/,Cabal Pit,Cabal Pit - Odyssey,3,Battle Wizards,90
+67,182990,16.0,https://www.battlewizards.co.za/falkenrath-forebear-innistrad-crimson-vow/,Falkenrath Forebear,Falkenrath Forebear - Innistrad: Crimson Vow,4,Battle Wizards,90
+68,183028,16.0,https://www.battlewizards.co.za/olivias-attendants-innistrad-crimson-vow/,Olivia's Attendants,Olivia's Attendants - Innistrad: Crimson Vow,3,Battle Wizards,90
+69,343400,16.2,https://www.battlewizards.co.za/mind-stone-commander-anthology-volume-ii/,Mind Stone,Mind Stone - Commander Anthology Volume II,1,Battle Wizards,90
+70,42766,23.4,https://www.battlewizards.co.za/barbarian-ring-odyssey/,Barbarian Ring,Barbarian Ring - Odyssey,2,Battle Wizards,90
+71,352371,71.0,https://www.battlewizards.co.za/squee-goblin-nabob-modern-masters-f/,"Squee, Goblin Nabob","Squee, Goblin Nabob - Modern Masters [F]",1,Battle Wizards,90
+72,77213,164.0,https://www.battlewizards.co.za/squee-goblin-nabob-mercadian-masques/,"Squee, Goblin Nabob","Squee, Goblin Nabob - Mercadian Masques",5,Battle Wizards,90
+73,218980,2.0,https://shop.dracoti.co.za/product/pointed-discussion/,Pointed Discussion,Pointed Discussion,3,Dracoti,90
+74,259130,3.0,https://shop.dracoti.co.za/product/terminal-agony/,Terminal Agony,Terminal Agony,3,Dracoti,90
+75,259131,5.0,https://shop.dracoti.co.za/product/terminal-agony-retro-frame/,Terminal Agony,Terminal Agony (Retro Frame),3,Dracoti,90
+76,182996,7.0,https://shop.dracoti.co.za/product/falkenrath-forebear-showcase/,Falkenrath Forebear,Falkenrath Forebear (Showcase),3,Dracoti,90
+77,471084,7.0,https://shop.dracoti.co.za/product/terminal-agony-retro-frame-foil/,Terminal Agony,Terminal Agony (Retro Frame) (FOIL),1,Dracoti,90
+78,182992,10.0,https://shop.dracoti.co.za/product/falkenrath-forebear-2/,Falkenrath Forebear,Falkenrath Forebear,3,Dracoti,90
+79,182995,10.0,https://shop.dracoti.co.za/product/falkenrath-forebear-foil/,Falkenrath Forebear,Falkenrath Forebear (FOIL),1,Dracoti,90
+80,183033,12.0,https://shop.dracoti.co.za/product/olivias-attendants-2/,Olivia's Attendants,Olivia's Attendants,1,Dracoti,90
+81,311959,15.0,https://shop.dracoti.co.za/product/falkenrath-forebear-prerelease-promo/,Falkenrath Forebear,Falkenrath Forebear (Prerelease Promo),3,Dracoti,90
+82,183034,17.0,https://shop.dracoti.co.za/product/olivias-attendants-foil/,Olivia's Attendants,Olivia's Attendants (FOIL),3,Dracoti,90
+83,183035,17.0,https://shop.dracoti.co.za/product/olivias-attendants-showcase/,Olivia's Attendants,Olivia's Attendants (Showcase),3,Dracoti,90
+84,157380,17.0,https://shop.dracoti.co.za/product/barbarian-ring-foil/,Barbarian Ring,Barbarian Ring (FOIL),1,Dracoti,90
+85,157379,20.0,https://shop.dracoti.co.za/product/barbarian-ring/,Barbarian Ring,Barbarian Ring,3,Dracoti,90
+86,482635,35.0,https://shop.dracoti.co.za/product/olivias-attendants-prerelease-promo/,Olivia's Attendants,Olivia's Attendants (Prerelease Promo),1,Dracoti,90
+87,466298,105.0,https://shop.dracoti.co.za/product/voldaren-estate-buy-a-box-promo/,Voldaren Estate,Voldaren Estate (Castle Dracula) (Buy-a-Box Promo),2,Dracoti,90
+88,323866,110.0,https://shop.dracoti.co.za/product/voldaren-estate-foil-2/,Voldaren Estate,Voldaren Estate (FOIL),1,Dracoti,90
+89,529843,162.0,https://shop.dracoti.co.za/product/olivia-crimson-bride/,"Olivia, Crimson Bride","Olivia, Crimson Bride",1,Dracoti,90
+90,135875,1575.0,https://shop.dracoti.co.za/product/bojuka-bog-foil/,Bojuka Bog,Bojuka Bog (FOIL),2,Dracoti,90
+91,218979,4.0,https://d20battleground.co.za/products/pointed-discussion-innistrad-crimson-vow,Pointed Discussion,Pointed Discussion [Innistrad: Crimson Vow] - Near Mint,9,D20Battleground,90
+92,482888,4.0,https://d20battleground.co.za/products/pointed-discussion-innistrad-double-feature,Pointed Discussion,Pointed Discussion [Innistrad: Double Feature] - Near Mint,1,D20Battleground,90
+93,259128,4.0,https://d20battleground.co.za/products/terminal-agony-timeshifted-modern-horizons-2,Terminal Agony,Terminal Agony (Retro) [Modern Horizons 2] - Near Mint,5,D20Battleground,90
+94,179450,5.0,https://d20battleground.co.za/products/edgars-awakening-innistrad-crimson-vow,Edgar's Awakening,Edgar's Awakening [Innistrad: Crimson Vow] - Near Mint,6,D20Battleground,90
+95,397545,5.0,https://d20battleground.co.za/products/edgars-awakening-innistrad-crimson-vow,Edgar's Awakening,Edgar's Awakening [Innistrad: Crimson Vow] - Near Mint Foil,1,D20Battleground,90
+96,313885,5.0,https://d20battleground.co.za/products/pointed-discussion-innistrad-crimson-vow,Pointed Discussion,Pointed Discussion [Innistrad: Crimson Vow] - Near Mint Foil,1,D20Battleground,90
+97,471080,5.0,https://d20battleground.co.za/products/terminal-agony-modern-horizons-2,Terminal Agony,Terminal Agony [Modern Horizons 2] - Near Mint,4,D20Battleground,90
+98,471081,5.0,https://d20battleground.co.za/products/terminal-agony-modern-horizons-2,Terminal Agony,Terminal Agony [Modern Horizons 2] - Near Mint Foil,1,D20Battleground,90
+99,504630,5.0,https://d20battleground.co.za/products/mind-stone-retro-dominaria-remastered,Mind Stone,Mind Stone (Retro) [Dominaria Remastered] - Near Mint,2,D20Battleground,90
+100,259129,6.0,https://d20battleground.co.za/products/terminal-agony-timeshifted-modern-horizons-2,Terminal Agony,Terminal Agony (Retro) [Modern Horizons 2] - Near Mint Foil,3,D20Battleground,90
+101,471082,6.0,https://d20battleground.co.za/products/terminal-agony-retro-etched-foil-modern-horizons-2,Terminal Agony,Terminal Agony (Retro Foil Etched) [Modern Horizons 2] - Near Mint Foil,1,D20Battleground,90
+102,182997,7.0,https://d20battleground.co.za/products/falkenrath-forebear-innistrad-crimson-vow,Falkenrath Forebear,Falkenrath Forebear [Innistrad: Crimson Vow] - Near Mint,1,D20Battleground,90
+103,311958,7.0,https://d20battleground.co.za/products/falkenrath-forebear-showcase-fang-frame-innistrad-crimson-vow,Falkenrath Forebear,Falkenrath Forebear (Showcase Fang Frame) [Innistrad: Crimson Vow] - Near Mint,2,D20Battleground,90
+104,200545,9.0,https://d20battleground.co.za/products/ifnir-deadlands-hour-of-devastation,Ifnir Deadlands,Ifnir Deadlands [Hour of Devastation] - Near Mint,7,D20Battleground,90
+105,210010,10.0,https://d20battleground.co.za/products/reckless-fireweaver-kaladesh,Reckless Fireweaver,Reckless Fireweaver [Kaladesh] - Near Mint,10,D20Battleground,90
+106,323867,10.0,https://d20battleground.co.za/products/voldaren-estate-innistrad-crimson-vow,Voldaren Estate,Voldaren Estate [Innistrad: Crimson Vow] - Near Mint,1,D20Battleground,90
+107,504629,10.0,https://d20battleground.co.za/products/mind-stone-retro-the-brothers-war-commander,Mind Stone,Mind Stone (Retro) [The Brothers' War Commander] - Near Mint,2,D20Battleground,90
+108,522078,12.0,https://d20battleground.co.za/products/mind-stone-iconic-masters,Mind Stone,Mind Stone [Iconic Masters] - Near Mint,2,D20Battleground,90
+109,270017,14.0,https://d20battleground.co.za/products/cabal-pit-odyssey,Cabal Pit,Cabal Pit [Odyssey] - Near Mint,1,D20Battleground,90
+110,524800,16.0,https://d20battleground.co.za/products/ramunap-ruins-hour-of-devastation,Ramunap Ruins,Ramunap Ruins [Hour of Devastation] - Near Mint,1,D20Battleground,90
+111,200546,19.0,https://d20battleground.co.za/products/ifnir-deadlands-hour-of-devastation,Ifnir Deadlands,Ifnir Deadlands [Hour of Devastation] - Near Mint Foil,1,D20Battleground,90
+112,524242,34.0,https://d20battleground.co.za/products/leechridden-swamp-duel-decks-nissa-vs-ob-nixilis,Leechridden Swamp,Leechridden Swamp [Duel Decks: Nissa vs. Ob Nixilis] - Near Mint,2,D20Battleground,90
+113,423075,38.0,https://d20battleground.co.za/products/leechridden-swamp-shadowmoor,Leechridden Swamp,Leechridden Swamp [Shadowmoor] - Near Mint,3,D20Battleground,90
+114,498958,40.0,https://d20battleground.co.za/products/yahenni-undying-partisan-double-masters-2022,"Yahenni, Undying Partisan","Yahenni, Undying Partisan [Double Masters 2022] - Near Mint",1,D20Battleground,90
+115,501171,78.0,https://d20battleground.co.za/products/breath-of-fury-commander-2016,Breath of Fury,Breath of Fury [Commander 2016] - Near Mint,1,D20Battleground,90
+116,501172,85.0,https://d20battleground.co.za/products/breath-of-fury-ravnica-city-of-guilds,Breath of Fury,Breath of Fury [Ravnica: City of Guilds] - Near Mint,1,D20Battleground,90
+117,171741,105.0,https://d20battleground.co.za/products/anger-ultimate-masters,Anger,Anger [Ultimate Masters] - Near Mint,2,D20Battleground,90
+118,360306,185.0,https://d20battleground.co.za/products/anger-ultimate-masters,Anger,Anger [Ultimate Masters] - Near Mint Foil,1,D20Battleground,90
+119,459404,201.0,https://d20battleground.co.za/products/mind-stone-gateway-2007,Mind Stone,Mind Stone [Gateway 2007] - Near Mint Foil,1,D20Battleground,90
+120,270018,731.0,https://d20battleground.co.za/products/cabal-pit-odyssey,Cabal Pit,Cabal Pit [Odyssey] - Near Mint Foil,1,D20Battleground,90
+121,210009,3.0,https://www.thewarren.co.za/shop/card/reckless-fireweaver,Reckless Fireweaver,Reckless Fireweaver - Kaladesh,8,The Warren,90
+122,218977,3.0,https://www.thewarren.co.za/shop/card/pointed-discussion,Pointed Discussion,Pointed Discussion - Innistrad: Crimson Vow,12,The Warren,90
+123,259127,3.0,https://www.thewarren.co.za/shop/card/terminal-agony,Terminal Agony,Terminal Agony - Modern Horizons 2,9,The Warren,90
+124,179448,4.0,https://www.thewarren.co.za/shop/card/edgars-awakening,Edgar's Awakening,Edgar's Awakening - Innistrad: Crimson Vow,4,The Warren,90
+125,218978,4.0,https://www.thewarren.co.za/shop/card/pointed-discussion,Pointed Discussion,Pointed Discussion - Innistrad: Crimson Vow (Foil),2,The Warren,90
+126,311872,4.0,https://www.thewarren.co.za/shop/card/terminal-agony,Terminal Agony,Terminal Agony - Modern Horizons 2 (#Retro),4,The Warren,90
+127,471083,4.0,https://www.thewarren.co.za/shop/card/terminal-agony,Terminal Agony,Terminal Agony - Modern Horizons 2 (Foil),1,The Warren,90
+128,311873,5.0,https://www.thewarren.co.za/shop/card/terminal-agony,Terminal Agony,Terminal Agony - Modern Horizons 2 (Foil) (#Retro),1,The Warren,90
+129,311874,6.0,https://www.thewarren.co.za/shop/card/terminal-agony,Terminal Agony,Terminal Agony - Modern Horizons 2 (Foil) (#Retro-Etched),1,The Warren,90
+130,453835,7.0,https://www.thewarren.co.za/shop/card/falkenrath-forebear,Falkenrath Forebear,Falkenrath Forebear - Innistrad: Crimson Vow,1,The Warren,90
+131,183031,8.0,https://www.thewarren.co.za/shop/card/olivias-attendants,Olivia's Attendants,Olivia's Attendants - Innistrad: Crimson Vow,7,The Warren,90
+132,466299,9.0,https://www.thewarren.co.za/shop/card/voldaren-estate,Voldaren Estate,Voldaren Estate - Innistrad: Crimson Vow,1,The Warren,90
+133,466302,9.0,https://www.thewarren.co.za/shop/card/voldaren-estate,Voldaren Estate,Voldaren Estate - Innistrad: Crimson Vow(PROMO PACK),1,The Warren,90
+134,525647,14.0,https://www.thewarren.co.za/shop/card/victimize,Victimize,Victimize - Magic: The Gathering—Conspiracy,1,The Warren,90
+135,344297,17.0,https://www.thewarren.co.za/shop/card/reckless-fireweaver,Reckless Fireweaver,Reckless Fireweaver - Mystery Booster,3,The Warren,90
+136,466301,20.0,https://www.thewarren.co.za/shop/card/voldaren-estate,Voldaren Estate,Voldaren Estate - Innistrad: Crimson Vow (#Extended),1,The Warren,90
+137,496238,20.0,https://www.thewarren.co.za/shop/card/barbarian-ring,Barbarian Ring,Barbarian Ring - The List,1,The Warren,90
+138,522079,23.0,https://www.thewarren.co.za/shop/card/mind-stone,Mind Stone,Mind Stone - Weatherlight,4,The Warren,90
+139,466300,26.0,https://www.thewarren.co.za/shop/card/voldaren-estate,Voldaren Estate,Voldaren Estate - Innistrad: Crimson Vow (Foil) (#Extended),1,The Warren,90
+140,290549,27.0,https://www.thewarren.co.za/shop/card/voldaren-estate,Voldaren Estate,Voldaren Estate - Innistrad: Crimson Vow(PROMO) (Foil) (#Buy-A-Box),15,The Warren,90
+141,524243,36.0,https://www.thewarren.co.za/shop/card/leechridden-swamp,Leechridden Swamp,Leechridden Swamp - Shadowmoor,1,The Warren,90
+142,302137,43.0,https://www.thewarren.co.za/shop/card/archfiend-of-ifnir,Archfiend of Ifnir,Archfiend of Ifnir - Amonkhet,1,The Warren,90
+143,508387,51.0,https://www.thewarren.co.za/shop/card/archfiend-of-ifnir,Archfiend of Ifnir,Archfiend of Ifnir - Amonkhet (Foil),1,The Warren,90
+144,501772,84.0,https://www.thewarren.co.za/shop/card/ramunap-ruins,Ramunap Ruins,Ramunap Ruins - Hour of Devastation (Foil),1,The Warren,90
+145,217334,96.0,https://www.thewarren.co.za/shop/card/breath-of-fury,Breath of Fury,Breath of Fury - Ravnica: City of Guilds,2,The Warren,90
+146,343401,160.0,https://www.thewarren.co.za/shop/card/mind-stone,Mind Stone,Mind Stone - Wizards Play Network 2021,6,The Warren,90
+147,541122,185.0,https://www.thewarren.co.za/shop/card/reckless-fireweaver,Reckless Fireweaver,Reckless Fireweaver - Kaladesh (Foil),1,The Warren,90
+148,371849,255.0,https://www.thewarren.co.za/shop/card/yahenni-undying-partisan,"Yahenni, Undying Partisan","Yahenni, Undying Partisan - Aether Revolt(PROMO PACK) (Foil)",1,The Warren,90
+149,218976,3.0,https://luckshack.co.za/index.php?route=product/product&product_id=84293,Pointed Discussion,Pointed Discussion,17,Luckshack,90
+150,35626,3.0,https://luckshack.co.za/index.php?route=product/product&product_id=79902,Terminal Agony,Terminal Agony,3,Luckshack,90
+151,179447,4.0,https://luckshack.co.za/index.php?route=product/product&product_id=84541,Edgar's Awakening,Edgar's Awakening,22,Luckshack,90
+152,35627,4.0,https://luckshack.co.za/index.php?route=product/product&product_id=80581,Terminal Agony,Terminal Agony (Retro Frame),6,Luckshack,90
+153,22566,7.0,https://luckshack.co.za/index.php?route=product/product&product_id=50450,Ifnir Deadlands,Ifnir Deadlands,13,Luckshack,90
+154,360241,8.0,https://luckshack.co.za/index.php?route=product/product&product_id=12897,Cabal Pit,Cabal Pit,2,Luckshack,90
+155,37199,9.0,https://luckshack.co.za/index.php?route=product/product&product_id=83130,Vampire Socialite,Vampire Socialite,2,Luckshack,90
+156,195881,10.0,https://luckshack.co.za/index.php?route=product/product&product_id=94068,Voldaren Estate,Voldaren Estate,2,Luckshack,90
+157,349727,10.0,https://luckshack.co.za/index.php?route=product/product&product_id=101426,Mind Stone,Mind Stone,4,Luckshack,90
+158,351290,12.0,https://luckshack.co.za/index.php?route=product/product&product_id=62184,"Squee, Goblin Nabob","Squee, Goblin Nabob",1,Luckshack,90
+159,183026,13.0,https://luckshack.co.za/index.php?route=product/product&product_id=84676,Olivia's Attendants,Olivia's Attendants,3,Luckshack,90
+160,344323,17.0,https://luckshack.co.za/index.php?route=product/product&product_id=91457,Barbarian Ring,Barbarian Ring,3,Luckshack,90
+161,525646,21.0,https://luckshack.co.za/index.php?route=product/product&product_id=49831,Victimize,Victimize,2,Luckshack,90
+162,29589,22.0,https://luckshack.co.za/index.php?route=product/product&product_id=50454,Ramunap Ruins,Ramunap Ruins,2,Luckshack,90
+163,183027,25.0,https://luckshack.co.za/index.php?route=product/product&product_id=84778,Olivia's Attendants,Olivia's Attendants (Showcase),1,Luckshack,90
+164,520833,31.0,https://luckshack.co.za/index.php?route=product/product&product_id=67269,Bojuka Bog,Bojuka Bog,1,Luckshack,90
+165,478094,38.0,https://luckshack.co.za/index.php?route=product/product&product_id=24521,Leechridden Swamp,Leechridden Swamp,1,Luckshack,90
+166,502722,49.0,https://luckshack.co.za/index.php?route=product/product&product_id=48120,"Yahenni, Undying Partisan","Yahenni, Undying Partisan",1,Luckshack,90
+167,508386,52.0,https://luckshack.co.za/index.php?route=product/product&product_id=49320,Archfiend of Ifnir,Archfiend of Ifnir,2,Luckshack,90
+168,30399,200.0,https://luckshack.co.za/index.php?route=product/product&product_id=46986,Reckless Fireweaver,Reckless Fireweaver,2,Luckshack,90
+169,259133,4.0,https://www.sadrobot.co.za/shop/terminal-agony/,Terminal Agony,Terminal Agony - Modern Horizons 2,9,SadRobot,90
+170,218983,5.0,https://www.sadrobot.co.za/shop/pointed-discussion/,Pointed Discussion,Pointed Discussion - Innistrad Crimson Vow,36,SadRobot,90
+171,524211,5.0,https://www.sadrobot.co.za/shop/pointed-discussion-2/,Pointed Discussion,Pointed Discussion - Innistrad: Double Feature,1,SadRobot,90
+172,259132,5.0,https://www.sadrobot.co.za/shop/terminal-agony-2/,Terminal Agony,Terminal Agony (Retro) - Modern Horizons 2,3,SadRobot,90
+173,210012,8.0,https://www.sadrobot.co.za/shop/reckless-fireweaver/,Reckless Fireweaver,Reckless Fireweaver - Kaladesh,49,SadRobot,90
+174,518534,10.0,https://www.sadrobot.co.za/shop/vampire-socialite-2/,Vampire Socialite,Vampire Socialite - Innistrad: Double Feature,2,SadRobot,90
+175,417174,15.0,https://www.sadrobot.co.za/shop/voldaren-estate-promo-pack/,Voldaren Estate,Voldaren Estate (Promo Pack) - Innistrad Crimson Vow,1,SadRobot,90
+176,535928,30.0,https://www.sadrobot.co.za/shop/bojuka-bog/,Bojuka Bog,Bojuka Bog - Worldwake,1,SadRobot,90
+177,535926,35.0,https://www.sadrobot.co.za/shop/bojuka-bog-12/,Bojuka Bog,Bojuka Bog - Commander 2013,1,SadRobot,90
+178,217336,100.0,https://www.sadrobot.co.za/shop/breath-of-fury/,Breath of Fury,Breath of Fury - Ravnica City of Guilds,3,SadRobot,90
+179,558554,110.0,https://www.sadrobot.co.za/shop/anger/,Anger,Anger - Ultimate Masters,1,SadRobot,90
+180,344298,145.0,https://www.sadrobot.co.za/shop/reckless-fireweaver-foil/,Reckless Fireweaver,Reckless Fireweaver (Foil) - Kaladesh,1,SadRobot,90
+181,522080,210.0,https://www.sadrobot.co.za/shop/mind-stone-promo-foil/,Mind Stone,Mind Stone (Promo Foil) - Promo Cards,2,SadRobot,90
+182,408460,750.0,https://www.sadrobot.co.za/shop/bojuka-bog-foil/,Bojuka Bog,Bojuka Bog (Foil) - Worldwake,2,SadRobot,90
+183,453149,4.0,https://thestonedragon.co.za/product/pointed-discussion-foil-innistrad-crimson-vow/,Pointed Discussion,Pointed Discussion (Foil) – Innistrad: Crimson Vow,2,The Stone Dragon,90
+184,471085,4.0,https://thestonedragon.co.za/product/terminal-agony-foil/,Terminal Agony,Terminal Agony (Foil) – Modern Horizons 2,1,The Stone Dragon,90
+185,510355,21.0,https://thestonedragon.co.za/product/voldaren-estate-foil-innistrad-crimson-vow-3/,Voldaren Estate,Voldaren Estate (Foil) – Innistrad: Crimson Vow,1,The Stone Dragon,90
+186,398134,390.0,https://thestonedragon.co.za/product/call-to-the-netherworld-foil/,Call to the Netherworld,Call to the Netherworld (Foil) – Time Spiral,1,The Stone Dragon,90
+187,510415,19.0,https://www.swordandboard.co.za/products/victimize-urzas-saga,Victimize,Victimize [Urza's Saga] - Near Mint,1,Sword & Board,90
+188,489823,58.0,https://www.swordandboard.co.za/products/yahenni-undying-partisan-promo-pack-aether-revolt-promos,"Yahenni, Undying Partisan","Yahenni, Undying Partisan (Promo Pack) [Aether Revolt Promos] - Near Mint",1,Sword & Board,90
