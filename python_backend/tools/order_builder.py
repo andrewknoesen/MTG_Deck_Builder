@@ -40,5 +40,7 @@ class Order_Builder:
     def optimize_order(self) -> pd.DataFrame:
         print(self.stores_df.keys())
         sorted_stores: pd.DataFrame = self.stores_df.sort_values(['name','cost'])
+
+        optimized_orders: pd.DataFrame = pd.DataFrame()
         return sorted_stores
          
