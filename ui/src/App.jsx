@@ -9,13 +9,17 @@ import SwipeableTemporaryDrawer from './components/SideBar';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import TopBar from './components/TopBar';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+      <div style={{postion: "realtive"}}>
+        <TopBar/>
+        </div>
+        <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -28,7 +32,7 @@ function App() {
         <Button variant='contained'  onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </Button>
-        <SwipeableTemporaryDrawer/>
+        
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
