@@ -1,17 +1,17 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
+
+import StyleOutlinedIcon from '@mui/icons-material/StyleOutlined';
+import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
+import BuildCircleOutlinedIcon from '@mui/icons-material/BuildCircleOutlined';
 
 export default function SwipeableTemporaryDrawer() {
     const [state, setState] = React.useState({
@@ -20,6 +20,12 @@ export default function SwipeableTemporaryDrawer() {
         bottom: false,
         right: false,
     });
+
+    const entries = {
+        'Collection': <Inventory2OutlinedIcon />, 
+        'Decks': <StyleOutlinedIcon />, 
+        'Deck Builder': <BuildCircleOutlinedIcon />,
+    };
 
     const toggleDrawer = (anchor, open) => (event) => {
         if (
@@ -41,30 +47,17 @@ export default function SwipeableTemporaryDrawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['Collection', 'Decks', 'Deck Builder'].map((text, index) => (
+                {Object.entries(entries).map(([text, icon]) => (
                     <ListItem key={text} disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                {icon}
                             </ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemButton>
                     </ListItem>
                 ))}
             </List>
-            {/* <Divider />
-            <List>
-                {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                    <ListItem key={text} disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                            </ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItemButton>
-                    </ListItem>
-                ))}
-            </List> */}
         </Box>
     );
 
