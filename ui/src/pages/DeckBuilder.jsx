@@ -9,7 +9,7 @@ function DeckBuilder() {
 
     return (
         <AppBase title="Deck Builder">
-            <div style={{ alignSelf: "center", backgroundColor: "red", display: 'flex', flexGrow: 1, height: "80vh", width: "80vw"}}>
+            <div style={{ alignSelf: "center", backgroundColor: "red", display: "flex", flexGrow: 1, height: "80vh", width: "80vw"}}>
                 <div style={{ backgroundColor:"blue", position:"fixed"}}>
                     <SearchBar placeholder="Search cards..."/>
                     <CardDisplayTable/>
