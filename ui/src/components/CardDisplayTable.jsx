@@ -269,7 +269,7 @@ export default function CardDisplayTable() {
 
     return (
         <Box sx={{ width: '100%' }}>
-            <Paper sx={{ width: '100%', mb: 2 }}>
+            <Paper sx={{ width: '100%', mb: 1 }}>
             
                 {/* <EnhancedTableToolbar numSelected={selected.length} /> */}
                 <Toolbar
@@ -289,6 +289,7 @@ export default function CardDisplayTable() {
             </Tooltip>
             
             <TablePagination
+                    sx={{ width: '100%'}}
                     rowsPerPageOptions={[5, 10, 25]}
                     component="div"
                     count={rows.length}

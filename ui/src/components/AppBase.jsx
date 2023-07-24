@@ -15,13 +15,26 @@ function AppBase({ title, children }) {
         },
     });
 
+    const componentStyles = {
+        display: 'flex',
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+        top: '0',
+        height: '100vh',
+        width: '100vw',
+        backgroundColor: 'blue',
+    };
+
+    
+
+
     return (
 
         <ThemeProvider theme={darkTheme}>
             <div>
                 <TopBar title={title} />
             </div>
-            <div style={{ alignContent: "right" }}>
+            <div style={componentStyles}>
                 {children}
             </div>
         </ThemeProvider>

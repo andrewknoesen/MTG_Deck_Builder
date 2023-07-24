@@ -13,9 +13,9 @@ export default function SearchBar({placeholder}) {
     return (
         <Paper
             component="form"
-            sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', marginBottom: "10px"}}
+            sx={{ p: '0.2rem 0.4rem', display: 'flex', alignItems: 'stretch', marginBottom: "1rem", flex: 1}}
         >
-            <IconButton sx={{ p: '10px' }} aria-label="menu">
+            <IconButton sx={{ p: '1rem' }} aria-label="menu">
                 <MenuIcon />
             </IconButton>
             <InputBase
@@ -25,7 +25,7 @@ export default function SearchBar({placeholder}) {
             />
 
             <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-            <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
+            <IconButton type="button" sx={{ p: '1rem' }} aria-label="search">
                 <SearchIcon />
             </IconButton>
         </Paper>

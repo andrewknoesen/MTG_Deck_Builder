@@ -10,8 +10,8 @@ import SwipeableTemporaryDrawer from './SideBar';
 
 export default function TopBar({title}) {
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar >
+        <Box sx={{ flexGrow: 1}}>
+            <AppBar position='fixed'>
                 <Toolbar>
                     <SwipeableTemporaryDrawer />
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
