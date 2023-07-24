@@ -10,10 +10,11 @@ from api.handlers.scryfall.search.fuzzy import FuzzySearch
 from api.handlers.scryfall.search.collection import CollectionSearch
 
 app = Flask(__name__, static_url_path='', static_folder='frontend/build')
+app.debug = True
 CORS(app) #comment this on deployment
 api = Api(app)
 
-@app.route("/", defaults={'path':''})
+@app.route("/", methods=['POST'], defaults={'path':''})
 def serve(path):
     return send_from_directory(app.static_folder,'index.html')
 

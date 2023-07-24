@@ -8,10 +8,11 @@ logging.basicConfig(
 )
 
 url_base: str = "https://api.scryfall.com"
-path: str = "/cards/named"
+path: str = "/cards/autocomplete"
 
 class FuzzySearch(Resource):
-    def get(self):
+    def post(self):
+        
         parser = reqparse.RequestParser()
         parser.add_argument('card', type=str)
 
@@ -19,7 +20,7 @@ class FuzzySearch(Resource):
 
         params: dict = dict({})
 
-        params['fuzzy'] = args['card']
+        params['q'] = args['card']
 
         response=requests.get(url=f'{url_base}{path}',params=params)
 
