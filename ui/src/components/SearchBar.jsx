@@ -6,6 +6,7 @@ import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import debounce from 'lodash/debounce';
 
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
@@ -16,36 +17,63 @@ export default function SearchBar({ placeholder }) {
     const previousController = useRef();
 
     const getCards = (cardName) => {
-        try {
-            let result = fetch('http://localhost:5000/flask/scryfall/fuzzy', {
-                credentials: 'include',
-                method: 'POST',
-                mode: 'no-cors',
-                headers: {
-                    'Accept': '*/*',
-                    'Content-Type': 'application/json',
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
 
-                },
-                body:{
-                    card: cardName
-                }
-            })
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (myJson) {
-                    console.log(
-                        "search term: " + cardName + ", results: ",
-                        myJson.products
-                    );
-                    const updatedOptions = myJson.products.map((p) => {
-                        return { data: p.data };
-                    });
-                    setOptions(updatedOptions);
+        var raw = JSON.stringify({
+            "card": cardName
+        });
+
+        var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+        };
+
+        fetch("http://localhost:5000/flask/scryfall/fuzzy", requestOptions)
+            .then(response => response.json())
+            // .then(result => console.log("search term: " + cardName + ",results: " + result))
+            .then(function (myJson) {
+                console.log(
+                    "search term: " + cardName + ", results (data field): ",
+                    JSON.stringify(myJson.data)
+                );
+                const updatedOptions = myJson.data.map((p) => {
+                    return { data: p };
                 });
-        } catch (e) {
-            console.log(e)
-        }
+                setOptions(updatedOptions);
+            })
+            .catch(error => console.log('error', error));
+        // try {
+        //     let result = fetch('http://localhost:5000/flask/scryfall/fuzzy', {
+        //         credentials: 'include',
+        //         method: 'POST',
+        //         mode: 'no-cors',
+        //         headers: {
+        //             'Accept': 'application/json',
+        //             'Content-Type': 'application/json; charset=utf-8'
+        //         },
+        //         body: JSON.stringify({
+        //             "card": cardName
+        //         })
+        //     })
+        //         .then(function (response) {
+        //             return response.json();
+        //         })
+        //         .then(function (myJson) {
+        //             console.log(
+        //                 "search term: " + cardName + ", results: ",
+        //                 myJson.products
+        //             );
+        //             const updatedOptions = myJson.products.map((p) => {
+        //                 return { data: p.data };
+        //             });
+        //             setOptions(updatedOptions);
+        //         });
+        // } catch (e) {
+        //     console.log(e)
+        // }
     }
 
     const onInputChange = (event, value, reason) => {
@@ -69,7 +97,7 @@ export default function SearchBar({ placeholder }) {
                     id="free-solo-2-demo"
                     freeSolo
                     disableClearable
-                    onInputChange={onInputChange}
+                    onInputChange={debounce(onInputChange, 300)}
                     options={options}
                     getOptionLabel={(option) => option.data}
                     renderInput={(params) => (

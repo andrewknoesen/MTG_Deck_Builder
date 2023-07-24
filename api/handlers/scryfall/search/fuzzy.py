@@ -12,6 +12,7 @@ path: str = "/cards/autocomplete"
 
 class FuzzySearch(Resource):
     def post(self):
+        
         parser = reqparse.RequestParser()
         parser.add_argument('card', type=str)
 
