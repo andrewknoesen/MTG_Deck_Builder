@@ -32,7 +32,7 @@ function DeckBuilder() {
         justifyContent: 'flex_start',
         backgroundColor: 'yellow',
         width: '80vw',
-        
+
 
     };
 
@@ -42,21 +42,13 @@ function DeckBuilder() {
                 style={baseStyle}
             >
                 <div style={buildPlateStyle}>
-                    <div>
+                    <div style={{ flex: 1 }}>
                         <SearchBar placeholder="Search cards..." />
+
+                    <CardDisplayTable />
                     </div>
-                </div>
-                <div style={collectionSearchStyle}>
-                    <div>
-                        <SearchBar placeholder="Search cards..." />
-                        <CardDisplayTable />
-                        <SearchBar placeholder="Search cards..." />
-                        <CardDisplayTable />
-                        <SearchBar placeholder="Search cards..." />
-                        <CardDisplayTable />
-                        <SearchBar placeholder="Search cards..." />
-                        <CardDisplayTable />
-                    </div>
+                    
+
                 </div>
             </div>
 
