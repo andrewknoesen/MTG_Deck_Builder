@@ -45,9 +45,9 @@ function DeckBuilder() {
                     <div style={{ flex: 1 }}>
                         <SearchBar placeholder="Search cards..." />
 
-                    <CardDisplayTable />
+                        <CardDisplayTable />
                     </div>
-                    
+
 
                 </div>
             </div>

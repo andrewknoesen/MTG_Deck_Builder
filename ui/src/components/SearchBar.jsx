@@ -63,9 +63,9 @@ export default function SearchBar({ placeholder }) {
             <IconButton sx={{ p: '1rem' }} aria-label="menu">
                 <MenuIcon />
             </IconButton>
+            <Divider sx={{ height: 'auto', m: 0.5 }} orientation="vertical" />
             <div style={{ flex: 1 }}>
                 <Autocomplete
-                    id="free-solo-2-demo"
                     freeSolo
                     disableClearable
                     onInputChange={debounce(onInputChange, 300)}
@@ -74,6 +74,7 @@ export default function SearchBar({ placeholder }) {
                     renderInput={(params) => (
                         <TextField
                             {...params}
+                            variant='outlined'
                             label="Search card"
                             InputProps={{
                                 ...params.InputProps,
@@ -84,7 +85,7 @@ export default function SearchBar({ placeholder }) {
                     )}
                 />
             </div>
-            <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
+            <Divider sx={{ height: 'auto', m: 0.5 }} orientation="vertical" />
             <IconButton type="button" sx={{ p: '1rem' }} aria-label="search">
                 <SearchIcon />
             </IconButton>
