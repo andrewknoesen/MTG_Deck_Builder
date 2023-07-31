@@ -8,6 +8,8 @@ import { width } from '@mui/system';
 import CardDisplayTable from '../components/CardDisplayTable';
 
 function DeckBuilder() {
+    const [searchQuery, setSearchQuery] = useState('');
+
 
     const baseStyle = {
         display: 'flex',
@@ -23,7 +25,6 @@ function DeckBuilder() {
         justifyContent: 'flex_start',
         backgroundColor: 'green',
         width: '20vw'
-
     };
 
     const buildPlateStyle = {
@@ -32,8 +33,11 @@ function DeckBuilder() {
         justifyContent: 'flex_start',
         backgroundColor: 'yellow',
         width: '80vw',
+    };
 
-
+    // Function to handle button click in SearchBar and update searchQuery state
+    const handleSearch = (query) => {
+        setSearchQuery(query);
     };
 
     return (
@@ -43,8 +47,7 @@ function DeckBuilder() {
             >
                 <div style={buildPlateStyle}>
                     <div style={{ flex: 1 }}>
-                        <SearchBar placeholder="Search cards..." />
-
+                        <SearchBar placeholder="Search cards..." onSearch={handleSearch}/>
                         <CardDisplayTable />
                     </div>
 

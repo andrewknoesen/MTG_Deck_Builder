@@ -11,9 +11,11 @@ import debounce from 'lodash/debounce';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 
-export default function SearchBar({ placeholder }) {
+export default function SearchBar({ placeholder, onSearch }) {
 
     const [options, setOptions] = useState([]);
+    const [searchText, setSearchText] = useState('');
+
     const previousController = useRef();
 
     const getCards = (cardName) => {
@@ -47,12 +49,40 @@ export default function SearchBar({ placeholder }) {
             .catch(error => console.log('error', error));
     }
 
+    const addCardsCollection = (name) => {
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        console.log("Got name: " + name)
+        var raw = JSON.stringify({
+            "name": name
+        });
+
+        var requestOptions = {
+            method: 'PUT',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+        };
+
+        fetch("http://localhost:5000/flask/postgres/upsert_collection_from_name", requestOptions)
+            .then(response => response.json())
+            .catch(error => console.log('error', error));
+    }
+
     const onInputChange = (event, value, reason) => {
         if (value) {
             getCards(value);
+            setSearchText(value);
         } else {
             setOptions([]);
         }
+    };
+
+    const handleButtonClick = () => {
+        // Call the onSearch callback with the current searchText when the button is clicked
+        console.log("Sending card for upsert: " + searchText)
+        addCardsCollection(searchText);
+        onSearch(searchText);
     };
 
     return (
@@ -76,6 +106,7 @@ export default function SearchBar({ placeholder }) {
                             {...params}
                             variant='outlined'
                             label="Search card"
+                            value={searchText}
                             InputProps={{
                                 ...params.InputProps,
                                 type: 'search',
@@ -86,7 +117,7 @@ export default function SearchBar({ placeholder }) {
                 />
             </div>
             <Divider sx={{ height: 'auto', m: 0.5 }} orientation="vertical" />
-            <IconButton type="button" sx={{ p: '1rem' }} aria-label="search">
+            <IconButton type="button" sx={{ p: '1rem' }} aria-label="search" onClick={handleButtonClick}>
                 <SearchIcon />
             </IconButton>
         </Paper>

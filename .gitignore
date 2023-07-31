@@ -24,3 +24,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+bulk_data/oracle-cards.json
+*.csv
