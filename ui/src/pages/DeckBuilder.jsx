@@ -6,6 +6,7 @@ import SearchBar from '../components/SearchBar';
 import Box from '@mui/material/Box';
 import { width } from '@mui/system';
 import CardDisplayTable from '../components/CardDisplayTable';
+import CardElement from '../components/CardElement'
 
 function DeckBuilder() {
     const [searchQuery, setSearchQuery] = useState('');
@@ -49,6 +50,10 @@ function DeckBuilder() {
                     <div style={{ flex: 1 }}>
                         <SearchBar placeholder="Search cards..." onSearch={handleSearch}/>
                         <CardDisplayTable />
+                        <div style={{ flex: 1 }}>
+                        <CardElement/>
+                        <CardElement/>
+                        </div>
                     </div>
 
 
