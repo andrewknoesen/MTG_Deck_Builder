@@ -48,11 +48,11 @@ function DeckBuilder() {
             >
                 <div style={buildPlateStyle}>
                     <div style={{ flex: 1 }}>
-                        <SearchBar placeholder="Search cards..." onSearch={handleSearch}/>
+                        <SearchBar placeholder="Search cards..." onSearch={handleSearch} />
                         <CardDisplayTable />
-                        <div style={{ flex: 1 }}>
-                        <CardElement/>
-                        <CardElement/>
+                        <div>
+                            <CardElement />
+                            <CardElement/>
                         </div>
                     </div>
 

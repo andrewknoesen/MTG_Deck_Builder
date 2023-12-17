@@ -1,12 +1,12 @@
 # Note: the module name is psycopg, not psycopg3
 import psycopg
 
-# from api.handlers.database.base_classes.postgres_collection import PostgresCollection
-# from api.handlers.database.base_classes.postgres_scryfall import PostgresScryfall
-# from api.handlers.database.base_classes.postgress_bulk import PostgresBulk
-from postgres_collection import PostgresCollection
-from postgres_scryfall import PostgresScryfall
-from postgress_bulk import PostgresBulk
+from api.handlers.database.base_classes.postgres_collection import PostgresCollection
+from api.handlers.database.base_classes.postgres_scryfall import PostgresScryfall
+from api.handlers.database.base_classes.postgress_bulk import PostgresBulk
+# from postgres_collection import PostgresCollection
+# from postgres_scryfall import PostgresScryfall
+# from postgress_bulk import PostgresBulk
 
 class PostgresBase:
     def __init__(self) -> None:

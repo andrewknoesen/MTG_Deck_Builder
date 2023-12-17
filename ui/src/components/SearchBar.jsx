@@ -105,7 +105,7 @@ export default function SearchBar({ placeholder, onSearch }) {
                         <TextField
                             {...params}
                             variant='outlined'
-                            label="Search card"
+                            label={placeholder}
                             value={searchText}
                             InputProps={{
                                 ...params.InputProps,

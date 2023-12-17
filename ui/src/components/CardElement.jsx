@@ -15,34 +15,6 @@ export default class CardElement extends React.Component {
         };
     }
 
-    componentDidMount() {
-        // Calculate the boundaries of the parent div after the component is mounted
-        this.updateBounds();
-        window.addEventListener('resize', this.updateBounds);
-    }
-
-    componentWillUnmount() {
-        // Clean up the event listener when the component is unmounted
-        window.removeEventListener('resize', this.updateBounds);
-    }
-
-    updateBounds = () => {
-        if (this.cardRef.current) {
-            const parentDiv = this.cardRef.current.parentElement;
-            const parentRect = parentDiv.getBoundingClientRect();
-
-            // Calculate the boundaries for the Draggable component
-            const bounds = {
-                left: parentRect.left,
-                top: parentRect.top,
-                right: parentRect.right - this.state.width,
-                bottom: parentRect.bottom - this.state.height,
-            };
-
-            this.setState({ bounds });
-        }
-    };
-
     handleDrag = (e, ui) => {
         this.setState({
             x: ui.x,
@@ -50,31 +22,17 @@ export default class CardElement extends React.Component {
         });
     };
 
-    handleResize = (e, direction, ref, delta, position) => {
-        const newWidth = parseFloat(ref.style.width);
-        const newHeight = newWidth * (360 / 200); // Maintain the aspect ratio (width:height = 200:360)
-
-        this.setState({
-            width: newWidth,
-            height: newHeight,
-            ...position,
-        });
-
-        this.updateBounds(); // Update the bounds after resizing
-    };
-
+    
     render() {
-        const { width, height, x, y, bounds } = this.state;
+        const { width, height, x, y } = this.state;
         const gridX = width * 1.1; // 110% of the image size (width)
+        const gridY = height * 0.15;
 
         return (
             <Draggable
-                nodeRef={this.cardRef} // Use the ref here
-                handle=".resize-handle"
-                grid={[gridX, 10]}
+                grid={[gridX, gridY]}
                 onDrag={this.handleDrag}
-                position={{ x, y }}
-                bounds={bounds} // Set the bounds for restricting movement
+                bounds="parent"
             >
                 <div
                     ref={this.cardRef} // Use the ref here
