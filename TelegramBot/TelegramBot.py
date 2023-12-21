@@ -1,6 +1,6 @@
 from enum import Enum, auto
 import os
-
+import requests
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 from telegram.ext import (
     Application,
@@ -33,6 +33,10 @@ class TelegramBot:
     def create_conversation_handler(self):        
         self.conv_handler = ChatFlow.conversation_handler
 
+    def send_message(self, id: str, text: str):
+        url = f"https://api.telegram.org/bot{self.token}/sendMessage?chat_id={id}&text={text}"
+        print(requests.get(url).json()) # this sends the message
+
     def start_bot(self):
         self.create_conversation_handler()
         self.application.add_handler(self.conv_handler)
@@ -43,7 +47,8 @@ class TelegramBot:
 
 
 if __name__ == '__main__':
-    env = read_env('.env')
-    bot = TelegramBot(token=env['TELEGRAM_TOKEN'])
+    # env = read_env('.env')
+    bot = TelegramBot()
     bot.start_bot()
+    # bot.send_message()
     

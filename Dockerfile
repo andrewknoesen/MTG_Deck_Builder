@@ -23,7 +23,8 @@ RUN crontab /etc/cron.d/cronfile
 # Installs dependencies found in your requirements.txt file
 RUN pip3 install -r requirements.txt
 
-RUN chmod +x /stock_alerter_main.py
+RUN chmod +x /main.py
+RUN chmod +x /scheduled_scrape.py
 
 # EXPOSE 80
 

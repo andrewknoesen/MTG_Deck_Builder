@@ -23,10 +23,12 @@ class MySql:
 
         return pd.read_sql(sql, self.connection)
 
-    def get_user_cards(self, username: str):
+    def get_user_cards(self, username: str, list_output = False):
         sql = f"SELECT card_name FROM cards WHERE username = '{username}'"
-        # df = pd.read_sql(sql, self.connection)
-        return pd.read_sql(sql, self.connection)['card_name'].to_string(index=False)
+        df = pd.read_sql(sql, self.connection)
+        if list_output:
+            return df['card_name'].to_list()
+        return df['card_name'].to_string(index=False)
 
     def remove_user(self, username: str):
         sql = f"DELETE FROM cards WHERE username = '{username}'"
@@ -64,6 +66,12 @@ class MySql:
             print('Card removed successfully!')
         except Exception as err:
             print(f'Error: {err}')
+
+    def get_users_for_card(self, card: str):
+        sql = f"SELECT DISTINCT username FROM cards where card_name = '{card}'"
+
+        df = pd.read_sql(sql, self.connection)
+        return df['username'].to_list()
 
 if __name__ == "__main__":
     my_sql = MySql('root', 'my_root_password', 'card_database')

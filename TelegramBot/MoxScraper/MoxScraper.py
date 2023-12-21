@@ -17,7 +17,7 @@ class MoxScraper:
 
         mox_response = requests.get(
             url=f"{MoxScraper.url_base}/search", params=search_parameters)
-
+        
         if mox_response.status_code == 200:
             for item in mox_response.json()['cards']:
                 if item['name'] == card_name:
