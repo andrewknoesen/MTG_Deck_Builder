@@ -14,11 +14,11 @@ services:
     ports:
       - "3307:3306"
 
-  # main:
-  #   restart: always
-  #   platform: linux/arm64/v8
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile
-  #   env_file:
-  #     - .env
+  main:
+    restart: always
+    platform: linux/arm64/v8
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
