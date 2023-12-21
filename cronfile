@@ -1,0 +1,1 @@
+* 07 * * * /usr/local/bin/python3 /stock_alerter_main.py >> /var/log/cron.log 2>&1

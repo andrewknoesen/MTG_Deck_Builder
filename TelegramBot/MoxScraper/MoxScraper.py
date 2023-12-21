@@ -50,8 +50,21 @@ class MoxScraper:
             return None
         
     def scrape_mox_df(self, card_name):
-        return pd.json_normalize(self.scrape_mox(card_name))
+        return_df = pd.json_normalize(self.scrape_mox(card_name))
+        return_df['name'] = card_name
+        return return_df
+    def format_for_retailer(self, df: pd.DataFrame):
+        columns = [
+            'name',
+            'price',
+            'retailer_name'
+        ]
+        
+        df['price'] = df['price'].apply(lambda x: f"R{x/100:.2f}")
+
+        return df[columns]
         
 if __name__ == '__main__':
     scraper = MoxScraper()
-    print(scraper.scrape_mox_df('Evolved Sleeper'))
+    print(
+        scraper.format_for_retailer(scraper.scrape_mox_df('Evolved Sleeper')))
