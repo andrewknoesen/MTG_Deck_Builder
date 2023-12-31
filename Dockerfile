@@ -3,9 +3,7 @@ FROM --platform=linux/arm64/v8 python:3.11
 
 LABEL maintainer="Andrew Knoesen"
 # Installs python, removes cache file to make things smaller
-RUN apt update -y && \
-    apt install -y cron && \
-    rm -Rf /var/cache/apt
+RUN apt update -y && apt install -y cron && rm -Rf /var/cache/apt
 
 # Copies requirements.txt file into the container
 COPY . .
