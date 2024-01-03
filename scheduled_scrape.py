@@ -3,7 +3,6 @@ from TelegramBot.TelegramBot import TelegramBot
 from TelegramBot.MySql.MySql import MySql
 from TelegramBot.MoxScraper.MoxScraper import MoxScraper
 import pandas as pd
-from tabulate import tabulate
 
 
 def read_env(path):
@@ -16,7 +15,7 @@ def read_env(path):
     return env
 
 def main():
-    # env = read_env('.env')
+    env = read_env('.env')
     
     bot = TelegramBot()
     my_sql = MySql()

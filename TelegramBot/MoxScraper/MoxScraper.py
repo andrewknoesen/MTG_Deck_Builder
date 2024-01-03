@@ -53,14 +53,25 @@ class MoxScraper:
         return_df = pd.json_normalize(self.scrape_mox(card_name))
         return_df['name'] = card_name
         return return_df
+
+    def convert_price(self, x):
+        try:
+            return f"R{x/100:.2f}"
+        except Exception as e:
+            print(f"Error converting value: {e}")
+            return x  # Return original value if conversion fails
+        
     def format_for_retailer(self, df: pd.DataFrame):
+        if df.empty:
+            return df
         columns = [
             'name',
             'price',
             'retailer_name'
         ]
-        
-        df['price'] = df['price'].apply(lambda x: f"R{x/100:.2f}")
+
+        print(df)
+        df['price'] = df['price'].apply(lambda x: self.convert_price(x))
 
         return df[columns]
         

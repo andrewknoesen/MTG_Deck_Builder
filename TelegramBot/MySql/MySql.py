@@ -4,7 +4,7 @@ import pandas as pd
 
 
 class MySql:
-    def __init__(self, user: str | None = None, password: str | None = None, database: str | None = None):
+    def __init__(self, user: str | None = None, password: str | None = None, database: str | None = None, host: str | None = None):
         if user is None:
             user = os.environ['MYSQL_USER']
 
@@ -14,7 +14,11 @@ class MySql:
         if database is None:
             database = os.environ['MYSQL_DATABASE']
 
-        connection_config = f'mysql+mysqlconnector://{user}:{password}@localhost:3307/{database}?&autocommit=true'
+        if host is None:
+            host = os.environ['LOCAL_IP']
+        
+
+        connection_config = f'mysql+mysqlconnector://{user}:{password}@{host}:3307/{database}?&autocommit=true'
         engine = create_engine(connection_config)
         self.connection = engine.connect()
 
@@ -56,6 +60,7 @@ class MySql:
             else:
                 print(f'Error: {e}')
         except Exception as e:
+            self.connection.rollback()
             print(f'Error: {e}')
 
     def remove_card(self, username: str, card: str):
@@ -65,6 +70,7 @@ class MySql:
             self.connection.execute(text(sql))
             print('Card removed successfully!')
         except Exception as err:
+            self.connection.rollback()
             print(f'Error: {err}')
 
     def get_users_for_card(self, card: str):

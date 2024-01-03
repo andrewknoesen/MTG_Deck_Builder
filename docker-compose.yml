@@ -6,8 +6,8 @@ services:
     image: mysql:8.0
     command: --default-authentication-plugin=mysql_native_password
     volumes:
-      - ./telegrambot/mysql/dbdata:/var/lib/mysql
-      - ./telegrambot/mysql/init/:/docker-entrypoint-initdb.d
+      - ./TelegramBot/MySql/dbdata:/var/lib/mysql
+      - ./TelegramBot/MySql/init/:/docker-entrypoint-initdb.d
     restart: always
     env_file:
       - .env
@@ -15,8 +15,9 @@ services:
       - "3307:3306"
 
   main:
+    container_name: mtg_telegram_alerter
     restart: always
-    platform: linux/arm64/v8
+    # platform: linux/arm64/v8
     build:
       context: .
       dockerfile: Dockerfile
