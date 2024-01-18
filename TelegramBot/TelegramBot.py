@@ -40,7 +40,7 @@ class TelegramBot:
     def start_bot(self):
         self.create_conversation_handler()
         self.application.add_handler(self.conv_handler)
-
+        self.application.add_error_handler(ChatFlow.chat_functions.error_handler)
         # Run the bot until the user presses Ctrl-C
         self.application.run_polling(allowed_updates=Update.ALL_TYPES)
 

@@ -1,4 +1,10 @@
 import asyncio
+import html
+import json
+import logging
+import os
+import traceback
+from telegram.constants import ParseMode
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 from telegram.ext import (
     Application,
@@ -15,17 +21,24 @@ from .ChatStates import States
 from .Scryfall.Scryfall import Scryfall
 from .MySql.MySql import MySql
 
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s | %(name)s | ChatFlow | %(levelname)s | %(message)s',
+    force=True
+)
+
+DEVELOPER_CHAT_ID = os.environ['DEV_CHAT_ID']
 
 class ChatFunctions:
     def __init__(self) -> None:
-        self.my_sql = MySql('root', 'my_root_password', 'card_database')
+        self.my_sql = MySql()
         self.scryfall = Scryfall()
 
     async def done(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         """Display the gathered info and end the conversation."""
         await update.message.reply_text(
             f"Cheers!",
-            reply_markup=ReplyKeyboardRemove(),
+            reply_markup=Markup.start_bot,
         )
 
         return ConversationHandler.END
@@ -130,6 +143,33 @@ class ChatFunctions:
         )
 
         return States.CHOOSING
+
+    async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
+        """Log the error and send a telegram message to notify the developer."""
+        # Log the error before we do anything else, so we can see it even if something breaks.
+        logging.error("Exception while handling an update:", exc_info=context.error)
+
+        # traceback.format_exception returns the usual python message about an exception, but as a
+        # list of strings rather than a single string, so we have to join them together.
+        tb_list = traceback.format_exception(None, context.error, context.error.__traceback__)
+        tb_string = "".join(tb_list)
+
+        # Build the message with some markup and additional information about what happened.
+        # You might need to add some logic to deal with messages longer than the 4096 character limit.
+        update_str = update.to_dict() if isinstance(update, Update) else str(update)
+        message = (
+            "An exception was raised while handling an update\n"
+            f"<pre>update = {html.escape(json.dumps(update_str, indent=2, ensure_ascii=False))}"
+            "</pre>\n\n"
+            f"<pre>context.chat_data = {html.escape(str(context.chat_data))}</pre>\n\n"
+            f"<pre>context.user_data = {html.escape(str(context.user_data))}</pre>\n\n"
+            f"<pre>{html.escape(tb_string)}</pre>"
+        )
+
+        # Finally, send the message
+        await context.bot.send_message(
+            chat_id=DEVELOPER_CHAT_ID, text=message, parse_mode=ParseMode.HTML
+        )
 
 
 class ChatFlow:
