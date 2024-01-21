@@ -5,3 +5,4 @@ __pycahce__
 node_modules
 .env
 **/dbdata/**
+node_modules
