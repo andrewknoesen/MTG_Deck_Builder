@@ -11,7 +11,7 @@ from telegram.ext import (
     filters,
 )
 
-from .ChatFlow import ChatFlow
+from TelegramBot.ChatFlow import ChatFlow
 
 def read_env(path):
     with open(path) as f:

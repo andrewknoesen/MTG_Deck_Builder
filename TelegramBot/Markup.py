@@ -6,6 +6,7 @@ class Keyboards:
 
     start_keyboard = [
         ["Get Current Cards"],
+        ["Scrape Current Cards"],
         ["Update Cards"],
         ["Done"]
     ]

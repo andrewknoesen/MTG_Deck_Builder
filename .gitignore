@@ -6,3 +6,6 @@ node_modules
 .env
 **/dbdata/**
 node_modules
+mtg_deck_builder.egg-info
+build/**
+**/*.pyc

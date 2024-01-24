@@ -1,31 +1,25 @@
-import asyncio
 import html
 import json
-import logging
 import os
 import traceback
+from anyio import sleep
 from telegram.constants import ParseMode
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 from telegram.ext import (
-    Application,
     CommandHandler,
     ContextTypes,
     ConversationHandler,
     MessageHandler,
     filters,
 )
+from CustomLogger.CustomLogger import log_error
+from MoxScraper.MoxScraper import MoxScraper
+from TelegramBot.Markup import Markup
 
-from .Markup import Markup
+from TelegramBot.ChatStates import States
+from Scryfall.Scryfall import Scryfall
+from MySql.MySql import MySql
 
-from .ChatStates import States
-from .Scryfall.Scryfall import Scryfall
-from .MySql.MySql import MySql
-
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s | %(name)s | ChatFlow | %(levelname)s | %(message)s',
-    force=True
-)
 
 DEVELOPER_CHAT_ID = os.environ['DEV_CHAT_ID']
 
@@ -33,6 +27,7 @@ class ChatFunctions:
     def __init__(self) -> None:
         self.my_sql = MySql()
         self.scryfall = Scryfall()
+        self.mox_scraper = MoxScraper()
 
     async def done(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         """Display the gathered info and end the conversation."""
@@ -54,10 +49,32 @@ class ChatFunctions:
         return States.CHOOSING
 
     async def get_cards(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-        """Start the conversation and ask user for input."""
+        """Get the current cards in the db."""
         cards = self.my_sql.get_user_cards(update.message.from_user.id)
         await update.message.reply_text(
             f"Your cards are: \n{cards}",
+            reply_markup=Markup.start_markup,
+        )
+
+        return States.CHOOSING
+
+    async def scrape_current_cards(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+        """Scrape for the current cards in the db."""
+        cards = self.my_sql.list_all()['card_name'].unique().tolist()
+        await update.message.reply_text(
+            'The following cards you are looking for are available:'
+        )
+
+        for item in cards:
+            df = self.mox_scraper.format_for_retailer(self.mox_scraper.scrape_mox_df(item))
+            if not df.empty:
+                await update.message.reply_text(
+                    f'{df}'
+                )
+
+            await sleep(5)
+        await update.message.reply_text(
+            f"Scrape complete",
             reply_markup=Markup.start_markup,
         )
 
@@ -147,7 +164,7 @@ class ChatFunctions:
     async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
         """Log the error and send a telegram message to notify the developer."""
         # Log the error before we do anything else, so we can see it even if something breaks.
-        logging.error("Exception while handling an update:", exc_info=context.error)
+        log_error("Exception while handling an update:", exc_info=context.error)
 
         # traceback.format_exception returns the usual python message about an exception, but as a
         # list of strings rather than a single string, so we have to join them together.
@@ -184,6 +201,10 @@ class ChatFlow:
                 MessageHandler(
                     filters.Regex(
                         "^Get Current Cards$"), chat_functions.get_cards
+                ),
+                MessageHandler(
+                    filters.Regex(
+                        "^Scrape Current Cards$"), chat_functions.scrape_current_cards
                 ),
                 MessageHandler(
                     filters.Regex(

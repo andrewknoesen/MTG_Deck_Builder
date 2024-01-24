@@ -1,10 +1,9 @@
-FROM python:3.11
+FROM python:3.10
 # FROM --platform=linux/arm64/v8 python:3.11
 
 LABEL maintainer="Andrew Knoesen"
 # Installs python, removes cache file to make things smaller
-RUN apt update -y
-RUN apt install -y cron 
+RUN apt update -y &&  apt install -y cron 
 RUN rm -Rf /var/cache/apt
 
 # Copies requirements.txt file into the container
@@ -21,10 +20,11 @@ RUN chmod 0644 /etc/cron.d/cronfile
 RUN crontab /etc/cron.d/cronfile
 
 # Installs dependencies found in your requirements.txt file
-RUN pip3 install -r requirements.txt
+# RUN pip3 install -r requirements.txt
+RUN pip3 install .
 
 RUN chmod +x /main.py
-RUN chmod +x /scheduled_scrape.py
+RUN chmod +x /MoxScraper/scheduled_scrape.py
 
 # EXPOSE 80
 

@@ -1,12 +1,8 @@
 import requests
 import pandas as pd
-import logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s | %(name)s | MoxScraper.py | %(levelname)s | %(message)s',
-    force=True
-)
+from CustomLogger.CustomLogger import log_message, log_error
+
 class MoxScraper:
 
     url_base: str = 'https://moxmonolith.com/card'
@@ -42,7 +38,7 @@ class MoxScraper:
         )
 
         if mox_response.status_code == 200:
-            logging.info(f"API Response: {mox_response.json()['products']}")
+            log_message(f"API Response: {mox_response.json()['products']}")
             return mox_response.json()['products']
         else: 
             return None
@@ -52,7 +48,7 @@ class MoxScraper:
         id: None | int = self.get_id(card_name)
 
         if id is not None:
-            logging.info(f'Querying for {card_name}')
+            log_message(f'Querying for {card_name}')
             return self.get_cards(id)
         else:
             return None
@@ -69,7 +65,7 @@ class MoxScraper:
         try:
             return f"R{x/100:.2f}"
         except Exception as e:
-            logging.error(f"Error converting value: {e}")
+            (f"Error converting value: {e}")
             return x  # Return original value if conversion fails
         
     def format_for_retailer(self, df: pd.DataFrame):
@@ -81,7 +77,7 @@ class MoxScraper:
             'retailer_name'
         ]
 
-        logging.info(df)
+        log_message(df)
         df['price'] = df['price'].apply(lambda x: self.convert_price(x))
 
         return df[columns]

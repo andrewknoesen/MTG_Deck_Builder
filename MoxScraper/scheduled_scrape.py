@@ -4,8 +4,8 @@ load_dotenv('/.env')
 
 from time import sleep
 from TelegramBot.TelegramBot import TelegramBot
-from TelegramBot.MySql.MySql import MySql
-from TelegramBot.MoxScraper.MoxScraper import MoxScraper
+from MySql.MySql import MySql
+from MoxScraper.MoxScraper import MoxScraper
 import pandas as pd
 
 def read_env(path):

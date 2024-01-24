@@ -1,4 +1,4 @@
-from .MySql import MySql
+from MySql.MySql import MySql
 
 class MySqlTelegramWrapper:
     def __init__(self, case: str):

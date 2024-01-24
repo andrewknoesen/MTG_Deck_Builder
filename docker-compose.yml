@@ -6,8 +6,9 @@ services:
     image: mysql:8.0
     command: --default-authentication-plugin=mysql_native_password
     volumes:
-      - ./TelegramBot/MySql/dbdata:/var/lib/mysql
-      - ./TelegramBot/MySql/init/:/docker-entrypoint-initdb.d
+      - ./MySql/dbdata:/var/lib/mysql
+      - ./MySql/init/:/docker-entrypoint-initdb.d
+      # - ./MySql/config/my.cnf:/etc/mysql/my.cnf
     restart: always
     env_file:
       - .env
