@@ -1,1 +1,1 @@
-0 07 * * * /usr/local/bin/python3 /MoxScraper/scheduled_scrape.py >> /var/log/cron.log 2>&1
+0 06 * * * /usr/local/bin/python3 /scheduled_scrape.py >> /var/log/cron.log 2>&1

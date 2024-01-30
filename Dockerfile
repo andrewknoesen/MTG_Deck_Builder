@@ -21,10 +21,11 @@ RUN crontab /etc/cron.d/cronfile
 
 # Installs dependencies found in your requirements.txt file
 # RUN pip3 install -r requirements.txt
-RUN pip3 install .
+# RUN pip3 install .
+RUN python3 setup.py install
 
 RUN chmod +x /main.py
-RUN chmod +x /MoxScraper/scheduled_scrape.py
+RUN chmod +x scheduled_scrape.py
 
 # EXPOSE 80
 
