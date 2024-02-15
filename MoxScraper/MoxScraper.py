@@ -6,7 +6,7 @@ from CustomLogger.CustomLogger import log_message, log_error
 class MoxScraper:
 
     url_base: str = 'https://moxmonolith.com/card'
-    retailers: list = [2, 3, 4, 6, 11, 13, 15, 16, 18, 19, 20, 21, 26, 34, 5]
+    retailers: list = [2, 3, 4, 6, 11, 13, 15, 16, 18, 19, 20, 21, 26, 34, 36]
 
     def __init__(self) -> None:
         pass
@@ -24,6 +24,7 @@ class MoxScraper:
             for item in mox_response.json()['cards']:
                 if item['name'] == card_name:
                     return item['id']
+        log_error(mox_response.json())
         return None  # Return None if the item is not found
 
     def get_cards(self, card_id: int) -> list[dict] | None:
@@ -40,7 +41,8 @@ class MoxScraper:
         if mox_response.status_code == 200:
             log_message(f"API Response: {mox_response.json()['products']}")
             return mox_response.json()['products']
-        else: 
+        else:
+            log_error(mox_response.json()) 
             return None
     
     def scrape_mox(self, card_name: str) -> list[dict] | None:

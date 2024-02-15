@@ -9,3 +9,4 @@ node_modules
 mtg_deck_builder.egg-info
 build/**
 **/*.pyc
+dist/**
