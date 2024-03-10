@@ -81,6 +81,13 @@ class MySql:
         except Exception as err:
             self.connection.rollback()
             log_error(f'Error: {err}')
+            
+    def get_users(self):
+        sql = f'SELECT DISTINCT username FROM cards'
+        log_message(f'SQL query="{sql}"')
+
+        df = pd.read_sql(sql, self.connection)
+        return df['username'].to_list()
 
     def get_users_for_card(self, card: str):
         sql = f'SELECT DISTINCT username FROM cards where card_name = "{card}"'

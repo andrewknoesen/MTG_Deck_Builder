@@ -32,6 +32,13 @@ class TelegramBot:
 
     def create_conversation_handler(self):        
         self.conv_handler = ChatFlow.conversation_handler
+        
+    def send_image(self, id: str, image_path: str):
+        url = f"https://api.telegram.org/bot{self.token}/sendPhoto"
+        files = {'photo': open(image_path, 'rb')}
+        data = {'chat_id': id}
+        response = requests.post(url, files=files, data=data)
+        print(response.json())
 
     def send_message(self, id: str, text: str):
         url = f"https://api.telegram.org/bot{self.token}/sendMessage?chat_id={id}&text={text}"
