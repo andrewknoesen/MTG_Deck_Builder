@@ -24,13 +24,13 @@ class MySql:
         self.connection = engine.connect()
 
     def list_all(self):
-        sql = f"SELECT * FROM cards"
+        sql = f'SELECT * FROM cards'
         log_message(f'SQL query="{sql}"')
 
         return pd.read_sql(sql, self.connection)
 
     def get_user_cards(self, username: str, list_output = False):
-        sql = f"SELECT card_name FROM cards WHERE username = '{username}'"
+        sql = f'SELECT card_name FROM cards WHERE username = "{username}"'
         log_message(f'SQL query="{sql}"')
         df = pd.read_sql(sql, self.connection)
         if list_output:
@@ -38,13 +38,13 @@ class MySql:
         return df['card_name'].to_string(index=False)
 
     def remove_user(self, username: str):
-        sql = f"DELETE FROM cards WHERE username = '{username}'"
+        sql = f'DELETE FROM cards WHERE username = "{username}"'
         log_message(f'SQL query="{sql}"')
 
         self.connection.execute(text(sql))
 
     def check_user_exits(self, username: str):
-        sql = f"SELECT * FROM cards WHERE username = '{username}'"
+        sql = f'SELECT * FROM cards WHERE username = "{username}"'
         log_message(f'SQL query="{sql}"')
         user = self.connection.execute(text(sql))
 
@@ -54,7 +54,7 @@ class MySql:
             return True
 
     def add_card(self, username: str, card: str):
-        sql = f"INSERT INTO cards (username, card_name) VALUES ('{username}', '{card}')"
+        sql = f'INSERT INTO cards (username, card_name) VALUES ("{username}", "{card}")'
         log_message(f'SQL query="{sql}"')
 
         try:
@@ -70,7 +70,7 @@ class MySql:
             log_error(f'Error: {e}')
 
     def remove_card(self, username: str, card: str):
-        sql = f"DELETE FROM cards WHERE username = '{username}' AND card_name = '{card}'"
+        sql = f'DELETE FROM cards WHERE username = "{username}" AND card_name = "{card}"'
         log_message(f'SQL query="{sql}"')
 
         try:
@@ -81,7 +81,7 @@ class MySql:
             log_error(f'Error: {err}')
 
     def get_users_for_card(self, card: str):
-        sql = f"SELECT DISTINCT username FROM cards where card_name = '{card}'"
+        sql = f'SELECT DISTINCT username FROM cards where card_name = "{card}"'
         log_message(f'SQL query="{sql}"')
 
         df = pd.read_sql(sql, self.connection)
