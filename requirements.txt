@@ -5,3 +5,4 @@ SQLAlchemy==2.0.19
 mysql-connector-python==8.2.0
 python-dotenv==1.0.0
 setuptools>=61.0
+matplotlib==3.8.3

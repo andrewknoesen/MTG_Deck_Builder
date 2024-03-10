@@ -3,7 +3,7 @@ FROM python:3.10
 
 LABEL maintainer="Andrew Knoesen"
 # Installs python, removes cache file to make things smaller
-RUN apt update -y &&  apt install -y cron 
+RUN apt update -y &&  apt install -y cron
 RUN rm -Rf /var/cache/apt
 
 # Copies requirements.txt file into the container

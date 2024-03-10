@@ -23,8 +23,10 @@ class MySql:
         engine = create_engine(connection_config)
         self.connection = engine.connect()
 
-    def list_all(self):
+    def list_all(self, username = None):
         sql = f'SELECT * FROM cards'
+        if username is not None:
+            sql = f'{sql} WHERE username = "{username}"'
         log_message(f'SQL query="{sql}"')
 
         return pd.read_sql(sql, self.connection)

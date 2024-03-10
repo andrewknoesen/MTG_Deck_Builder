@@ -3,6 +3,7 @@ import json
 import os
 import traceback
 from anyio import sleep
+import pandas as pd
 from telegram.constants import ParseMode
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 from telegram.ext import (
@@ -12,9 +13,10 @@ from telegram.ext import (
     MessageHandler,
     filters,
 )
-from CustomLogger.CustomLogger import log_error
+from CustomLogger.CustomLogger import log_error, log_message
 from MoxScraper.MoxScraper import MoxScraper
 from TelegramBot.Markup import Markup
+import matplotlib.pyplot as plt
 
 from TelegramBot.ChatStates import States
 from Scryfall.Scryfall import Scryfall
@@ -60,19 +62,33 @@ class ChatFunctions:
 
     async def scrape_current_cards(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         """Scrape for the current cards in the db."""
-        cards = self.my_sql.list_all()['card_name'].unique().tolist()
+        cards = self.my_sql.list_all(update.message.from_user.id)['card_name'].unique().tolist()
+        log_message(f'Cards \n {cards}')
         await update.message.reply_text(
             'The following cards you are looking for are available:'
         )
 
+        appended_df = pd.DataFrame()
+
         for item in cards:
             df = self.mox_scraper.format_for_retailer(self.mox_scraper.scrape_mox_df(item))
             if not df.empty:
-                await update.message.reply_text(
-                    f'{df}'
-                )
+                # Append the current DataFrame to the existing one
+                appended_df = pd.concat([appended_df, df], ignore_index=True)
 
             await sleep(5)
+            
+        # Plot DataFrame
+        plt.figure(figsize=(8, 6))  # Adjust size as needed
+        plt.table(cellText=appended_df.values, colLabels=appended_df.columns, loc='center')
+        plt.axis('off')  # Hide axis
+        plt.savefig('output.png', bbox_inches='tight', pad_inches=0)  # Save plot as image
+        plt.close()
+
+        # Send the image to Telegram
+        with open('output.png', 'rb') as img:
+            await update.message.reply_photo(img)
+            
         await update.message.reply_text(
             f"Scrape complete",
             reply_markup=Markup.start_markup,
