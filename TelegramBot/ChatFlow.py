@@ -177,7 +177,7 @@ class ChatFunctions:
 
         return States.CHOOSING
 
-    async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
+    async def error_handler(self, update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
         """Log the error and send a telegram message to notify the developer."""
         # Log the error before we do anything else, so we can see it even if something breaks.
         log_error("Exception while handling an update:", exc_info=context.error)
