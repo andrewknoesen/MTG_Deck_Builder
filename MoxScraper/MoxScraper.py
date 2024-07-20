@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 
-from CustomLogger.CustomLogger import log_message, log_error
+from CustomLogger.CustomLogger import log_message, log_error, log_info
 
 class MoxScraper:
 
@@ -24,7 +24,7 @@ class MoxScraper:
             for item in mox_response.json()['cards']:
                 if item['name'] == card_name:
                     return item['id']
-        log_error(mox_response.json())
+        log_error(f'{card_name}: \n Query params: {search_parameters} \n {mox_response.json()}')
         return None  # Return None if the item is not found
 
     def get_cards(self, card_id: int) -> list[dict] | None:
@@ -38,11 +38,13 @@ class MoxScraper:
             params=params
         )
 
+        log_message(f"Response code: {mox_response.status_code}")
+        
         if mox_response.status_code == 200:
-            log_message(f"API Response: {mox_response.json()['products']}")
+            log_info(f"API Response: {mox_response.json()['products']}")
             return mox_response.json()['products']
         else:
-            log_error(mox_response.json()) 
+            log_error(f'{card_id}: \n Query params: {params} \n {mox_response.json()}') 
             return None
     
     def scrape_mox(self, card_name: str) -> list[dict] | None:
@@ -73,13 +75,16 @@ class MoxScraper:
     def format_for_retailer(self, df: pd.DataFrame):
         if df.empty:
             return df
+        
         columns = [
+            'id',
             'name',
             'price',
+            'stock',
             'retailer_name'
         ]
 
-        log_message(df)
+        log_info(df)
         df['price'] = df['price'].apply(lambda x: self.convert_price(x))
 
         return df[columns]
