@@ -22,7 +22,9 @@ class OrderOptimizer:
             'UnderworldConnections': 0,
             'TCG Trader': 100,
             'Untapped Lands': 100,
-            'Battle Bunker Paarl': 0
+            'Battle Bunker Paarl': 0,
+            'D20Battleground': 90,
+            'Big Bang Shop': 100
         }
 
     def optimize(self, df: pd.DataFrame, orders: list[dict]):
