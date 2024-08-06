@@ -23,9 +23,9 @@ logger = logging.getLogger(__name__)
 
 def log_message(msg: str, log_level=CustomLogLevel.CUSTOM_LEVEL):
     if log_level == CustomLogLevel.CUSTOM_LEVEL:
-        logger.custom(msg, stacklevel=2)
+        logger.custom(msg, stacklevel=3)
     else:
-        logger.log(log_level, msg, stacklevel=2)
+        logger.log(log_level, msg, stacklevel=3)
         
 def log_error(msg):
     log_message(msg, logging.ERROR)
