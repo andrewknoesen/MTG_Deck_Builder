@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.12
 # FROM --platform=linux/arm64/v8 python:3.11
 
 LABEL maintainer="Andrew Knoesen"
@@ -9,6 +9,11 @@ RUN rm -Rf /var/cache/apt
 # Copies requirements.txt file into the container
 COPY . .
 
+# Installs dependencies found in your requirements.txt file
+# RUN pip3 install -r requirements.txt
+# RUN pip3 install .
+RUN python3 setup.py install
+
 # Copy the cron file to the container
 COPY cronfile /etc/cron.d/cronfile
 RUN touch /var/log/cron.log
@@ -18,11 +23,6 @@ RUN chmod 0644 /etc/cron.d/cronfile
 
 # Apply the cron job
 RUN crontab /etc/cron.d/cronfile
-
-# Installs dependencies found in your requirements.txt file
-# RUN pip3 install -r requirements.txt
-# RUN pip3 install .
-RUN python3 setup.py install
 
 RUN chmod +x /main.py
 RUN chmod +x scheduled_scrape.py

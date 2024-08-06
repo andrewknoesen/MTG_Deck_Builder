@@ -43,10 +43,14 @@ def main():
             sleep(5)
             
         # Plot DataFrame
-        plt.figure(figsize=(8, 6))  # Adjust size as needed
+        ratio = 3/2
+        scale = 20
+        x = scale * ratio
+        y = x / (2/3)
+        plt.figure(figsize=(x, y))  # Adjust size as needed
         plt.table(cellText=appended_df.values, colLabels=appended_df.columns, loc='center')
         plt.axis('off')  # Hide axis
-        plt.savefig('/output.png', bbox_inches='tight', pad_inches=0)  # Save plot as image
+        plt.savefig('output.png', bbox_inches='tight', pad_inches=0.1, dpi=600)  # Save plot as image
         plt.close()
 
         # Send the image to Telegram
