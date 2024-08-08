@@ -7,11 +7,13 @@ RUN apt update -y &&  apt install -y cron
 RUN rm -Rf /var/cache/apt
 
 # Copies requirements.txt file into the container
-COPY . .
+COPY src .
+
+COPY requirements.txt .
+
+COPY *.py .
 
 # Installs dependencies found in your requirements.txt file
-# RUN pip3 install -r requirements.txt
-# RUN pip3 install .
 RUN python3 setup.py install
 
 # Copy the cron file to the container

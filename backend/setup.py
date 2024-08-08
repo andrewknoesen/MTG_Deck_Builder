@@ -7,7 +7,8 @@ with open('requirements.txt', 'r') as fh:
 
 setup(
     name='mtg_deck_builder',
-    packages=find_packages(),
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'},
     install_requires=requirements_list,
     keywords=['python', 'MTG_DECK_BUILDER'],
     classifiers=[
