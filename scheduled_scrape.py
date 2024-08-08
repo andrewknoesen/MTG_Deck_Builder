@@ -1,6 +1,8 @@
 from dotenv import load_dotenv, find_dotenv
 import matplotlib.pyplot as plt
 
+from CustomLogger.CustomLogger import log_message
+
 
 load_dotenv('/.env')
 
@@ -54,8 +56,14 @@ def main():
         plt.close()
 
         # Send the image to Telegram
+        log_message("===========================================================")
+        log_message("Attempting to send report")
+        log_message("===========================================================")
         bot.send_image(id=user, image_path='/output.png')
-            
+        log_message("===========================================================")
+        log_message("Report sent")
+        log_message("===========================================================")
+
 
     # cards = my_sql.list_all()['card_name'].unique().tolist()
 

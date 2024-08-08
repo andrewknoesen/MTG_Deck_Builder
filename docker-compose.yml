@@ -8,6 +8,8 @@ services:
       - ./MySql/init/:/docker-entrypoint-initdb.d
       # - ./MySql/config/my.cnf:/etc/mysql/my.cnf
     restart: always
+    environment:
+      - TZ=Africa/Johannesburg
     env_file:
       - .env
     ports:
@@ -16,6 +18,8 @@ services:
   main:
     container_name: mtg_telegram_alerter
     restart: always
+    environment:
+      - TZ=Africa/Johannesburg
     # platform: linux/arm64/v8
     build:
       context: .
