@@ -1,5 +1,7 @@
 from TelegramBot.TelegramBot import TelegramBot
 
+from CustomLogger.CustomLogger import log_message
+
 def read_env(path):
     with open(path) as f:
         lines = f.readlines()
@@ -20,4 +22,5 @@ def main():
     t.start_bot()
 
 if __name__ == "__main__":
+    log_message('Bot is running')
     main()
