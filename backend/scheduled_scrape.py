@@ -46,7 +46,7 @@ def main():
             
         # Plot DataFrame
         ratio = 3/2
-        scale = 20
+        scale = 5
         x = scale * ratio
         y = x / (2/3)
         plt.figure(figsize=(x, y))  # Adjust size as needed
