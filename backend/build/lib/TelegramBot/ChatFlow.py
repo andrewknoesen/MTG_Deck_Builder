@@ -17,6 +17,8 @@ from CustomLogger.CustomLogger import log_error, log_message
 from MoxScraper.MoxScraper import MoxScraper
 from TelegramBot.Markup import Markup
 import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+
 
 from TelegramBot.ChatStates import States
 from Scryfall.Scryfall import Scryfall
@@ -89,12 +91,16 @@ class ChatFunctions:
         plt.figure(figsize=(x, y))  # Adjust size as needed
         plt.table(cellText=appended_df.values, colLabels=appended_df.columns, loc='center')
         plt.axis('off')  # Hide axis
-        plt.savefig('output.png', bbox_inches='tight', pad_inches=0.1, dpi=600)  # Save plot as image
+        # plt.savefig('output.png', bbox_inches='tight', pad_inches=0.1, dpi=600)  # Save plot as image
+        with PdfPages('output.pdf') as pdf:
+            pdf.savefig(bbox_inches='tight', pad_inches=0.1)        
         plt.close()
 
         # Send the image to Telegram
-        with open('output.png', 'rb') as img:
-            await update.message.reply_photo(img)
+        # with open('output.png', 'rb') as img:
+        #     await update.message.reply_photo(img)
+        with open('output.pdf', 'rb') as doc:
+            await update.message.reply_document(doc)
             
         await update.message.reply_text(
             f"Scrape complete",

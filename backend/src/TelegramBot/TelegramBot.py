@@ -10,6 +10,7 @@ from telegram.ext import (
     MessageHandler,
     filters,
 )
+from CustomLogger.CustomLogger import log_error, log_message
 
 from TelegramBot.ChatFlow import ChatFlow
 
@@ -38,11 +39,18 @@ class TelegramBot:
         files = {'photo': open(image_path, 'rb')}
         data = {'chat_id': id}
         response = requests.post(url, files=files, data=data)
-        print(response.json())
-
+        log_message(response.json())
+        
+    def send_media(self, id: str, file_path: str):
+        url = f"https://api.telegram.org/bot{self.token}/sendDocument"
+        files = {'document': open(file_path, 'rb')}
+        data = {'chat_id': id}
+        response = requests.post(url, files=files, data=data)
+        log_message(response.json())
+        
     def send_message(self, id: str, text: str):
         url = f"https://api.telegram.org/bot{self.token}/sendMessage?chat_id={id}&text={text}"
-        print(requests.get(url).json()) # this sends the message
+        log_message(requests.get(url).json()) # this sends the message
 
     def start_bot(self):
         self.create_conversation_handler()
