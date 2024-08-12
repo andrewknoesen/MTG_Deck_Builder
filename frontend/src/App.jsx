@@ -4,6 +4,7 @@ import './App.css'
 import FreeSolo from './assets/components/SearchBar'
 import EnhancedTable from './assets/components/Table'
 import AddButton from './assets/components/AddButton'
+import ScrapeButton from './assets/components/ScrapeButton'
 import Stack from '@mui/material/Stack';
 import { height } from '@mui/system';
 
@@ -49,6 +50,7 @@ function App() {
               <AddButton text={text} onAdd={() => addFunction && addFunction(text)} />
             </div>
           </div>
+            <ScrapeButton/>
           <EnhancedTable onAdd={handleAddFunction}/>
         </Stack>
       </div>
