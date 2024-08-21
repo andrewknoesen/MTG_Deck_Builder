@@ -1,5 +1,6 @@
 from dotenv import load_dotenv, find_dotenv
 import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
 
 from CustomLogger.CustomLogger import log_message
 
@@ -52,14 +53,18 @@ def main():
         plt.figure(figsize=(x, y))  # Adjust size as needed
         plt.table(cellText=appended_df.values, colLabels=appended_df.columns, loc='center')
         plt.axis('off')  # Hide axis
-        plt.savefig('output.png', bbox_inches='tight', pad_inches=0.1, dpi=600)  # Save plot as image
+        # plt.savefig('output.png', bbox_inches='tight', pad_inches=0.1, dpi=600)  # Save plot as image
+        # Save the figure to a PDF file
+        with PdfPages('output.pdf') as pdf:
+            pdf.savefig(bbox_inches='tight', pad_inches=0.1)        
         plt.close()
 
         # Send the image to Telegram
         log_message("===========================================================")
         log_message("Attempting to send report")
         log_message("===========================================================")
-        bot.send_image(id=user, image_path='/output.png')
+        bot.send_media(id=user, image_path='/output.png')
+        bot.send_message
         log_message("===========================================================")
         log_message("Report sent")
         log_message("===========================================================")
