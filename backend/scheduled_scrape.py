@@ -27,10 +27,6 @@ def main():
     my_sql = MySql()
     mox_scraper = MoxScraper()
     
-    # Get users
-    # Run list_all for user
-    # run image gen
-    
     users = my_sql.get_users()
     
     for user in users:
@@ -53,7 +49,6 @@ def main():
         plt.figure(figsize=(x, y))  # Adjust size as needed
         plt.table(cellText=appended_df.values, colLabels=appended_df.columns, loc='center')
         plt.axis('off')  # Hide axis
-        # plt.savefig('output.png', bbox_inches='tight', pad_inches=0.1, dpi=600)  # Save plot as image
         # Save the figure to a PDF file
         with PdfPages('output.pdf') as pdf:
             pdf.savefig(bbox_inches='tight', pad_inches=0.1)        
@@ -63,8 +58,8 @@ def main():
         log_message("===========================================================")
         log_message("Attempting to send report")
         log_message("===========================================================")
-        bot.send_media(id=user, image_path='/output.png')
-        bot.send_message
+        bot.send_media(id=user, file_path='/output.pdf')
+        # bot.send_message
         log_message("===========================================================")
         log_message("Report sent")
         log_message("===========================================================")

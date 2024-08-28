@@ -42,13 +42,20 @@ class MySql:
     def remove_user(self, username: str):
         sql = f'DELETE FROM cards WHERE username = "{username}"'
         log_message(f'SQL query="{sql}"')
-
-        self.connection.execute(text(sql))
-
+        try:
+            self.connection.execute(text(sql))
+        except Exception as e:
+            self.connection.rollback()
+            log_error(f'Error: {e}')
+        
     def check_user_exits(self, username: str):
         sql = f'SELECT * FROM cards WHERE username = "{username}"'
         log_message(f'SQL query="{sql}"')
-        user = self.connection.execute(text(sql))
+        try:
+            user = self.connection.execute(text(sql))
+        except Exception as e:
+            self.connection.rollback()
+            log_error(f'Error: {e}')
 
         if len(user.fetchall()) == 0 :
             return False
