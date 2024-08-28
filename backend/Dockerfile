@@ -1,5 +1,4 @@
 FROM python:3.12
-# FROM --platform=linux/arm64/v8 python:3.11
 
 LABEL maintainer="Andrew Knoesen"
 # Installs python, removes cache file to make things smaller
@@ -33,7 +32,4 @@ RUN crontab /etc/cron.d/cronfile
 RUN chmod +x main.py
 RUN chmod +x scheduled_scrape.py
 
-# EXPOSE 80
-
-# CMD ["cron", "-f"]
 CMD ["bash", "start_service.sh"]

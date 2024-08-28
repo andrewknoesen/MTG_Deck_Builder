@@ -262,40 +262,6 @@ def main():
             'qty': 2
         },
     ]
-    # wants = [
-    #     {
-    #         'name': 'Generous Ent',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Oliphaunt',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Sneaky Snacker',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Refurbished Familiar',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': "Trespasser's Curse",
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Sneaky Snacker',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Gorilla Shaman',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Basking Broodscale',
-    #         'qty': 4
-    #     }
-    # ]
 
     return_df = pd.DataFrame()
     scraper = MoxScraper()

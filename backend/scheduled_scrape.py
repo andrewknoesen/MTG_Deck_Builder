@@ -59,24 +59,9 @@ def main():
         log_message("Attempting to send report")
         log_message("===========================================================")
         bot.send_media(id=user, file_path='/output.pdf')
-        # bot.send_message
         log_message("===========================================================")
         log_message("Report sent")
         log_message("===========================================================")
-
-
-    # cards = my_sql.list_all()['card_name'].unique().tolist()
-
-    # for item in cards:
-    #     df = mox_scraper.format_for_retailer(mox_scraper.scrape_mox_df(item))
-
-    #     if not df.empty:
-    #         ids = my_sql.get_users_for_card(item)
-    #         for id in ids:
-    #             message = f'The following cards you are looking for are available:\n\n{df}'
-    #             bot.send_message(id=id, text=message)
-
-    #     sleep(5)
 
 if __name__ =="__main__":
     main()

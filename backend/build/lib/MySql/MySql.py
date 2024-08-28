@@ -98,11 +98,11 @@ class MySql:
 
 if __name__ == "__main__":
     my_sql = MySql('root', 'my_root_password', 'card_database')
-    # log_message(f'SQL query="{sql}"')
+    log_message(f'SQL query="{sql}"')
     username = 'andrew'
     card = 'Fireball'
-    # my_sql.add_card(username, card)
-    # my_sql.remove_user('andrew')
+    my_sql.add_card(username, card)
+    my_sql.remove_user('andrew')
     my_sql.remove_card(username, card)
-    # my_sql.remove_card(username, card)
+    my_sql.remove_card(username, card)
     log_message(my_sql.list_all())
