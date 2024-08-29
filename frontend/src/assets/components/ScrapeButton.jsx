@@ -1,8 +1,12 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 
-export default function scrapeButton(){
+export default function ScrapeButton({rows}){
     return(
-        <Button variant="contained">Start searching</Button>
+        <Button
+            variant="contained"
+            onClick={() => alert(JSON.stringify(rows, null, 2))}> {/* Pretty-print JSON */}
+            Build order
+            </Button>
     )
 }

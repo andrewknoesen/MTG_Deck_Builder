@@ -6,53 +6,28 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import TextField from '@mui/material/TextField';
 
-function createData(name, qty) {
-  return { name, qty };
-}
+export default function BasicTable({ rows, handleQtyChange }) {
 
-function updateData(name, qty, setRows) {
-    setRows(prevRows => {
-        const newRows = [...prevRows];
-        const existingRow = newRows.find(row => row.name === name);
-        if (existingRow) {
-          existingRow.qty += qty;  // Increment qty if entry exists
-        } else {
-          newRows.push(createData(name, qty));  // Create new entry if it doesn't exist
-        }
-        return newRows;
-      });
-}
-
-const initialRows = [
-  createData('Frozen yoghurt', 159),
-  createData('Ice cream sandwich', 237),
-  createData('Eclair', 262),
-  createData('1Cupcake', 305),
-  createData('G2ingerbread', 356),
-  createData('Fr3ozen yoghurt', 159),
-  createData('Ice4 cream sandwich', 237),
-  createData('Ecla5ir', 262),
-  createData('Eclabvvnmjfdir', 262),
-  createData('Cupcakqwerfdse', 305),
-  createData('Gingerbredsfgrtewsad', 356),
-];
-
-export default function BasicTable({ onAdd }) {
-  const [rows, setRows] = React.useState(initialRows);
-  const handleAdd = (name) => {
-    if (name) {
-      updateData(name, 1, setRows);
+  const handleBlur = (name, qty) => {
+    // Set qty to 0 if the field is empty
+    if (qty === '') {
+      handleQtyChange(name, 0);
+    } else {
+      handleQtyChange(name, Number(qty))
     }
   };
 
-  // Pass handleAdd to the parent component
-  React.useEffect(() => {
-    onAdd(handleAdd);
-  }, [onAdd]);
+  const handleKeyDown = (e, name, qty) => {
+    // Set qty to 0 if Enter is pressed and field is empty
+    if (e.key === 'Enter') {
+      handleQtyChange(name, qty === '' ? 0 : qty);
+    }
+  };
 
   return (
-    <TableContainer sx={{ height: '90vh', width: '25vw' }} component={Paper}>
+    <TableContainer sx={{ height: '90vh', width: '30vw' }} component={Paper}>
       <Table
         aria-labelledby="tableTitle"
         size={'small'}
@@ -74,7 +49,17 @@ export default function BasicTable({ onAdd }) {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.qty}</TableCell>
+              <TableCell align="right">
+                <TextField
+                  type="number"
+                  value={row.qty}
+                  onChange={(e) => handleQtyChange(row.name, e.target.value)}
+                  onBlur={(e) => handleBlur(row.name, e.target.value)}
+                  onKeyDown={(e) => handleKeyDown(e, row.name, e.target.value)}
+                  variant="standard"
+                  inputProps={{ min: 0 }}
+                />
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

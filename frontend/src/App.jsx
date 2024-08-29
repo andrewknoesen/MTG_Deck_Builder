@@ -5,18 +5,38 @@ import FreeSolo from './assets/components/SearchBar'
 import EnhancedTable from './assets/components/Table'
 import AddButton from './assets/components/AddButton'
 import ScrapeButton from './assets/components/ScrapeButton'
-import Stack from '@mui/material/Stack';
-import { height } from '@mui/system';
+import Stack from '@mui/material/Stack'
+import QtyField from './assets/components/QtyField';
 
+function createData(name, qty) {
+  return { name, qty };
+}
 
 function App() {
-  
-  const [text, setText] = useState('');
-  const [addFunction, setAddFunction] = useState(null);
 
-  const handleAddFunction = useCallback((fn) => {
-    setAddFunction(() => fn);
-  }, []);
+  const [text, setText] = useState('');
+  const [qty, setQty] = useState(1);
+  const [rows, setRows] = useState([])
+
+  const updateRows = (name, qty) => {
+    setRows((prevRows) => {
+      const newRows = [...prevRows];
+      const existingRow = newRows.find(row => row.name === name);
+      if (existingRow) {
+        if (qty === 0) {
+          // Remove the entry if qty is 0
+          return newRows.filter(row => row.name !== name);
+        } else {
+          existingRow.qty = qty;  // Update if exists
+        }
+      } else {
+        if (qty > 0) {
+          newRows.push(createData(name, qty));  // Create new entry if it doesn't exist
+        }
+      }
+      return newRows;
+    });
+  };
 
   return (
     <>
@@ -42,16 +62,19 @@ function App() {
               flexItem
               variant='middle' />
           }>
-          <div style={{ display: 'flex', margin: "8px", flexDirection: 'row', gap: '0.1', width: '25vw' }}>
-            <div style={{ flexGrow: 10 }}>
-              <FreeSolo setText={setText}/>
+          <div style={{ display: 'flex', margin: "8px", flexDirection: 'row', width: '30vw' }}>
+            <div style={{ flex: 8, padding: 10 }}>
+              <FreeSolo setText={setText} />
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexGrow: 1}}>
-              <AddButton text={text} onAdd={() => addFunction && addFunction(text)} />
+            <div style={{ flex: 1, padding: 10 }}>
+              <QtyField setQty={setQty} />
+            </div>
+            <div style={{ flex: 1, padding: 10 }}>
+              <AddButton onAdd={() => updateRows(text, qty)} /> {/* using a call back so that the function is only called when the button is clicked */}
             </div>
           </div>
-            <ScrapeButton/>
-          <EnhancedTable onAdd={handleAddFunction}/>
+          <ScrapeButton rows={rows} />
+          <EnhancedTable rows={rows} handleQtyChange={updateRows} />
         </Stack>
       </div>
     </>
