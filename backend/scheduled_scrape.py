@@ -4,7 +4,6 @@ from matplotlib.backends.backend_pdf import PdfPages
 
 from CustomLogger.CustomLogger import log_message
 
-
 load_dotenv('/.env')
 
 from time import sleep
@@ -23,6 +22,9 @@ def read_env(path):
     return env
 
 def main():
+    log_message("===========================================================")
+    log_message("Scheduled scrape started")
+    log_message("===========================================================")
     bot = TelegramBot()
     my_sql = MySql()
     mox_scraper = MoxScraper()
@@ -50,7 +52,7 @@ def main():
         plt.table(cellText=appended_df.values, colLabels=appended_df.columns, loc='center')
         plt.axis('off')  # Hide axis
         # Save the figure to a PDF file
-        with PdfPages('output.pdf') as pdf:
+        with PdfPages('/output.pdf') as pdf:
             pdf.savefig(bbox_inches='tight', pad_inches=0.1)        
         plt.close()
 

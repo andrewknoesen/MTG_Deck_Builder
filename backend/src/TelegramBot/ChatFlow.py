@@ -91,12 +91,12 @@ class ChatFunctions:
         plt.figure(figsize=(x, y))  # Adjust size as needed
         plt.table(cellText=appended_df.values, colLabels=appended_df.columns, loc='center')
         plt.axis('off')  # Hide axis
-        with PdfPages('output.pdf') as pdf:
+        with PdfPages('/output.pdf') as pdf:
             pdf.savefig(bbox_inches='tight', pad_inches=0.1)        
         plt.close()
 
         # Send the image to Telegram
-        with open('output.pdf', 'rb') as doc:
+        with open('/output.pdf', 'rb') as doc:
             await update.message.reply_document(doc)
             
         await update.message.reply_text(
