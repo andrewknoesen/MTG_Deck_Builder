@@ -9,22 +9,21 @@ import pandas as pd
 class OrderOptimizer:
     def __init__(self) -> None:
         self.shipping_cost = {
-            "D20Battleground": 90,
-            "Greedy Gold": 100,
-            "Sword & Board": 80,
-            "Luckshack": 20,
-            "Geek Home Deckbox": 0,
-            "Dracoti": 120,
-            "The Warren": 0,
-            "The Stone Dragon": 100,
-            "Mirage Gaming": 100,
-            "TopDeck": 70,
-            "UnderworldConnections": 0,
-            "TCG Trader": 100,
-            "Untapped Lands": 100,
-            "Battle Bunker Paarl": 0,
-            "D20Battleground": 90,
-            "Big Bang Shop": 100,
+            'D20Battleground': 90,
+            'Greedy Gold': 100,
+            'Sword & Board': 80,
+            'Luckshack': 20,
+            'Geek Home Deckbox': 0,
+            'Dracoti': 120,
+            'The Warren': 0,
+            'The Stone Dragon': 100,
+            'Mirage Gaming': 100,
+            'TopDeck': 70,
+            'Underworld Connections': 0,
+            'TCG Trader': 100,
+            'Untapped Lands': 100,
+            'Battle Bunker Paarl': 0,
+            'Big Bang Shop': 100,
         }
 
     def optimize(self, df: pd.DataFrame, orders: list[dict]):
@@ -184,60 +183,51 @@ class OrderOptimizer:
 
 def main():
     wants = [
-        {"name": "Wild Growth", "qty": 3},
-        {"name": "Malevolent Rumble", "qty": 3},
-        {"name": "Mwonvuli Acid-Moss", "qty": 4},
-        {"name": "Utopia Sprawl", "qty": 4},
-        {"name": "Thermokarst", "qty": 4},
-        {"name": "Annoyed Altisaur", "qty": 4},
-        {"name": "Writhing Chrysalis", "qty": 4},
-        {"name": "Arbor Elf", "qty": 4},
-        {"name": "Eldrazi Repurposer", "qty": 4},
-        {"name": "Avenging Hunter", "qty": 4},
-        {"name": "Boarding Party", "qty": 4},
-        {"name": "Wooded Ridgeline", "qty": 1},
-        {"name": "Tamiyo's Safekeeping", "qty": 1},
-        {"name": "Cast into the Fire", "qty": 1},
-        {"name": "Relic of Progenitus", "qty": 3},
-        {"name": "Breath Weapon", "qty": 3},
-        {"name": "Gorilla Shaman", "qty": 1},
-        {"name": "Deglamer", "qty": 4},
-        {"name": "Weather the Storm", "qty": 2},
+        {
+            'name': "Deathgreeter",
+            'qty': 1
+        },
+        {
+            'name': "Marauding Blight-Priest",
+            'qty': 1
+        },
+        {
+            'name': "Springbloom Druid",
+            'qty': 1
+        },
+        {
+            'name': "Syphon Mind",
+            'qty': 1
+        },
+        {
+            'name': "Corrupted Conviction",
+            'qty': 1
+        },
+        {
+            'name': "Crop Rotation",
+            'qty': 1
+        },
+        {
+            'name': "Defile",
+            'qty': 1
+        },
+        {
+            'name': "Victim of Night",
+            'qty': 1
+        },
+        {
+            'name': "Village Rites",
+            'qty': 1
+        },
+        {
+            'name': "Parasitic Impetus",
+            'qty': 1
+        },
+        {
+            'name': "Vampiric Link",
+            'qty': 1
+        },
     ]
-    # wants = [
-    #     {
-    #         'name': 'Generous Ent',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Oliphaunt',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Sneaky Snacker',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Refurbished Familiar',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': "Trespasser's Curse",
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Sneaky Snacker',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Gorilla Shaman',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Basking Broodscale',
-    #         'qty': 4
-    #     }
-    # ]
 
     return_df = pd.DataFrame()
     scraper = MoxScraper()

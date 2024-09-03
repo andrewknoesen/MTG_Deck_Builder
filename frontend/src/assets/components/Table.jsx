@@ -27,7 +27,7 @@ export default function BasicTable({ rows, handleQtyChange }) {
   };
 
   return (
-    <TableContainer sx={{ height: '90vh', width: '30vw' }} component={Paper}>
+    <TableContainer sx={{ height: '100%', width: '30vw' }} component={Paper}>
       <Table
         aria-labelledby="tableTitle"
         size={'small'}
