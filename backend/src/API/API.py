@@ -1,5 +1,6 @@
 from time import sleep
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 
 from Scryfall.Scryfall import Scryfall
@@ -7,6 +8,18 @@ from OrderOptimizer.OrderOptimizer import OrderOptimizer
 from MoxScraper.MoxScraper import MoxScraper
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:5173",  # React app's URL
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 def validate_order_structure(data):
     # Check if the top-level key 'order' exists and is a list
