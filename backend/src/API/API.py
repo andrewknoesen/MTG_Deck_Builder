@@ -2,11 +2,11 @@ from time import sleep
 from fastapi import FastAPI
 import pandas as pd
 
+from Scryfall.Scryfall import Scryfall
 from OrderOptimizer.OrderOptimizer import OrderOptimizer
 from MoxScraper.MoxScraper import MoxScraper
 
 app = FastAPI()
-
 
 def validate_order_structure(data):
     # Check if the top-level key 'order' exists and is a list
@@ -34,6 +34,15 @@ def validate_order_structure(data):
     # If all checks pass, return True
     return True
 
+# ############################################################################ #
+#                                  API METHODS                                 #
+# ############################################################################ #
+
+@app.get("/get_card_autocomplete")
+async def get_card_autocomplete(query: str):
+    scryfall = Scryfall()
+    
+    return(scryfall.search(query))
 
 @app.post("/optimize_custom_order")
 async def optimize_custom_order(body: dict):
