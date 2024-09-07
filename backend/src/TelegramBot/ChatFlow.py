@@ -80,7 +80,7 @@ class ChatFunctions:
                 
             
 
-            await sleep(5)
+            await sleep(1)
         
         log_message(f"{appended_df}")
         # Plot DataFrame
