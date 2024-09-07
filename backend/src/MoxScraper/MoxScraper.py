@@ -6,9 +6,8 @@ from CustomLogger.CustomLogger import log_message, log_error, log_info
 class MoxScraper:
 
     url_base: str = 'https://moxmonolith.com/card'
-    # retailers: list = [2, 3, 4, 6, 11, 13, 15, 16, 18, 19, 20, 21, 26, 34, 36]
-    # retailers: list = [2, 3, 4, 11, 13, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 32, 33, 34, 35, 37, 39, 40, 41, 42, 43, 44, 45, 46, 48, 51]
-    retailers: list = [2,3,4,11,13,15,18,19,20,21,26,34,41,44,43,51,42]
+    # retailers: list = [2,3,4,11,13,15,18,19,20,21,26,34,41,44,43,51,42]
+    retailers: list = [2,3,4,11,13,15,18,19,20,21,22,23,24,25,26,32,33,34,35,37,39,40,41,42,43,44,45,48,51,52,53,54]
 
     def __init__(self) -> None:
         pass
