@@ -10,3 +10,5 @@ mtg_deck_builder.egg-info
 build/**
 **/*.pyc
 dist/**
+backend/build
+backend/dist
