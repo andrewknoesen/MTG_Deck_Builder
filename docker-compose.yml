@@ -1,26 +1,53 @@
 services:
-  db:
-    container_name: mtg_db
-    image: mysql:8.0
-    command: --default-authentication-plugin=mysql_native_password
-    volumes:
-      - ./MySql/dbdata:/var/lib/mysql
-      - ./MySql/init/:/docker-entrypoint-initdb.d
-    restart: always
-    environment:
-      - TZ=Africa/Johannesburg
-    env_file:
-      - .env
-    ports:
-      - "3307:3306"
+  # db:
+  #   container_name: mtg_db
+  #   image: mysql:8.0
+  #   command: --default-authentication-plugin=mysql_native_password
+  #   volumes:
+  #     - ./MySql/dbdata:/var/lib/mysql
+  #     - ./MySql/init/:/docker-entrypoint-initdb.d
+  #   restart: always
+  #   environment:
+  #     - TZ=Africa/Johannesburg
+  #   env_file:
+  #     - .env
+  #   ports:
+  #     - "3307:3306"
 
-  main:
-    container_name: mtg_telegram_alerter
+  # main:
+  #   container_name: mtg_telegram_alerter
+  #   restart: always
+  #   environment:
+  #     - TZ=Africa/Johannesburg
+  #   build:
+  #     context: ./backend
+  #     dockerfile: ./Dockerfile
+  #   env_file:
+  #     - .env
+
+  api:
+    container_name: mtg_api
     restart: always
     environment:
       - TZ=Africa/Johannesburg
     build:
       context: ./backend
-      dockerfile: ./Dockerfile
+      dockerfile: ./API_Dockerfile
     env_file:
       - .env
+    ports: 
+      - "8000:8000"
+
+  # ui:
+  #   container_name: mtg_ui
+  #   restart: always
+  #   environment:
+  #     - TZ=Africa/Johannesburg
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: ./Dockerfile
+  #   env_file:
+  #     - .env
+  #   ports: 
+  #     - "5173:5173"
+    

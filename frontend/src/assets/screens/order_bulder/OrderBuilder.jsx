@@ -13,11 +13,10 @@ function createData(name, qty) {
     return { name, qty };
 }
 
-export default function OrderBuilder() {
+export default function OrderBuilder({ setReport }) {
     const [text, setText] = useState('');
     const [qty, setQty] = useState(1);
     const [rows, setRows] = useState([])
-
     const updateRows = (name, qty) => {
         setRows((prevRows) => {
             const newRows = [...prevRows];
@@ -71,7 +70,7 @@ export default function OrderBuilder() {
                         <AddButton onAdd={() => updateRows(text, qty)} /> {/* using a call back so that the function is only called when the button is clicked */}
                     </div>
                 </div>
-                <ScrapeButton rows={rows} />
+                <ScrapeButton rows={rows} setReport={setReport} />
                 <EnhancedTable rows={rows} handleQtyChange={updateRows} />
             </Stack>
         </div>

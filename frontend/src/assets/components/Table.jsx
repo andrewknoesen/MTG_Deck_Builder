@@ -7,8 +7,17 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
+import Tooltip from '@mui/material/Tooltip';
+import { useState, useEffect, useCallback } from 'react'
+import { CircularProgress } from '@mui/material';
+import axios from 'axios';
+
 
 export default function BasicTable({ rows, handleQtyChange }) {
+
+  const [hoveredCard, setHoveredCard] = useState(null);
+  const [cardImage, setCardImage] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleBlur = (name, qty) => {
     // Set qty to 0 if the field is empty
@@ -26,6 +35,30 @@ export default function BasicTable({ rows, handleQtyChange }) {
     }
   };
 
+  const fetchCardImage = async (cardName) => {
+    setIsLoading(true);
+    try {
+      const response = await axios.get(`http://localhost:8000/get_card_image?query=${encodeURIComponent(cardName)}`);
+      console.log({response})
+      setCardImage(response.data.small);
+    } catch (error) {
+      console.error(`Error fetching image for ${cardName}:`, error);
+      setCardImage(null);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleMouseEnter = (cardName) => {
+    setHoveredCard(cardName);
+    fetchCardImage(cardName);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredCard(null);
+    setCardImage(null);
+  };
+
   return (
     <TableContainer sx={{ height: '100%', width: '30vw' }} component={Paper}>
       <Table
@@ -37,7 +70,7 @@ export default function BasicTable({ rows, handleQtyChange }) {
           <TableRow
             sx={{ border: 3 }}>
             <TableCell>Card</TableCell>
-            <TableCell align="right">Qty</TableCell>
+            <TableCell align="center">Qty</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -46,18 +79,32 @@ export default function BasicTable({ rows, handleQtyChange }) {
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
-              <TableCell align="right">
+              <Tooltip
+                title={
+                  isLoading ? (
+                    <CircularProgress size={20} />
+                  ) : cardImage ? (
+                    <img src={cardImage} alt={`${row.name} card`} style={{ maxWidth: '200px' }} />
+                  ) : (
+                    "Image not available"
+                  )
+                }
+                onOpen={() => handleMouseEnter(row.name)}
+                onClose={handleMouseLeave}
+              >
+                <TableCell component="th" scope="row">
+                  {row.name}
+                </TableCell>
+              </Tooltip>
+              <TableCell align="center" style={{ width: '30%', whiteSpace: 'nowrap' }}>
                 <TextField
                   type="number"
                   value={row.qty}
                   onChange={(e) => handleQtyChange(row.name, e.target.value)}
                   onBlur={(e) => handleBlur(row.name, e.target.value)}
                   onKeyDown={(e) => handleKeyDown(e, row.name, e.target.value)}
-                  variant="standard"
-                  inputProps={{ min: 0 }}
+                  // variant="standard"
+                  inputProps={{ min: 0,  style: { textAlign: 'center' } }}
                 />
               </TableCell>
             </TableRow>

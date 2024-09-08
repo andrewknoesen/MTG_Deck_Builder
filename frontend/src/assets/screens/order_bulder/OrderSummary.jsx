@@ -12,7 +12,7 @@ function createData(name, qty) {
     return { name, qty };
 }
 
-export default function OrderSummary() {
+export default function OrderSummary({ report }) {
     const [text, setText] = useState('');
     const [qty, setQty] = useState(1);
     const [rows, setRows] = useState([])
@@ -72,7 +72,7 @@ export default function OrderSummary() {
                                 </Typography>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'start' }}>
-                                <EnhancedTable rows={rows} handleQtyChange={updateRows} />
+                                <EnhancedTable rows={rows} handleQtyChange={report} />
 
                             </div>
                         </div>

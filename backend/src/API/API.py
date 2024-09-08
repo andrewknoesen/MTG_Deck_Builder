@@ -7,15 +7,16 @@ from Scryfall.Scryfall import Scryfall
 from OrderOptimizer.OrderOptimizer import OrderOptimizer
 from MoxScraper.MoxScraper import MoxScraper
 
-app = FastAPI()
+scraper = MoxScraper()
+optimizer = OrderOptimizer()
+scryfall = Scryfall()
 
-origins = [
-    "http://localhost:5173",  # React app's URL
-]
+
+app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["http://0.0.0.0:5173", "http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -52,21 +53,16 @@ def validate_order_structure(data):
 # ############################################################################ #
 
 @app.get("/get_card_autocomplete")
-async def get_card_autocomplete(query: str):
-    scryfall = Scryfall()
-    
+async def get_card_autocomplete(query: str):    
     return(scryfall.search(query))
 
 @app.post("/optimize_custom_order")
 async def optimize_custom_order(body: dict):
+    return_df = pd.DataFrame()
     is_valid = validate_order_structure(body)
     
     if not is_valid:
         return {"status": 500, "Message": "Invalid structure"}
-
-    return_df = pd.DataFrame()
-    scraper = MoxScraper()
-    optimizer = OrderOptimizer()
 
     for item in body['order']:
         df = scraper.format_for_retailer(scraper.scrape_mox_df(item['name']))
@@ -78,3 +74,8 @@ async def optimize_custom_order(body: dict):
     report = optimizer.optimize(return_df, body['order'])
 
     return {'report': report}
+
+@app.get("/get_card_image")
+async def get_card_image(query: str):
+    return scryfall.get_image(query)
+
