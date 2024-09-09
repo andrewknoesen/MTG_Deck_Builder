@@ -5,7 +5,7 @@ import { useState, useCallback } from 'react'
 import Stack from '@mui/material/Stack'
 import { Typography } from '@mui/material';
 
-import EnhancedTable from '../../components/Table'
+import SummaryTable from '../../components/SummaryTable'
 
 
 function createData(name, qty) {
@@ -72,7 +72,7 @@ export default function OrderSummary({ report }) {
                                 </Typography>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'start' }}>
-                                <EnhancedTable rows={rows} handleQtyChange={report} />
+                                <SummaryTable purchaseData={report} />
 
                             </div>
                         </div>

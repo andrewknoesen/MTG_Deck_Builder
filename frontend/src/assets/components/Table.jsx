@@ -13,9 +13,8 @@ import { CircularProgress } from '@mui/material';
 import axios from 'axios';
 
 
-export default function BasicTable({ rows, handleQtyChange }) {
+export default function EnhancedTable({ rows, handleQtyChange }) {
 
-  const [hoveredCard, setHoveredCard] = useState(null);
   const [cardImage, setCardImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -50,12 +49,10 @@ export default function BasicTable({ rows, handleQtyChange }) {
   };
 
   const handleMouseEnter = (cardName) => {
-    setHoveredCard(cardName);
     fetchCardImage(cardName);
   };
 
   const handleMouseLeave = () => {
-    setHoveredCard(null);
     setCardImage(null);
   };
 
