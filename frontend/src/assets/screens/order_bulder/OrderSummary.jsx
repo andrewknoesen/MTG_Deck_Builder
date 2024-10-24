@@ -5,7 +5,10 @@ import { useState, useCallback } from 'react'
 import Stack from '@mui/material/Stack'
 import { Typography } from '@mui/material';
 
-import SummaryTable from '../../components/SummaryTable'
+import OrderBreakdown from '../../components/OrderBreakdown';
+import OrderSummaryTitle from '../../components/OrderSummaryTitle';
+import CostReport from '../../components/CostReport';
+import ShippingBreakdown from '../../components/ShippingBreakdown';
 
 
 function createData(name, qty) {
@@ -58,56 +61,14 @@ export default function OrderSummary({ report }) {
                         flexItem
                         variant='middle' />
                 }>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <Typography variant="h3" sx={{ color: 'black', padding: 1 }}>
-                        Order Summary
-                    </Typography>
-                </div>
-                <div style={{ display: 'flex', margin: "8px", flexDirection: 'row', height: '100%' }}>
-                    <div style={{ flex: 1}}>
-                        <div style={{ alignItems: 'start' }}>
-                            <div style={{ display: 'flex', alignItems: 'start' }}>
-                                <Typography variant="h6" sx={{ color: 'black', padding: 1 }}>
-                                    Items
-                                </Typography>
-                            </div>
-                            <div style={{ display: 'flex', alignItems: 'start' }}>
-                                <SummaryTable purchaseData={report} />
-
-                            </div>
-                        </div>
-                    </div>
-
+                <OrderSummaryTitle />
+                <div style={{ display: 'flex', margin: "8px", flexDirection: 'row' }}>
+                    <OrderBreakdown report={report} />
                     <Divider orientation='vertical' flexItem variant='middle' />
-
                     <div style={{ flex: 1 }}>
-                        <div style={{ alignItems: 'start' }}>
-                            <div style={{ display: 'flex', alignItems: 'start' }}>
-                                <Typography variant="h6" sx={{ color: 'black', padding: 1 }}>
-                                    Shipping Breakdown
-                                </Typography>
-                            </div>
-                            <div style={{ display: 'flex', alignItems: 'start' }}>
-                                <Typography variant="body1" sx={{ color: 'black', padding: 1 }}>
-                                    Test
-                                </Typography>
-                            </div>
-                        </div>
-
+                        <CostReport report={report} />
                         <Divider orientation='horizontal' flexItem variant='full' />
-
-                        <div style={{ alignItems: 'start' }}>
-                            <div style={{ display: 'flex', alignItems: 'start' }}>
-                                <Typography variant="h6" sx={{ color: 'black', padding: 1 }}>
-                                    Total Cost
-                                </Typography>
-                            </div>
-                            <div style={{ display: 'flex', alignItems: 'start' }}>
-                                <Typography variant="body1" sx={{ color: 'black', padding: 1 }}>
-                                    Test
-                                </Typography>
-                            </div>
-                        </div>
+                        <ShippingBreakdown report={report} />
                     </div>
                 </div>
             </Stack>

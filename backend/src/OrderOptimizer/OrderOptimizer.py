@@ -25,6 +25,8 @@ class OrderOptimizer:
             "Battle Bunker Paarl": 0,
             "Big Bang Shop": 100,
         }
+        
+        self.default_shipping_cost = 120 #postnet
 
     def optimize(self, df: pd.DataFrame, orders: list[dict]):
         error: bool = False
@@ -91,6 +93,8 @@ class OrderOptimizer:
             # item costs
             objective_terms.append(selected_indicator[key] * cost[key])
             # Add shipping costs
+            if key[1] not in self.shipping_cost:
+                self.shipping_cost[key[1]] = self.default_shipping_cost
             objective_terms.append(shipping_indicator[key] * self.shipping_cost[key[1]])
 
         problem += pl.lpSum(objective_terms)

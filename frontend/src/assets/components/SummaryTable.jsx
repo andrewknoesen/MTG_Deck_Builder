@@ -63,20 +63,20 @@ const PurchaseTable = ({ purchaseData }) => {
   };
 
   return (
-    <TableContainer sx={{ height: '100%', width: '30vw' }} component={Paper}>
+    <TableContainer sx={{ height: '100%', width: '37vw'}} component={Paper}>
       <Table
-        aria-labelledby="tableTitle"
+        aria-labelledby="Order summary"
         size={'small'}
         stickyHeader
       >
         <TableHead>
           <TableRow
             sx={{ border: 3 }}>
-            <TableCell>Store</TableCell>
-            <TableCell>Card Name</TableCell>
-            <TableCell>Quantity</TableCell>
-            <TableCell>Unit Price</TableCell>
-            <TableCell>Gross</TableCell>
+            <TableCell><strong>Store</strong></TableCell>
+            <TableCell><strong>Card Name</strong></TableCell>
+            <TableCell><strong>Quantity</strong></TableCell>
+            <TableCell><strong>Unit Price</strong></TableCell>
+            <TableCell><strong>Gross</strong></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -99,8 +99,8 @@ const PurchaseTable = ({ purchaseData }) => {
                 <TableCell>{row.cardName}</TableCell>
               </Tooltip>
               <TableCell>{row.purchase_qty}</TableCell>
-              <TableCell>{row.unit}</TableCell>
-              <TableCell>{row.gross}</TableCell>
+              <TableCell>R{row.unit}</TableCell>
+              <TableCell>R{row.gross}</TableCell>
             </TableRow>
           ))}
         </TableBody>

@@ -51,7 +51,6 @@ export default function OrderBuilder({ setReport }) {
                     height: '90vh',
                     border: '1px solid grey',
                     justifyContent: 'center', alignItems: 'center'
-
                 }}
                 divider={
                     <Divider

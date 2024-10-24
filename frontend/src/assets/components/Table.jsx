@@ -59,15 +59,15 @@ export default function EnhancedTable({ rows, handleQtyChange }) {
   return (
     <TableContainer sx={{ height: '100%', width: '30vw' }} component={Paper}>
       <Table
-        aria-labelledby="tableTitle"
+        aria-labelledby="Order"
         size={'small'}
         stickyHeader
       >
         <TableHead>
           <TableRow
             sx={{ border: 3 }}>
-            <TableCell>Card</TableCell>
-            <TableCell align="center">Qty</TableCell>
+            <TableCell><strong>Card</strong></TableCell>
+            <TableCell align="center"><strong>Qty</strong></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
