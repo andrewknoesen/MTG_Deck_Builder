@@ -12,7 +12,7 @@ export default function OrderBreakdown({ report }) {
                     <strong>Order Breakdown</strong>
                 </Typography>
             </div>
-            <div style={{ display: 'flex', alignItems: 'start' }}>
+            <div style={{ alignItems: 'start' }}>
                 <SummaryTable purchaseData={report} />
             </div>
         </div>
