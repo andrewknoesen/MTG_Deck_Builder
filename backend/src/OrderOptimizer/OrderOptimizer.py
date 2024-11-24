@@ -19,13 +19,14 @@ class OrderOptimizer:
             "The Stone Dragon": 100,
             "Mirage Gaming": 100,
             "TopDeck": 70,
-            "UnderworldConnections": 0,
+            "Underworld Connections": 0,
             "TCG Trader": 100,
             "Untapped Lands": 100,
             "Battle Bunker Paarl": 0,
-            "D20Battleground": 90,
             "Big Bang Shop": 100,
         }
+        
+        self.default_shipping_cost = 120 #postnet
 
     def optimize(self, df: pd.DataFrame, orders: list[dict]):
         error: bool = False
@@ -92,39 +93,54 @@ class OrderOptimizer:
             # item costs
             objective_terms.append(selected_indicator[key] * cost[key])
             # Add shipping costs
+            if key[1] not in self.shipping_cost:
+                self.shipping_cost[key[1]] = self.default_shipping_cost
             objective_terms.append(shipping_indicator[key] * self.shipping_cost[key[1]])
 
         problem += pl.lpSum(objective_terms)
 
         status = problem.solve(pl.PULP_CBC_CMD())
 
-        return_str = ""
-        return_str += f"Status: {pl.LpStatus[status]}"
+        response = dict({})
+        response["Status"] = pl.LpStatus[status]
         total_cost = 0
 
-        return_str += "\n# --------------------------------- purchases -------------------------------- #\n"
+        # ############################################################################ #
+        #                                   PURCHASES                                  #
+        # ############################################################################ #
+        response["purchase"] = dict({})
         for var in selected_indicator:
             if selected_indicator[var].varValue > 0:
-                return_str += f"{var}: {selected_indicator[var].varValue} at R{cost[var]} each --> R{selected_indicator[var].varValue * cost[var]}\n"
+                response["purchase"].setdefault(str(var[1]), {}).setdefault(str(var[0]).rsplit('-', 1)[0], {})
+                response["purchase"][str(var[1])][str(var[0]).rsplit('-', 1)[0]][str(var[0]).rsplit('-', 1)[1]] = {
+                    "purchase_qty": selected_indicator[var].varValue,
+                    "unit": cost[var],
+                    "gross": selected_indicator[var].varValue * cost[var],
+                }
                 total_cost += selected_indicator[var].varValue * cost[var]
 
-        return_str += "\n# --------------------------------- shipping --------------------------------- #\n"
+        # ############################################################################ #
+        #                                   SHIPPING                                   #
+        # ############################################################################ #
+        response["shipping"] = dict({})
         for var in shipping_indicator:
             if shipping_indicator[var].varValue > 0:
-                return_str += f"{var}: R{shipping_indicator[var].varValue * self.shipping_cost[var[1]]}\n"
+                response["shipping"][str(var[1])] = shipping_indicator[var].varValue * self.shipping_cost[var[1]]
                 total_cost += (
                     shipping_indicator[var].varValue * self.shipping_cost[var[1]]
                 )
 
-        return_str += "\n# -------------------------------- breakdown -------------------------------- #\n"
-        for var in shipping_indicator:
-            if shipping_indicator[var].varValue > 0:
-                return_str += f"{var}: R{(selected_indicator[var].varValue * cost[var]) + shipping_indicator[var].varValue * self.shipping_cost[var[1]]}\n"
+        # response += "\n# -------------------------------- breakdown -------------------------------- #\n"
+        # for var in shipping_indicator:
+        #     if shipping_indicator[var].varValue > 0:
+        #         response += f"{var}: R{(selected_indicator[var].varValue * cost[var]) + shipping_indicator[var].varValue * self.shipping_cost[var[1]]}\n"
 
-        return_str += "\n# ----------------------------------- total ---------------------------------- #\n"
-        return_str += f"Total Cost: {total_cost}"
+        # ############################################################################ #
+        #                                     TOTAL                                    #
+        # ############################################################################ #
+        response["total"] = total_cost
 
-        return return_str
+        return response
 
     def filter_cards(self, orders: list[dict], df: pd.DataFrame) -> list[dict]:
         """This function filters the cards that are available and adjusts the order list to only cards that are available.
@@ -184,60 +200,18 @@ class OrderOptimizer:
 
 def main():
     wants = [
-        {"name": "Wild Growth", "qty": 3},
-        {"name": "Malevolent Rumble", "qty": 3},
-        {"name": "Mwonvuli Acid-Moss", "qty": 4},
-        {"name": "Utopia Sprawl", "qty": 4},
-        {"name": "Thermokarst", "qty": 4},
-        {"name": "Annoyed Altisaur", "qty": 4},
-        {"name": "Writhing Chrysalis", "qty": 4},
-        {"name": "Arbor Elf", "qty": 4},
-        {"name": "Eldrazi Repurposer", "qty": 4},
-        {"name": "Avenging Hunter", "qty": 4},
-        {"name": "Boarding Party", "qty": 4},
-        {"name": "Wooded Ridgeline", "qty": 1},
-        {"name": "Tamiyo's Safekeeping", "qty": 1},
-        {"name": "Cast into the Fire", "qty": 1},
-        {"name": "Relic of Progenitus", "qty": 3},
-        {"name": "Breath Weapon", "qty": 3},
-        {"name": "Gorilla Shaman", "qty": 1},
-        {"name": "Deglamer", "qty": 4},
-        {"name": "Weather the Storm", "qty": 2},
+        {"name": "Deathgreeter", "qty": 1},
+        {"name": "Marauding Blight-Priest", "qty": 1},
+        {"name": "Springbloom Druid", "qty": 1},
+        {"name": "Syphon Mind", "qty": 1},
+        {"name": "Corrupted Conviction", "qty": 1},
+        {"name": "Crop Rotation", "qty": 1},
+        {"name": "Defile", "qty": 1},
+        {"name": "Victim of Night", "qty": 1},
+        {"name": "Village Rites", "qty": 1},
+        {"name": "Parasitic Impetus", "qty": 1},
+        {"name": "Vampiric Link", "qty": 1},
     ]
-    # wants = [
-    #     {
-    #         'name': 'Generous Ent',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Oliphaunt',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Sneaky Snacker',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Refurbished Familiar',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': "Trespasser's Curse",
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Sneaky Snacker',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Gorilla Shaman',
-    #         'qty': 4
-    #     },
-    #     {
-    #         'name': 'Basking Broodscale',
-    #         'qty': 4
-    #     }
-    # ]
 
     return_df = pd.DataFrame()
     scraper = MoxScraper()
