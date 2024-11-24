@@ -41,7 +41,7 @@ def main():
                 # Append the current DataFrame to the existing one
                 appended_df = pd.concat([appended_df, df], ignore_index=True)
 
-            sleep(5)
+            sleep(1)
             
         # Plot DataFrame
         ratio = 3/2
