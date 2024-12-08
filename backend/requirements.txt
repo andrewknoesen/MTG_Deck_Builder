@@ -1,0 +1,13 @@
+requests>=2.31.0
+pandas>=2.1.4
+python-telegram-bot>=20.7
+SQLAlchemy>=2.0.19
+mysql-connector-python>=8.2.0
+python-dotenv>=1.0.0
+matplotlib>=3.8.3
+setuptools>=61.0
+fastapi>=0.112.2
+fastapi-cli>=0.0.5
+uvicorn>=0.30.6
+# pulp==2.8.0
+pulp

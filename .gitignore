@@ -1,7 +1,14 @@
-__pycahce__
+**/__pycahce__
 .venv
 .ipynb_checkpoints
 .vscode
 node_modules
 .env
 **/dbdata/**
+node_modules
+mtg_deck_builder.egg-info
+build/**
+**/*.pyc
+dist/**
+backend/build
+backend/dist

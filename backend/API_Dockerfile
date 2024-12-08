@@ -1,0 +1,26 @@
+FROM python:3.12
+
+LABEL maintainer="Andrew Knoesen"
+# Update package list and install cron
+RUN apt update -y && rm -Rf /var/cache/apt
+
+# Set the working directory
+WORKDIR /app
+
+# Copy requirements.txt and install dependencies
+COPY ./requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# Copy the source code into the container
+COPY ./src /app/src
+COPY ./*.py /app/
+
+# Set environment variables
+ENV LOG_LEVEL=debug
+
+# Install any additional Python dependencies using setup.py if needed
+RUN python3 setup.py install
+
+# Use Uvicorn to run the FastAPI application with logging enabled
+# CMD ["uvicorn", "src.API.API:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["python3", "/app/src/API/api.py"]

@@ -1,0 +1,1 @@
+0 08 * * * env - `cat /proc/1/environ | tr '\0' '\n'` /usr/local/bin/python3 /scheduled_scrape.py >> /var/log/cron.log 2>&1
